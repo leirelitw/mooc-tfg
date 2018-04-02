@@ -1,0 +1,24 @@
+{
+  "name": "mooc-tfg",
+  "version": "1.0.0",
+  "description": "TFG in universities ranking",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "Mongoose",
+    "Universities"
+  ],
+  "author": "Leire Litwin",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12",
+    "npm": "^5.8.0"
+  }
+}
