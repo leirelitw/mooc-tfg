@@ -1,0 +1,269 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+tab1 {
+  padding-left: 1em;
+}
+
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("../images/statistics.png");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../images/home.gif");
+  min-height: 450px;
+}
+
+.bgimg-3 {
+  background-image: url("../images/background2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("../images/cubes.jpg");
+  min-height: 100%;
+  opacity: 0.80;
+}
+
+.bgimg-5 {
+  background-image: url("../images/yellow.png");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.home-text{
+  color: #777;
+  background-color:white;
+  font-size:18px;
+  text-align:center;
+  padding:50px 100px;
+  text-align: justify;
+}
+
+span{
+  cursor:default;
+}
+
+a{
+  color: white;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+header{
+  position:fixed;
+  z-index:10;
+  width: 100%;
+  background-color: #161921;
+}
+
+.subheader{
+  display: inline-block;
+  width:70%;
+  margin:0;
+  padding:0;
+  float:right;
+  margin-top:40px;
+  margin-right:20px;
+}
+
+.principal-menu-mooc li, a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.chart-menu-mooc{
+  background-color: black;
+  height: 40px;
+  text-align: center;
+  position:relative;
+  margin-top: 65px;
+}
+
+.chart-menu-mooc li{
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 0;
+  padding: 0 30px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.chart-menu-mooc li:hover{
+  color:white;
+}
+
+#menu-item-home, #menu-item-data, #menu-item-graphs,#menu-item-about{
+  width:100px;
+  height:35px;
+  margin:0;
+  padding:0 10px;
+  float:right;
+}
+
+#menu-item-home a{
+  color: #33aacc;
+}
+
+#menu-item-data a{
+  color: #ea62a2;
+}
+
+#menu-item-graphs a{
+  color: #ffb600;
+}
+
+#menu-item-about a{
+  color: #29a047;
+}
+
+
+#menu-item-about a:hover, #menu-item-graphs a:hover, #menu-item-data a:hover, #menu-item-home a:hover{
+  color: white;
+}
+
+.about-me{
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  margin-left: 15%;
+  width: 70%;
+  padding: 15px;
+}
+
+.split1 {
+    height: 600px;
+    width: 25%;
+    position: absolute;
+    z-index: 1;
+    top: 500px;
+    overflow-x: hidden;
+}
+
+.split2 {
+    width: 75%;
+    position: absolute;
+    z-index: 1;
+    top: 500px;
+    /*height: 600px;
+    overflow-x: hidden;*/
+    border-left: 2px solid grey;
+
+}
+
+.left {
+    left: 0;
+    /*background-color: lightpink;*/
+}
+
+.right {
+    right: 0;
+    /*background-color: lightblue;*/
+}
+
+.centered {
+    margin-left: 20px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media (max-width: 800px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+        background-attachment: scroll;
+    }
+
+    .bgimg-4 {
+      min-height: 700px;
+    }
+
+    header{
+      position:absolute;
+    }
+
+    .subheader{
+      display: inline-block;
+      width:100%;
+      margin:0;
+      padding:0;
+      text-align: center;
+    }
+
+    .home-text{
+      padding:10px 20px;
+    }
+
+    #statistics-image{
+      width: 350px;
+    }
+
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 10px;
+      font-size: 20px;
+      letter-spacing: 5px;
+    }
+
+    ul, #menu-item-home, #menu-item-data, #menu-item-graphs,#menu-item-about{
+      width:100%;
+      float:none;
+      margin:0;
+      padding:0;
+      text-align: center;
+    }
+
+    .chart-menu-mooc{
+      background-color: black;
+      height: 80px;
+      text-align: center;
+      position:relative;
+      margin-top:25px;
+    }
+
+    .about-me{
+      padding: 0;
+    }
+}

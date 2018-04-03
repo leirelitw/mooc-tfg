@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Exo+2:300" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/mooc.css">
+<link type="text/css" rel="stylesheet" href="css/jquery.dynatable.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<title>MOOCs Ranking | by Leire Litwin</title>
+<link rel="icon" href="images/favicon.png">
+
+</head>
+<body>
+
+  <header class="site-header">
+      <a href="#" class="logo"><img src="images/logo.png" alt="" style="width:250px; padding:5px;"></a>
+
+    <div class="subheader">
+            <ul class="principal-menu-mooc">
+              <li id="menu-item-about" class="menu-item"><a href="about.html">ABOUT</a></li>
+              <li id="menu-item-graphs" class="menu-item"><a href="graphs.html">GRAPHS</a></li>
+              <li id="menu-item-data" class="menu-item"><a href="data.html">DATA</a></li>
+              <li id="menu-item-home" class="menu-item current-menu-item"><a href="index.html">HOME</a></li>
+            </ul>
+    </div>
+  </header>
+
+  <div class="bgimg-3"style="top:100px;">
+    <img src="images/graphs.png" width="420px">
+    <div class="caption" style="top:45%;">
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">RANKINGS AND DATA</span>
+      <br>
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">(Use Dynatable)</span>
+    </div>
+  </div>
+
+  <div class="split1 left">
+  <div class="centered">
+    <h2>Select a region</h2>
+    <form>
+      <input type="radio" name="continent-data" value="all-data" checked> All<br>
+      <tab1><input type="radio" name="continent-data" value="asia-data"> Asia</tab1><br>
+      <tab1><input type="radio" name="continent-data" value="south-america-data"> South America</tab1><br>
+      <tab1><input type="radio" name="continent-data" value="north-america-data"> North America</tab1><br>
+      <tab1><input type="radio" name="continent-data" value="oceania-data"> Oceania</tab1><br>
+      <tab1><input type="radio" name="continent-data" value="europe-america-data"> Europe</tab1><br>
+      <tab1><input type="radio" name="continent-data" value="africa-america-data"> Africa</tab1><br>
+    </form>
+  </div>
+</div>
+
+<div class="split2 right">
+  <div class="centered">
+    <table id="example" class="display nowrap dataTable dtr-inline collapsed" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 80%; margin-top: 20px; margin-left: 10px;">
+      <thead>
+        <tr role="row">
+        <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="University Name: activate to sort column descending" style="width: 160px;">University Name</th>
+        <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Ranking: activate to sort column ascending" style="width: 120px;">Ranking</th>
+        <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="ShanghaiRanking: activate to sort column ascending" style="width: 120px;">Shanghai Ranking</th>
+        <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Country: activate to sort column ascending" style="width: 120px;">Country</th>
+        <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Size: activate to sort column ascending" style="width: 120px;">Size</th>
+        <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="TotalMOOCS: activate to sort column ascending" style="width: 120px;">MOOCS</th>
+      </tr>
+      </thead>
+    </table>
+
+<!--
+    <div class="dataTables_paginate paging_simple_numbers" id="example_paginate" style="text-align:center;">
+      <a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a>
+      <span>
+        <a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a>
+        <a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a>
+        <a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a>
+        <a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a>
+        <a class="paginate_button " aria-controls="example" data-dt-idx="5" tabindex="0">5</a>
+        <a class="paginate_button " aria-controls="example" data-dt-idx="6" tabindex="0">6</a>
+      </span>
+      <a class="paginate_button next" aria-controls="example" data-dt-idx="7" tabindex="0" id="example_next">Next</a>
+    </div>
+-->
+
+
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="scripts/scriptmooc.js"></script>
+<script src="scripts/jquery.dynatable.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function(){
+  $.getJSON("mooc.json", function(data){
+    var university_data = '';
+    $.each(data, function(key, value){
+      university_data +='<tr>';
+      university_data += '<td>'+value.universityName+'</td>';
+      university_data += '<td style="text-align:center;">'+value.ranking+'</td>';
+      university_data += '<td style="text-align:center;">'+value.shangaiRanking+'</td>';
+      university_data += '<td>'+value.country+'</td>';
+      /*university_data += '<td>'+value.universitySize+'</td>';
+      university_data += '<td>'+value.totalMOOCS+'</td>';*/
+      university_data += '<td style="text-align:center;">'+value.universitySize+'</td>';
+      university_data += '<td style="text-align:center;">'+value.totalMOOCS+'</td>';
+      university_data +='</tr>';
+    });
+    $('#example').append(university_data);
+  });
+});
+</script>
+
+
+</body></html>

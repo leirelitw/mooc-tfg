@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 
 // create express app
 var app = express();
+var path = require('path');
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -13,6 +14,13 @@ app.use(bodyParser.json())
 // Configuring the database
 var dbConfig = require('./config/database.config.js');
 var mongoose = require('mongoose');
+var index = require('./app/routes/home.routes.js');
+
+// Require Universities routes
+require('./app/routes/university.routes.js')(app);
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/index', index);
 
 mongoose.Promise = global.Promise;
 
@@ -28,12 +36,12 @@ mongoose.connection.once('open', function() {
 })
 
 // define a simple route
+/*
 app.get('/', function(req, res){
     res.json({"message": "Welcome to MOOC application."});
+    //require('./app/routes/home.routes.js')(app);
 });
-
-// Require Universities routes
-require('./app/routes/university.routes.js')(app);
+*/
 
 // listen for requests
 app.listen(3000, function(){

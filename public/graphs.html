@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Exo+2:300" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/mooc.css">
+<link type="text/css" rel="stylesheet" href="css/maps.css">
+<title>MOOCs Ranking | by Leire Litwin</title>
+<link rel="icon" href="images/favicon.png">
+
+</head>
+<body>
+
+  <header class="site-header">
+      <a href="#" class="logo"><img src="images/logo.png" alt="" style="width:250px; padding:5px;"></a>
+
+    <div class="subheader">
+            <ul class="principal-menu-mooc">
+              <li id="menu-item-about" class="menu-item"><a href="about.html">ABOUT</a></li>
+              <li id="menu-item-graphs" class="menu-item"><a href="graphs.html">GRAPHS</a></li>
+              <li id="menu-item-data" class="menu-item"><a href="data.html">DATA</a></li>
+              <li id="menu-item-home" class="menu-item current-menu-item"><a href="index.html">HOME</a></li>
+            </ul>
+    </div>
+  </header>
+
+  <div class="bgimg-5"style="top:100px;">
+    <div class="caption" style="top:45%;">
+      <span class="border">GRAPHS</span>
+    </div>
+  </div>
+
+  <ul class="chart-menu-mooc">
+    <li class="menu-item" id="maps-menu" onclick="displayMaps()" style="color:white;">MAPS</li>
+    <li class="menu-item" id="linear-graph-menu" onclick="displayLinear()">LINEAR GRAPH</li>
+    <li class="menu-item" id="bar-chart-menu" onclick="displayBar()">BAR CHART</li>
+    <li class="menu-item" id="pie-chart-menu" onclick="displayPie()">PIE CHART</li>
+  </ul>
+
+  <div class="split1 left">
+  <div class="centered">
+    <h2>Select a region</h2>
+    <form>
+      <input type="radio" name="continent-data" value="all-data" checked> All<br>
+      <tab1><input type="radio" name="continent-data" value="asia-data"> Asia</tab1><br>
+      <tab1><input type="radio" name="continent-data" value="south-america-data"> South America</tab1><br>
+      <tab1><input type="radio" name="continent-data" value="north-america-data"> North America</tab1><br>
+      <tab1><input type="radio" name="continent-data" value="oceania-data"> Oceania</tab1><br>
+      <tab1><input type="radio" name="continent-data" value="europe-america-data"> Europe</tab1><br>
+      <tab1><input type="radio" name="continent-data" value="africa-america-data"> Africa</tab1><br>
+    </form>
+  </div>
+  </div>
+
+<div class="split2 right">
+<div class="centered">
+
+
+  <div id="demo-wrapper">
+      <div id="mapBox">
+          <div class="selector">
+              <button id="btn-prev-map" class="prev-next"><i class="fa fa-angle-left"></i></button>
+              <select id="mapDropdown" class="ui-widget combobox"></select>
+              <button id="btn-next-map" class="prev-next"><i class="fa fa-angle-right"></i></button>
+          </div>
+          <div id="container"></div>
+      </div>
+      <div id="sideBox">
+          <input type="checkbox" id="chkDataLabels" checked='checked' />
+          <label for="chkDataLabels" style="display: inline">Data labels</label>
+      </div>
+  </div>
+
+  <div id="container2" style="padding:20px;"></div>
+
+
+</div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="scripts/highmaps.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+  <script src="https://www.highcharts.com/samples/maps/demo/all-maps/jquery.combobox.js"></script>
+  <script src="scripts/maps.js"></script>
+  <script src="scripts/highcharts.js"></script>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/drilldown.js"></script>
+  <script src="scripts/chartie.js"></script>
+  <script src="scripts/scriptmooc.js"></script>
+
+
+</body></html>
