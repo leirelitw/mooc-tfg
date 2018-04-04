@@ -1,0 +1,51 @@
+TIPS FOR DATABASE:
+In one terminal run: sudo mongod
+In another terminal run: mongo
+
+use mooc
+
+db.universities.drop()
+db.createCollection("university")
+
+OR
+
+db.university.insert({
+"universityName" : "SFSU",
+"countryCode" : "USA",
+"continent" : "America",
+"universitySize" : 1,
+"universitySizeValue" : 1,
+"shangaiRanking" : 1,
+"courseraMOOCS" : 1,
+"edXMOOCS" : 1,
+"totalMOOCS" : 1,
+"M2" : 0.1,
+"M9" : 0.1,
+"M10" : 0.1
+})
+
+mongoimport --db mooc --collection universities --type csv --headerline --file /Users/leirelitwin/Desktop/mooc-tfg/public/tfg.csv
+
+db.universities.find().pretty()
+
+
+
+db.University.insert({
+"title" : "SFSU",
+"content" : "USA"
+})
+
+db.universities.insert({
+"title" : "SFSU",
+"content" : "USA"
+})
+
+db.universities.insert({
+"title" : "UC3M",
+"content" : "Spain"
+})
+
+db.universities.insert({
+"title" : "Paris-Saclay",
+"content" : "France"
+})

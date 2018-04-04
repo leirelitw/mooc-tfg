@@ -8,8 +8,14 @@ module.exports = function(app) {
     // Retrieve all universities
     app.get('/universities', universities.findAll);
 
+    // Retrieve all universities by country
+    app.get('/universities/:country', universities.findByCountry);
+
+    // Retrieve all universities by continent
+    //app.get('/universities/:continent', universities.findByContinent);
+
     // Retrieve a single university with universityId
-    app.get('/universities/:universityId', universities.findOne);
+    app.get('/universities/:universityName', universities.findOne);
 
     // Update a university with universityId
     app.put('/universities/:universityId', universities.update);

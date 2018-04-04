@@ -1,0 +1,1131 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Usuario de Microsoft Office</Author>
+  <LastAuthor>Microsoft Office User</LastAuthor>
+  <Created>2018-02-07T02:38:04Z</Created>
+  <LastSaved>2018-02-08T18:10:43Z</LastSaved>
+  <Version>15.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <PixelsPerInch>96</PixelsPerInch>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <SupBook>
+   <Path>/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/EMOOC-CONFERENCE.xlsx</Path>
+   <SheetName>COURSERA-RAW</SheetName>
+   <SheetName>COURSERA_EUROPE</SheetName>
+   <SheetName>EDX-RAW</SheetName>
+   <SheetName>EDX-EUROPE</SheetName>
+   <SheetName>SHANGAI-ALUMNI-2016</SheetName>
+   <SheetName>METRICS-UNIVERSITY</SheetName>
+   <SheetName>METRICS-COUNTRY</SheetName>
+   <Xct>
+    <Count>0</Count>
+    <SheetIndex>0</SheetIndex>
+   </Xct>
+   <Xct>
+    <Count>21</Count>
+    <SheetIndex>1</SheetIndex>
+    <Crn>
+     <Row>1</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Sweden</Text>
+    </Crn>
+    <Crn>
+     <Row>2</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Denmark</Text>
+    </Crn>
+    <Crn>
+     <Row>3</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>UK</Text>
+    </Crn>
+    <Crn>
+     <Row>5</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>UK</Text>
+    </Crn>
+    <Crn>
+     <Row>7</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Israel</Text>
+    </Crn>
+    <Crn>
+     <Row>8</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Germany</Text>
+    </Crn>
+    <Crn>
+     <Row>9</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>UK</Text>
+    </Crn>
+    <Crn>
+     <Row>10</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Netherlands</Text>
+    </Crn>
+    <Crn>
+     <Row>11</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Switzerland</Text>
+    </Crn>
+    <Crn>
+     <Row>14</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Switzerland</Text>
+    </Crn>
+    <Crn>
+     <Row>18</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Italy</Text>
+    </Crn>
+    <Crn>
+     <Row>19</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Switzerland</Text>
+    </Crn>
+    <Crn>
+     <Row>24</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>France</Text>
+    </Crn>
+    <Crn>
+     <Row>25</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Germany</Text>
+    </Crn>
+    <Crn>
+     <Row>30</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>France</Text>
+    </Crn>
+    <Crn>
+     <Row>38</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Denmark</Text>
+    </Crn>
+    <Crn>
+     <Row>39</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Netherlands</Text>
+    </Crn>
+    <Crn>
+     <Row>53</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>France</Text>
+    </Crn>
+    <Crn>
+     <Row>68</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Switzerland</Text>
+    </Crn>
+    <Crn>
+     <Row>72</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>Spain</Text>
+    </Crn>
+    <Crn>
+     <Row>75</Row>
+     <ColFirst>8</ColFirst>
+     <ColLast>8</ColLast>
+     <Text>France</Text>
+    </Crn>
+   </Xct>
+   <Xct>
+    <Count>0</Count>
+    <SheetIndex>2</SheetIndex>
+   </Xct>
+   <Xct>
+    <Count>16</Count>
+    <SheetIndex>3</SheetIndex>
+    <Crn>
+     <Row>1</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>Germany</Text>
+    </Crn>
+    <Crn>
+     <Row>2</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>France</Text>
+    </Crn>
+    <Crn>
+     <Row>3</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>Netherlands</Text>
+    </Crn>
+    <Crn>
+     <Row>5</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>Switzerland</Text>
+    </Crn>
+    <Crn>
+     <Row>6</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>UK</Text>
+    </Crn>
+    <Crn>
+     <Row>7</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>Sweden</Text>
+    </Crn>
+    <Crn>
+     <Row>8</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>Belgium</Text>
+    </Crn>
+    <Crn>
+     <Row>10</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>Belgium</Text>
+    </Crn>
+    <Crn>
+     <Row>12</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>France</Text>
+    </Crn>
+    <Crn>
+     <Row>13</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>UK</Text>
+    </Crn>
+    <Crn>
+     <Row>14</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>Sweden</Text>
+    </Crn>
+    <Crn>
+     <Row>15</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>France</Text>
+    </Crn>
+    <Crn>
+     <Row>16</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>Israel</Text>
+    </Crn>
+    <Crn>
+     <Row>17</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>Russia</Text>
+    </Crn>
+    <Crn>
+     <Row>18</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>Spain</Text>
+    </Crn>
+    <Crn>
+     <Row>19</Row>
+     <ColFirst>1</ColFirst>
+     <ColLast>1</ColLast>
+     <Text>Spain</Text>
+    </Crn>
+   </Xct>
+   <Xct>
+    <Count>0</Count>
+    <SheetIndex>4</SheetIndex>
+   </Xct>
+   <Xct>
+    <Count>0</Count>
+    <SheetIndex>5</SheetIndex>
+   </Xct>
+   <Xct>
+    <Count>0</Count>
+    <SheetIndex>6</SheetIndex>
+   </Xct>
+  </SupBook>
+  <WindowHeight>13600</WindowHeight>
+  <WindowWidth>25340</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>440</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s16" ss:Name="Comma">
+   <NumberFormat
+    ss:Format="_-* #,##0.00\ _€_-;\-* #,##0.00\ _€_-;_-* &quot;-&quot;??\ _€_-;_-@_-"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Alignment ss:Vertical="Bottom" ss:Rotate="45"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s18">
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s19">
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s20">
+   <Font x:Family="Swiss" ss:Size="9" ss:Color="#000000"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s21">
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s22" ss:Parent="s16">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="tfg.csv">
+  <Table ss:ExpandedColumnCount="13" ss:ExpandedRowCount="39" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="16">
+   <Column ss:AutoFitWidth="0" ss:Width="334"/>
+   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="51"/>
+   <Column ss:Index="9" ss:Width="68"/>
+   <Row ss:Height="77">
+    <Cell ss:StyleID="s17"><Data ss:Type="String">universityName</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">country</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">countryCode</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">continent</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">universitySize</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">universitySizeValue</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">shangaiRanking</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">courseraMOOCS</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">edXMOOCS</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">totalMOOCS</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">M2</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">M9</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">M10</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Swiss Federal Institute of Technology Lausanne</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[10]C[7]"><Data
+      ss:Type="String">Switzerland</Data></Cell>
+    <Cell><Data ss:Type="String">CH</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18" ss:Formula="=5205+4919"><Data ss:Type="Number">10124</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">92</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">4.4660643468082188</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">1.1492457287923533E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">39.666522162177948</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Delft University of Technology</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[1]C"><Data
+      ss:Type="String">Netherlands</Data></Cell>
+    <Cell><Data ss:Type="String">NL</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">19613</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">151</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">2.539140486761061</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">7.893421564554004E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">68.980622562183584</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Centrale Superior Paris</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[27]C[7]"><Data
+      ss:Type="String">France</Data></Cell>
+    <Cell><Data ss:Type="String">FR</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">1394</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">501</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">1.103638323514327</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.33166219151100518</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">8.1711714969174256</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Chalmers University of Technology</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[10]C"><Data
+      ss:Type="String">Sweden</Data></Cell>
+    <Cell><Data ss:Type="String">SE</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">11000</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">201</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">1.0826822658929016</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.33868586067616541</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">11.958490661408343</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Swiss Federal Institute of Technology Zurich</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!RC"><Data
+      ss:Type="String">Switzerland</Data></Cell>
+    <Cell><Data ss:Type="String">CH</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">10851</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">1.0826822658929016</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.33868586067616541</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">8.3098498630279813</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Universidad Carlos III de Madrid</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[13]C"><Data
+      ss:Type="String">Spain</Data></Cell>
+    <Cell><Data ss:Type="String">ES</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">18676</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">501</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.84638016225368706</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.42896490829169481</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">46.303305149198749</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">University of Notre Dame</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[5]C"><Data
+      ss:Type="String">France</Data></Cell>
+    <Cell><Data ss:Type="String">FR</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">12179</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">501</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.8120116994196761</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.44396404506171155</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">16.342342993834851</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Karolinska Institute</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[-1]C"><Data
+      ss:Type="String">Sweden</Data></Cell>
+    <Cell><Data ss:Type="String">SE</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">5978</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.8120116994196761</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.44396404506171155</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">6.551928732169185</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ecole Normale Superieure - Lyon</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[15]C[7]"><Data
+      ss:Type="String">France</Data></Cell>
+    <Cell><Data ss:Type="String">FR</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">2000</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">301</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.73575888234288467</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.47914170878801532</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">3.6515333693191949</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ecole Polytechnique</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[43]C[7]"><Data
+      ss:Type="String">France</Data></Cell>
+    <Cell><Data ss:Type="String">FR</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">2888</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">301</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.73575888234288467</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.47914170878801532</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">3.6515333693191949</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Catholic University of Louvain</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[-1]C"><Data
+      ss:Type="String">Belgium</Data></Cell>
+    <Cell><Data ss:Type="String">BE</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">29711</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">151</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.43957533332962034</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.64430997996724504</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">32.461469441027575</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">University of Geneva</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[7]C[7]"><Data
+      ss:Type="String">Switzerland</Data></Cell>
+    <Cell><Data ss:Type="String">CH</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">14489</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">53</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.40600584970983805</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.66630626971514506</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">3.3354656295195926</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IESE Business School</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[59]C[7]"><Data
+      ss:Type="String">Spain</Data></Cell>
+    <Cell><Data ss:Type="String">ES</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18" ss:Formula="=560+520+60+41+900"><Data ss:Type="Number">2081</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">501</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.36787944117144233</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.69220062755534639</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">2.7237238323058088</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">HEC Paris</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[61]C[7]"><Data
+      ss:Type="String">France</Data></Cell>
+    <Cell><Data ss:Type="String">FR</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">4000</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">501</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.36787944117144233</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.69220062755534639</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">2.7237238323058088</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IsraelX</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[1]C"><Data
+      ss:Type="String">Israel</Data></Cell>
+    <Cell><Data ss:Type="String">ISR</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">501</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.36787944117144233</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.69220062755534639</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">2.7237238323058088</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Institut Mines-Télécom </Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[-1]C"><Data
+      ss:Type="String">France</Data></Cell>
+    <Cell><Data ss:Type="String">FR</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">0</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">501</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.36787944117144233</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.69220062755534639</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">2.7237238323058088</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Technical University of Denmark</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[21]C[7]"><Data
+      ss:Type="String">Denmark</Data></Cell>
+    <Cell><Data ss:Type="String">DK</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">11190</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">151</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.2706705664732254</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.7628677692336272</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">2.7051224534189644</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Leiden University</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[-8]C[7]"><Data
+      ss:Type="String">Netherlands</Data></Cell>
+    <Cell><Data ss:Type="String">NL</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">24270</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">93</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.2489353418393197</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.77963038122150408</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">6.0221113018881489</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ITMO University</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[-2]C"><Data
+      ss:Type="String">Russia</Data></Cell>
+    <Cell><Data ss:Type="String">RU</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">12000</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">501</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.1353352832366127</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.87342301849311665</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">2.7237238323058088</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Eindhoven University of Technology</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[19]C[7]"><Data
+      ss:Type="String">Netherlands</Data></Cell>
+    <Cell><Data ss:Type="String">NL</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">9711</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">201</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.1353352832366127</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.87342301849311665</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">1.4948113326760428</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">University of Lausanne</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[47]C[7]"><Data
+      ss:Type="String">Switzerland</Data></Cell>
+    <Cell><Data ss:Type="String">CH</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">13500</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">201</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.1353352832366127</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.87342301849311665</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">1.4948113326760428</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">The University of Edinburgh</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[-19]C[7]"><Data
+      ss:Type="String">UK</Data></Cell>
+    <Cell><Data ss:Type="String">UK</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">35582</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">41</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.11454509898445295</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.89177171951230227</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">18.452748767102332</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">University of Zurich</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[-9]C[7]"><Data
+      ss:Type="String">Switzerland</Data></Cell>
+    <Cell><Data ss:Type="String">CH</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">25732</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">54</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.10989383333240509</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.89592924807020424</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">6.6842864723188056</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">The Hebrew University of Jerusalem</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[-17]C[7]"><Data
+      ss:Type="String">Israel</Data></Cell>
+    <Cell><Data ss:Type="String">ISR</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">23000</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">87</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">9.9574136735727889E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.90522283711452844</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">2.3801111316407253</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Autonomous University of Madrid</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[-7]C"><Data
+      ss:Type="String">Spain</Data></Cell>
+    <Cell><Data ss:Type="String">ES</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18" ss:Formula="=32206+3912"><Data ss:Type="Number">36118</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">201</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">5.3903575992683736E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.94752346610672611</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">11.958490661408343</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">The University of Manchester</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[-21]C[7]"><Data
+      ss:Type="String">UK</Data></Cell>
+    <Cell><Data ss:Type="String">UK</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">38590</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">5.3903575992683736E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.94752346610672611</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">8.5800654500337306</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">University College London</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[-18]C[7]"><Data
+      ss:Type="String">UK</Data></Cell>
+    <Cell><Data ss:Type="String">UK</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">161270</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">5.3903575992683736E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.94752346610672611</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">8.2766768538249433</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Copenhagen Business School</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[-26]C[7]"><Data
+      ss:Type="String">Denmark</Data></Cell>
+    <Cell><Data ss:Type="String">DK</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">22829</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">501</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">4.9787068367863944E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.95143199290045344</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">2.7237238323058088</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">University of Oxford</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[-16]C"><Data
+      ss:Type="String">UK</Data></Cell>
+    <Cell><Data ss:Type="String">UK</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">22602</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">4.9787068367863944E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.95143199290045344</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">1.0140984589384923</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">KU Leuven</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[-22]C"><Data
+      ss:Type="String">Belgium</Data></Cell>
+    <Cell><Data ss:Type="String">BE</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">55484</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">93</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">4.7165628993598274E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.95392938614090339</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">8.4309558226434085</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ludwig-Maximilians-University of Munich (LMU)</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[-6]C[7]"><Data
+      ss:Type="String">Germany</Data></Cell>
+    <Cell><Data ss:Type="String">DE</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">50542</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">501</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">3.3689734995427337E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.96687144447782469</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">13.618619161529043</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sorbonne University System</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[-30]C"><Data
+      ss:Type="String">France</Data></Cell>
+    <Cell><Data ss:Type="String">FR</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">57800</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">501</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">3.3689734995427337E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.96687144447782469</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">13.618619161529043</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Technical University Munich</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[-25]C[7]"><Data
+      ss:Type="String">Germany</Data></Cell>
+    <Cell><Data ss:Type="String">DE</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">40000</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">47</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">3.3689734995427337E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.96687144447782469</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">5.4927987295858687</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RWTH Aachen University</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[-33]C"><Data
+      ss:Type="String">Germany</Data></Cell>
+    <Cell><Data ss:Type="String">DE</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">42000</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">201</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">2.6951787996341868E-2</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.97340817035133109</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">5.9792453307041713</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sapienza University of Rome</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[-17]C[7]"><Data
+      ss:Type="String">Italy</Data></Cell>
+    <Cell><Data ss:Type="String">IT</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">112564</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">151</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">6.737946999085467E-3</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.99328470206784147</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">1.3525612267094822</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lund University</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]COURSERA_EUROPE'!R[-35]C[7]"><Data
+      ss:Type="String">Sweden</Data></Cell>
+    <Cell><Data ss:Type="String">SE</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">41000</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">101</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="10" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">6.737946999085467E-3</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.99328470206784147</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">1.2238480081113581</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">The Imperial College of Science, Technology and Medicine</Data></Cell>
+    <Cell
+     ss:Formula="='/Users/leirelitwin/Desktop/TFG/OTHERS/mooc-research-public/trunk/papers/emooc2017/[EMOOC-CONFERENCE.xlsx]EDX-EUROPE'!R[-31]C"><Data
+      ss:Type="String">UK</Data></Cell>
+    <Cell><Data ss:Type="String">UK</Data></Cell>
+    <Cell><Data ss:Type="String">Europe</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">16610</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s22" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">San Francisco State University</Data></Cell>
+    <Cell><Data ss:Type="String">United States</Data></Cell>
+    <Cell><Data ss:Type="String">USA</Data></Cell>
+    <Cell><Data ss:Type="String">America</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">17000</Data></Cell>
+    <Cell
+     ss:Formula="=IF(RC[-1]&lt;=5000,1,IF(RC[-1]&lt;=15000,2,IF(RC[-1]&lt;=25000,3,IF(RC[-1]&lt;=35000,4,5))))"><Data
+      ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">1000</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s21" ss:Formula="=SUM(#REF!)"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s19" ss:Formula="=SUM(#REF!)/EXP(#REF!)"><Data
+      ss:Type="Number">0.19914827347145578</Data></Cell>
+    <Cell ss:StyleID="s19" ss:Formula="=EXP(-#REF!)"><Data ss:Type="Number">0.81942838483367608</Data></Cell>
+    <Cell ss:StyleID="s19" ss:Formula="=SUM(#REF!)/EXP(-#REF!/500)"><Data
+      ss:Type="Number">29.556224395722598</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <VerticalResolution>0</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <TopRowVisible>19</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>38</ActiveRow>
+     <ActiveCol>5</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -6,7 +6,7 @@ exports.create = function(req, res) {
         return res.status(400).send({message: "University can not be empty"});
     }
 
-    var uni = new University({title: req.body.title || "University", content: req.body.content});
+    var uni = new University({title: req.body.title || "Unknown University", content: req.body.content});
 
     uni.save(function(err, data) {
         if(err) {
@@ -30,6 +30,44 @@ exports.findAll = function(req, res) {
     });
 };
 
+exports.findByCountry = function(req, res) {
+    // Find a single university with a universityId
+    University.find({country: req.params.country}, function(err, uni) {
+        if(err) {
+            console.log(err);
+            if(err.kind === 'ObjectId') {
+                return res.status(404).send({message: "University not found by country: " + req.params.country});
+            }
+            return res.status(500).send({message: "Error retrieving university with country: " + req.params.country});
+        }
+
+        if(!uni) {
+            return res.status(404).send({message: "UniversityId not found with country: " + req.params.country});
+        }
+
+        res.send(uni);
+    });
+};
+
+/*
+exports.findByContinent = function(req, res) {
+    University.find({continent: req.params.continent}, function(err, uni) {
+        if(err) {
+            console.log(err);
+            if(err.kind === 'ObjectId') {
+                return res.status(404).send({message: "University not found by continent: " + req.params.continent});
+            }
+            return res.status(500).send({message: "Error retrieving university with continent: " + req.params.continent});
+        }
+
+        if(!uni) {
+            return res.status(404).send({message: "UniversityId not found with continent: " + req.params.continent});
+        }
+
+        res.send(uni);
+    });
+};
+*/
 
 exports.findOne = function(req, res) {
     // Find a single university with a universityId
