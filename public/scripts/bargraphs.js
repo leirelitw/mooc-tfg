@@ -1,5 +1,5 @@
 // Create the chart
-Highcharts.chart('container2', {
+Highcharts.chart('bar-chart-1', {
     chart: {
         type: 'column'
     },

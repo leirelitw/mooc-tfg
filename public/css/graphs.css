@@ -6,7 +6,17 @@ padding-top: 20px;
 display: block;
 }
 
-#container2{
+#maps-container{
+  display: block;
+}
+
+#bar-graphs-container{
+  display: none;
+}
+#linear-graphs-container{
+  display: none;
+}
+#pie-graphs-container{
   display: none;
 }
 
