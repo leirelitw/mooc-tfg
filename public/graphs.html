@@ -7,6 +7,7 @@
 <link type="text/css" rel="stylesheet" href="css/graphs.css">
 <link type="text/css" rel="stylesheet" href="css/dropdown.css">
 <link type="text/css" rel="stylesheet" href="css/slider.css">
+<link rel="stylesheet" type="text/css" href="https://github.com/downloads/lafeber/world-flags-sprite/flags32.css" />
 
 <title>MOOCs Ranking | by Leire Litwin</title>
 <link rel="icon" href="images/favicon.png">
@@ -68,20 +69,7 @@
 <div class="centered">
 
 <div id="maps-container">
-  <div id="demo-wrapper">
-      <div id="mapBox">
-          <div class="selector">
-              <button id="btn-prev-map" class="prev-next"><i class="fa fa-angle-left"></i></button>
-              <select id="mapDropdown" class="ui-widget combobox"></select>
-              <button id="btn-next-map" class="prev-next"><i class="fa fa-angle-right"></i></button>
-          </div>
-          <div id="container"></div>
-      </div>
-      <div id="sideBox">
-          <input type="checkbox" id="chkDataLabels" checked='checked' />
-          <label for="chkDataLabels" style="display: inline">Data labels</label>
-      </div>
-  </div>
+  <div id="maps-universities-1" style="width: 90%;margin: 20px auto"></div>
 </div>
 <div id="bar-graphs-container">
   <div id="bar-chart-1" style="padding:20px;"></div>
@@ -97,11 +85,16 @@
 </div>
 </div>
 
-
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
   <script src="https://www.highcharts.com/samples/maps/demo/all-maps/jquery.combobox.js"></script>
+
   <script src="scripts/drilldown.js"></script>
   <script src="scripts/dropdown.js"></script>
   <script src="scripts/bargraphs.js"></script>
@@ -111,6 +104,7 @@
   <script src="scripts/slider.js"></script>
   <script src="scripts/sortingTables.js"></script>
   <script src="scripts/dropdown.js"></script>
+  <script src="scripts/maps.js"></script>
 
 
 </body></html>
