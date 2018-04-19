@@ -7,6 +7,39 @@
 <link type="text/css" rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 <title>MOOCs Ranking | by Leire Litwin</title>
 <link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+table {
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    -webkit-appearance:none;
+}
+
+table:focus, th:focus {
+  outline: none;
+}
+
+th:hover{
+  background-color: #59a6db;
+}
+
+th {
+    cursor: pointer;
+    background-color: #478cbc;
+    color: white;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px 3px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+</style>
 
 </head>
 <body>
@@ -50,35 +83,20 @@
 
 <div class="split2 right">
   <div class="centered">
-    <table id="example" class="display nowrap dataTable dtr-inline collapsed" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 80%; margin-top: 20px; margin-left: 10px;">
+    <div class="table-responsive">
+    <table id="universities-table" class="display nowrap dataTable dtr-inline collapsed" cellspacing="0" width="100%" role="grid" aria-describedby="universities-table_info" style="width: 80%; margin-top: 20px; margin-left: 10px;">
       <thead>
         <tr role="row">
-        <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="University Name: activate to sort column descending" style="width: 160px;">University Name</th>
-        <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Ranking: activate to sort column ascending" style="width: 120px;">Ranking</th>
-        <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="ShanghaiRanking: activate to sort column ascending" style="width: 120px;">Shanghai Ranking</th>
-        <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Country: activate to sort column ascending" style="width: 120px;">Country</th>
-        <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Size: activate to sort column ascending" style="width: 120px;">Size</th>
-        <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="TotalMOOCS: activate to sort column ascending" style="width: 120px;">MOOCS</th>
+        <th class="sorting" tabindex="0" aria-controls="universities-table" rowspan="1" colspan="1" aria-label="University Name: activate to sort column descending" onclick="sortTablebyString(0)" style="width: 160px;">University Name</th>
+        <th class="sorting" tabindex="0" aria-controls="universities-table" rowspan="1" colspan="1" aria-label="Ranking: activate to sort column ascending" onclick="sortTablebyNumber(1)" style="width: 120px;">Ranking</th>
+        <th class="sorting" tabindex="0" aria-controls="universities-table" rowspan="1" colspan="1" aria-label="ShanghaiRanking: activate to sort column ascending" onclick="sortTablebyNumber(2)" style="width: 120px;">Shanghai Ranking</th>
+        <th class="sorting" tabindex="0" aria-controls="universities-table" rowspan="1" colspan="1" aria-label="Country: activate to sort column ascending" onclick="sortTablebyString(3)" style="width: 120px;">Country</th>
+        <th class="sorting" tabindex="0" aria-controls="universities-table" rowspan="1" colspan="1" aria-label="Size: activate to sort column ascending" onclick="sortTablebyNumber(4)" style="width: 120px;">Size</th>
+        <th class="sorting" tabindex="0" aria-controls="universities-table" rowspan="1" colspan="1" aria-label="TotalMOOCS: activate to sort column ascending" onclick="sortTablebyNumber(5)" style="width: 120px;">MOOCS</th>
       </tr>
       </thead>
     </table>
-
-<!--
-    <div class="dataTables_paginate paging_simple_numbers" id="example_paginate" style="text-align:center;">
-      <a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a>
-      <span>
-        <a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a>
-        <a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a>
-        <a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a>
-        <a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a>
-        <a class="paginate_button " aria-controls="example" data-dt-idx="5" tabindex="0">5</a>
-        <a class="paginate_button " aria-controls="example" data-dt-idx="6" tabindex="0">6</a>
-      </span>
-      <a class="paginate_button next" aria-controls="example" data-dt-idx="7" tabindex="0" id="example_next">Next</a>
-    </div>
--->
-
-
+  </div>
   </div>
 </div>
 
@@ -102,10 +120,10 @@ $(document).ready(function(){
       university_data += '<td style="text-align:center;">'+value.totalMOOCS+'</td>';
       university_data +='</tr>';
     });
-    $('#example').append(university_data);
+    $('#universities-table').append(university_data);
   });
 });
 </script>
-
+<script src="scripts/sortingTables.js"></script>
 
 </body></html>
