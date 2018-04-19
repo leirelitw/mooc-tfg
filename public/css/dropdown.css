@@ -140,15 +140,7 @@ ul {
   margin: 0;
 }
 
-li{
-  text-decoration: none;
-}
-
-select{
-  text-decoration: none;
-
-}
-option{
-  text-decoration: none;
-
+.dropdown{
+  width: 100%;
+  margin: 0 auto;
 }

@@ -85,3 +85,26 @@ $(document).on('keydown', '.dropdown', function(event) {
 $(document).ready(function() {
   create_custom_dropdowns();
 });
+
+
+function fixsidebar() {
+  if(window.innerWidth>800){
+    var desiredPosition = 399;
+    if (window.pageYOffset > desiredPosition) {
+      document.getElementsByClassName("container-sidebar")[0].style.position = "fixed";
+      document.getElementsByClassName("container-sidebar")[0].style.top = "105px";
+      document.getElementsByClassName("container-sidebar")[0].style.left = "1.9vw";
+    }
+    else{
+      document.getElementsByClassName("container-sidebar")[0].style.position = "relative";
+      document.getElementsByClassName("container-sidebar")[0].style.top = "0";
+      document.getElementsByClassName("container-sidebar")[0].style.left = "0px";
+    }
+  }
+  else{
+    document.getElementsByClassName("container-sidebar")[0].style.position = "relative";
+    document.getElementsByClassName("container-sidebar")[0].style.left = "0px";
+    document.getElementsByClassName("container-sidebar")[0].style.top = "0";
+  }
+}
+window.onscroll = fixsidebar;

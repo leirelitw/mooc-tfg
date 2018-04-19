@@ -2,9 +2,11 @@
 <html><head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Exo+2:300" rel="stylesheet">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link type="text/css" rel="stylesheet" href="css/mooc.css">
 <link type="text/css" rel="stylesheet" href="css/maps.css">
 <link type="text/css" rel="stylesheet" href="css/dropdown.css">
+<link type="text/css" rel="stylesheet" href="css/slider.css">
 
 <title>MOOCs Ranking | by Leire Litwin</title>
 <link rel="icon" href="images/favicon.png">
@@ -39,8 +41,9 @@
   </ul>
 
   <div class="split1 left">
-    <div class="container" style=" padding:5px; width:80%; height: 300px; text-align: center; align-items: center; margin: 10px auto; border: solid 2px grey">
+    <div class="container-sidebar">
       <h3>Select a continent</h3>
+      <div style="width: 150px; margin:0 auto;">
       <select class="continent-selector">
         <option value="" data-display-text="All Continents">All Continents</option>
         <option value="asia">Asia</option>
@@ -49,16 +52,15 @@
         <option value="africa">Africa</option>
         <option value="oceania">Oceania</option>
       </select>
+      </div>
       <br><br>
-      <h3>Select a <br>country</h3>
-      <select class="country-selector">
-        <option value="" data-display-text="All Countries">All Countries</option>
-        <option value="asia">Asia</option>
-        <option value="europe">Europe</option>
-        <option value="america">America</option>
-        <option value="africa">Africa</option>
-        <option value="oceania">Oceania</option>
-      </select>
+      <h3>Ranking Selection</h3>
+      <div id="range-slider">
+          <p><input type="text" id="amount" readonly style="border:0;"></p>
+          <div id="slider-range"></div>
+      </div>
+      <br>
+      <button class="button button-blue">Filter</button>
     </div>
 </div>
 
@@ -99,6 +101,9 @@
   <script src="scripts/dropdown.js"></script>
   <script src="scripts/chartie.js"></script>
   <script src="scripts/scriptmooc.js"></script>
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/sortingTables.js"></script>
+  <script src="scripts/dropdown.js"></script>
 
 
 </body></html>
