@@ -14,7 +14,7 @@ $.getJSON('https://cdn.rawgit.com/highcharts/highcharts/057b672172ccc6c08fe7dbb2
         },
 
         title: {
-            text: 'Fixed tooltip with HTML'
+            text: 'Universities per Country'
         },
 
         legend: {
@@ -56,7 +56,7 @@ $.getJSON('https://cdn.rawgit.com/highcharts/highcharts/057b672172ccc6c08fe7dbb2
         series: [{
             data: data,
             joinBy: ['iso-a3', 'code3'],
-            name: 'Population density',
+            name: 'How many universities in our ranking?',
             states: {
                 hover: {
                     color: '#a4edba'
