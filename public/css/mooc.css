@@ -117,6 +117,7 @@ header{
   text-align: center;
   position:relative;
   margin-top: 65px;
+  z-index: 10;
 }
 
 .chart-menu-mooc li{
@@ -183,7 +184,16 @@ header{
     top: 500px;
     overflow-x: hidden;
 }
-
+/*
+.split1 {
+    height: 600px;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    overflow-x: hidden;
+}
+*/
 .split2 {
     width: 75%;
     position: absolute;

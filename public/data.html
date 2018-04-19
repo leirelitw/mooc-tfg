@@ -7,7 +7,7 @@
 <title>MOOCs Ranking | by Leire Litwin</title>
 <link rel="icon" href="images/favicon.png">
 <link type="text/css" rel="stylesheet" href="css/tables.css">
-
+<link type="text/css" rel="stylesheet" href="css/dropdown.css">
 
 </head>
 <body>
@@ -26,25 +26,34 @@
   </header>
 
   <div class="bgimg-3"style="top:100px;">
-    <img src="images/graphs.png" width="420px">
+    <img src="images/graphs.png" width="380px">
     <div class="caption" style="top:45%;">
       <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">RANKINGS AND DATA</span>
     </div>
   </div>
 
   <div class="split1 left">
-  <div class="centered">
-    <h2>Select a region</h2>
-    <form>
-      <input type="radio" name="continent-data" value="all-data" checked> All<br>
-      <tab1><input type="radio" name="continent-data" value="asia-data"> Asia</tab1><br>
-      <tab1><input type="radio" name="continent-data" value="south-america-data"> South America</tab1><br>
-      <tab1><input type="radio" name="continent-data" value="north-america-data"> North America</tab1><br>
-      <tab1><input type="radio" name="continent-data" value="oceania-data"> Oceania</tab1><br>
-      <tab1><input type="radio" name="continent-data" value="europe-america-data"> Europe</tab1><br>
-      <tab1><input type="radio" name="continent-data" value="africa-america-data"> Africa</tab1><br>
-    </form>
-  </div>
+    <div class="container" style=" padding:5px; width:80%; height: 300px; text-align: center; align-items: center; margin: 10px auto; border: solid 2px grey">
+      <h3>Select a continent</h3>
+      <select class="continent-selector">
+        <option value="" data-display-text="All Continents">All Continents</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="america">America</option>
+        <option value="africa">Africa</option>
+        <option value="oceania">Oceania</option>
+      </select>
+      <br><br>
+      <h3>Select a <br>country</h3>
+      <select class="country-selector">
+        <option value="" data-display-text="All Countries">All Countries</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="america">America</option>
+        <option value="africa">Africa</option>
+        <option value="oceania">Oceania</option>
+      </select>
+    </div>
 </div>
 
 <div class="split2 right">
@@ -91,5 +100,6 @@ $(document).ready(function(){
 });
 </script>
 <script src="scripts/sortingTables.js"></script>
+<script src="scripts/dropdown.js"></script>
 
 </body></html>
