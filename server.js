@@ -15,12 +15,25 @@ app.use(bodyParser.json())
 var dbConfig = require('./config/database.config.js');
 var mongoose = require('mongoose');
 var index = require('./app/routes/home.routes.js');
+var data = require('./app/routes/data.routes.js');
+var about = require('./app/routes/about.routes.js');
+var graphs = require('./app/routes/graphs.routes.js');
 
 // Require Universities routes
 require('./app/routes/university.routes.js')(app);
 
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 app.use('/index', index);
+app.use('/about', about);
+app.use('/graphs', graphs);
+app.use('/data', data);
+app.use(express.static(path.join(__dirname, '/public')));
+
+app.get('/', function (req, res, next) {
+    res.redirect('/index');
+});
 
 mongoose.Promise = global.Promise;
 

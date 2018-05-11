@@ -5,7 +5,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'MOOCs Ranking | Leire Litwin' });
+  res.render('data', { title: 'MOOCs Ranking | Leire Litwin' });
 });
 
 module.exports = router;

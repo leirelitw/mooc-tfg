@@ -49,8 +49,8 @@ exports.findByCountry = function(req, res) {
     });
 };
 
-/*
 exports.findByContinent = function(req, res) {
+    // Find a single university with a universityId
     University.find({continent: req.params.continent}, function(err, uni) {
         if(err) {
             console.log(err);
@@ -61,13 +61,12 @@ exports.findByContinent = function(req, res) {
         }
 
         if(!uni) {
-            return res.status(404).send({message: "UniversityId not found with continent: " + req.params.continent});
+            return res.status(404).send({message: "University continent not found with continent: " + req.params.continent});
         }
 
         res.send(uni);
     });
 };
-*/
 
 exports.findOne = function(req, res) {
     // Find a single university with a universityId

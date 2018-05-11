@@ -9,10 +9,10 @@ module.exports = function(app) {
     app.get('/universities', universities.findAll);
 
     // Retrieve all universities by country
-    app.get('/universities/:country', universities.findByCountry);
+    app.get('/universities/countries/:country', universities.findByCountry);
 
     // Retrieve all universities by continent
-    //app.get('/universities/:continent', universities.findByContinent);
+    app.get('/universities/continents/:continent', universities.findByContinent);
 
     // Retrieve a single university with universityId
     app.get('/universities/:universityName', universities.findOne);
