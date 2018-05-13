@@ -15,8 +15,8 @@ var UniversitySchema = mongoose.Schema({
     Mo9: Number,
     Mo10: Number,
     Ranking: Number
-}, {
-    timestamps: true
+},{
+    _id: false
 });
 
 module.exports = mongoose.model('universities', UniversitySchema);

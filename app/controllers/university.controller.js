@@ -30,6 +30,16 @@ exports.findAll = function(req, res) {
     });
 };
 
+exports.findAllTest = function() {
+    // Retrieve and return all universities from the database.
+    return University.find()
+    .then((results) =>
+    {
+      //console.log(results));
+      return results;
+    });
+};
+
 exports.findByCountry = function(req, res) {
     // Find a single university with a universityId
     University.find({country: req.params.country}, function(err, uni) {
