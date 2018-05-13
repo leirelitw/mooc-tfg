@@ -5,6 +5,7 @@ var router = express.Router();
 var universities = require('../controllers/university.controller.js');
 
 /* GET home page. */
+
 router.get('/', function(req, res, next) {
   universities.findAllTest().then( function(dataRetrieved){
     console.log(dataRetrieved);
@@ -13,8 +14,8 @@ router.get('/', function(req, res, next) {
     });
   }, function (reason) {
     console.log("argh"+reason);
+  });
 });
 
-});
 
 module.exports = router;

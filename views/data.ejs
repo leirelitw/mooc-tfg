@@ -60,8 +60,6 @@
 
 <div class="split2 right">
   <div class="centered">
-    <p><%= data %></p>
-
     <div class="table-responsive">
     <table id="universities-table" class="display nowrap dataTable dtr-inline collapsed" cellspacing="0" width="100%" role="grid" aria-describedby="universities-table_info" style="width: 80%; margin-top: 20px; margin-left: 10px;">
       <thead>
@@ -87,42 +85,23 @@
 
 <script>
 $(document).ready(function(){
-  //$.getJSON("mooc.json", function(data){
-  var memberfilter = new Array();
-  memberfilter[0] = "_id";
-  memberfilter[1] = "universityName";
-  memberfilter[2] = "country";
-  memberfilter[3] = "countryCode";
-  memberfilter[4] = "continent";
-  memberfilter[5] = "universitySize";
-  memberfilter[6] = "universitySizeValue";
-  memberfilter[7] = "shangaiRanking";
-  memberfilter[8] = "courseraMOOCS";
-  memberfilter[9] = "edXMOOCS";
-  memberfilter[10] = "continent";
-  memberfilter[11] = "totalMOOCS";
-  memberfilter[12] = "Mo2";
-  memberfilter[13] = "Mo9";
-  memberfilter[14] = "Mo10";
-  memberfilter[15] = "Ranking";
 
-  var dataJSON = JSON.stringify(<%= data %>, memberfilter, "\t");
-
-    //alert(data);
     var university_data = '';
-    $.each(dataJSON, function(key, value){
-      university_data +='<tr>';
-      university_data += '<td>'+value.universityName+'</td>';
-      university_data += '<td style="text-align:center;">'+value.ranking+'</td>';
-      university_data += '<td style="text-align:center;">'+value.shangaiRanking+'</td>';
-      university_data += '<td>'+value.country+'</td>';
-      /*university_data += '<td>'+value.universitySize+'</td>';
-      university_data += '<td>'+value.totalMOOCS+'</td>';*/
-      university_data += '<td style="text-align:center;">'+value.universitySize+'</td>';
-      university_data += '<td style="text-align:center;">'+value.totalMOOCS+'</td>';
-      university_data +='</tr>';
-    });
+    <% for(var i=0; i<data.length; i++) {%>
+       university_data +='<tr>';
+       university_data += '<td>'+ "<%= data[i].universityName %> "+'</td>';
+       university_data += '<td style="text-align:center;">'+ <%=data[i].ranking%> + '</td>';
+       university_data += '<td style="text-align:center;">'+ <%= data[i].shangaiRanking %> +'</td>';
+       university_data += '<td>'+ " <%= data[i].country %> " + '</td>';
+       /*university_data += '<td>'+value.universitySize+'</td>';
+       university_data += '<td>'+value.totalMOOCS+'</td>';*/
+       university_data += '<td style="text-align:center;">'+ "<%= data[i].universitySize %>" +'</td>';
+       university_data += '<td style="text-align:center;">'+ "<%= data[i].totalMOOCS %>" +'</td>';
+       university_data +='</tr>';
+    <% } %>
     $('#universities-table').append(university_data);
+    sortTablebyNumber(1);
+
 });
 </script>
 <script src="scripts/slider.js"></script>

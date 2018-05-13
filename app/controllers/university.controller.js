@@ -42,20 +42,11 @@ exports.findAllTest = function() {
 
 exports.findByCountry = function(req, res) {
     // Find a single university with a universityId
-    University.find({country: req.params.country}, function(err, uni) {
-        if(err) {
-            console.log(err);
-            if(err.kind === 'ObjectId') {
-                return res.status(404).send({message: "University not found by country: " + req.params.country});
-            }
-            return res.status(500).send({message: "Error retrieving university with country: " + req.params.country});
-        }
-
-        if(!uni) {
-            return res.status(404).send({message: "UniversityId not found with country: " + req.params.country});
-        }
-
-        res.send(uni);
+    return University.find({country: req.params.country})
+    .then((results) =>
+    {
+      //console.log(results));
+      return results;
     });
 };
 

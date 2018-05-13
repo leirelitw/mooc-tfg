@@ -7,14 +7,14 @@ var UniversitySchema = mongoose.Schema({
     continent: String,
     universitySize: Number,
     universitySizeValue: Number,
+    ranking: Number,
     shangaiRanking: Number,
     courseraMOOCS: Number,
     edXMOOCS: Number,
     totalMOOCS: Number,
     Mo2: Number,
     Mo9: Number,
-    Mo10: Number,
-    Ranking: Number
+    Mo10: Number
 },{
     _id: false
 });
