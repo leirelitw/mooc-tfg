@@ -9,7 +9,11 @@ module.exports = function(app) {
     app.get('/universities', universities.findAll);
 
     // Retrieve all universities by country
-    app.get('/universities/countries/:country', universities.findByCountry);
+    app.post('/universities/countries/:country', function(req, res, next) {
+        universities.findByCountry(req.params.country).then( function(dataRetrieved){
+            res.status(200).json(dataRetrieved);
+        });
+    })
 
     // Retrieve all universities by continent
     app.get('/universities/continents/:continent', universities.findByContinent);
