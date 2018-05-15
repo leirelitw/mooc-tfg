@@ -14,32 +14,32 @@ $('#pie-graph-universities-1').highcharts({
       type: 'pie'
     },
     xAxis: {
-      categories: ["Peter", "Leire", "Ilya",
-                     "Danielle", "Justin", "Alex"]
+      categories: ["Spain", "France", "Italy",
+                     "Belgium", "Germany", "UK"]
     },
     title: {
-      text: 'Employees team working hours'
+      text: 'Universities per country'
     },
     series: [{
-      name: 'Working hours/week',
+      name: 'Universities/country',
       colorByPoint: true,
       data: [{
-        name: 'Peter',
+        name: 'Spain',
         y: 40,
       }, {
-        name: 'Leire',
+        name: 'France',
         y: 42
       }, {
-        name: 'Ilya',
+        name: 'Italy',
         y: 37
       }, {
-        name: 'Danielle',
+        name: 'Belgium',
         y: 50
       }, {
-        name: 'Justin',
+        name: 'Germany',
         y: 21
       }, {
-        name: 'Alex',
+        name: 'UK',
         y: 13
       }]
     }]

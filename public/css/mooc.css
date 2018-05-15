@@ -183,7 +183,7 @@ header{
     z-index: 1;
     top: 500px;
     overflow-x: hidden;
-
+    /*border-right: 2px solid grey;*/
 }
 /*
 .split1 {
@@ -202,6 +202,7 @@ header{
     /*height: 600px;
     overflow-x: hidden;*/
     border-left: 2px solid grey;
+    min-height: 100%;
 
 }
 

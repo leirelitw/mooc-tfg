@@ -1,19 +1,18 @@
 $('#linear-graph-universities-1').highcharts({
     xAxis: {
-        categories: ["January", "February", "March",
-                     "April", "May", "June", "July", "August",
-                   "September","October","November", "December"]
+        categories: ["America", "Europe", "Asia",
+                     "Oceania", "Africa"]
     },
     yAxis: [{
       title: {
-        text: 'Dollars ($)'
+        text: 'Universities'
       }
     }],
     title: {
-      text: 'Chart for paycheck $/month'
+      text: 'Chart for universities in each continent'
     },
     series: [{
-      name: 'Dollars ($) a month',
-      data: [2000, 2100, 2300, 2000, 1800, 1950, 1900, 2000, 2100, 2400, 2300, 2350]
+      name: 'Universities / Continent',
+      data: [218, 132, 146, 80, 43]
     }]
 });
