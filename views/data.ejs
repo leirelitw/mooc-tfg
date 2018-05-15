@@ -63,7 +63,7 @@
       <div id="slider-range"></div>
     </div>
     <br>
-    <button class="button button-blue" onclick="getByCountry()" id="filter">Filter</button>
+    <button class="button button-blue" onclick="filterTable()" id="filter">Filter</button>
   </div>
 </div>
 
@@ -105,8 +105,6 @@
             university_data += '<td style="text-align:center;">'+ <%=data[i].ranking%> + '</td>';
             university_data += '<td style="text-align:center;">'+ <%= data[i].shangaiRanking %> +'</td>';
             university_data += '<td>'+ " <%= data[i].country %> " + '</td>';
-            /*university_data += '<td>'+value.universitySize+'</td>';
-            university_data += '<td>'+value.totalMOOCS+'</td>';*/
             university_data += '<td style="text-align:center;">'+ "<%= data[i].universitySize %>" +'</td>';
             university_data += '<td style="text-align:center;">'+ "<%= data[i].totalMOOCS %>" +'</td>';
             university_data +='</tr>';
@@ -114,6 +112,31 @@
             $('#tableBody').html(university_data);
             sortTablebyNumber(1);
         });
+
+    function filterTable(){
+      //getByCountry();
+      updateByRanking();
+    }
+
+    function updateByRanking(){
+      var university_data = '';
+      <% for(var i=0; i<data.length; i++) {%>
+        if( <%= data[i].ranking%> >= parseInt($('#slider-range').slider("values")[0])){
+          if(<%=data[i].ranking%> <= parseInt($('#slider-range').slider("values")[1])){
+          university_data +='<tr>';
+          university_data += '<td>'+ "<%= data[i].universityName %> "+'</td>';
+          university_data += '<td style="text-align:center;">'+ <%=data[i].ranking%> + '</td>';
+          university_data += '<td style="text-align:center;">'+ <%= data[i].shangaiRanking %> +'</td>';
+          university_data += '<td>'+ " <%= data[i].country %> " + '</td>';
+          university_data += '<td style="text-align:center;">'+ "<%= data[i].universitySize %>" +'</td>';
+          university_data += '<td style="text-align:center;">'+ "<%= data[i].totalMOOCS %>" +'</td>';
+          university_data +='</tr>';
+        }
+      }
+      <% } %>
+      $('#tableBody').html(university_data);
+      sortTablebyNumber(1);
+    }
 
     function getByCountry() {
         // var country = $("country-selector").val();
@@ -147,8 +170,6 @@
                 university_data += '<td style="text-align:center;">'+ response[i].ranking + '</td>';
                 university_data += '<td style="text-align:center;">'+ response[i].shangaiRanking +'</td>';
                 university_data += '<td>'+ response[i].country + '</td>';
-                /*university_data += '<td>'+value.universitySize+'</td>';
-                university_data += '<td>'+value.totalMOOCS+'</td>';*/
                 university_data += '<td style="text-align:center;">'+ response[i].universitySize +'</td>';
                 university_data += '<td style="text-align:center;">'+ response[i].totalMOOCS +'</td>';
                 university_data +='</tr>';
@@ -159,26 +180,26 @@
                 alert('There was a problem with the response request');
             }
         }
-    };
+      }
 </script>
 
 <script>
 // Range slider - gravity forms
 $( function() {
   var length = <%= data.length %>;
-    $( "#slider-range" ).slider({
+    $("#slider-range").slider({
       range: true,
       min: 1,
       max: length,
       step: 1,
-      values: [ 1, 100 ],
+      values: [ 1, length ],
       slide: function( event, ui ) {
-        $( "#amount" ).val( "#" + ui.values[ 0 ] + " - #" + ui.values[ 1 ] );
+        $("#amount").val( "#" + ui.values[0] + " - #" + ui.values[1] );
       }
     });
-    $( "#amount" ).val( "#" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - #" + $( "#slider-range" ).slider( "values", 1 ) );
-  } );
+    $("#amount").val( "#" + $("#slider-range").slider("values", 0) +
+      " - #" + $("#slider-range").slider("values", 1));
+  });
 
 </script>
 <script src="scripts/sortingTables.js"></script>
