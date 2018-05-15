@@ -13,41 +13,42 @@ exports.create = function(req, res) {
             console.log(err);
             res.status(500).send({message: "Some error occurred while creating the University."});
         } else {
-            res.send(data);
+            res.status(200).send(data);
         }
     });
 };
 
-exports.findAll = function(req, res) {
-    // Retrieve and return all universities from the database.
-    University.find(function(err, universities){
-        if(err) {
-            console.log(err);
-            res.status(500).send({message: "Some error occurred while retrieving universities."});
-        } else {
-            res.send(universities);
-        }
-    });
-};
-
-exports.findAllTest = function() {
+exports.findAll = function() {
     // Retrieve and return all universities from the database.
     return University.find()
-    .then((results) =>
-    {
-      //console.log(results));
-      return results;
-    });
+        .then((results) =>
+        {
+            //console.log(results));
+            return results;
+        });
 };
 
-exports.findByCountry = function(req, res) {
+exports.findByCountry = function(country) {
     // Find a single university with a universityId
-    return University.find({country: req.params.country})
-    .then((results) =>
-    {
-      //console.log(results));
-      return results;
-    });
+    console.log(country);
+
+    if (country == "all") {
+        return University.find()
+            .then((results) =>
+            {
+                //console.log(results));
+                return results;
+            });
+    }
+    else{
+        return University.find({country: country})
+            .then((results) =>
+            {
+                //console.log(results);
+                return results;
+            });
+    }
+
 };
 
 exports.findByContinent = function(req, res) {

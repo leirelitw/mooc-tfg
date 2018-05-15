@@ -7,8 +7,8 @@ var universities = require('../controllers/university.controller.js');
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-  universities.findAllTest().then( function(dataRetrieved){
-    console.log(dataRetrieved);
+  universities.findAll().then( function(dataRetrieved){
+    //console.log(dataRetrieved);
     res.render('data', { title: 'MOOCs Ranking | Leire Litwin',
     data: dataRetrieved
     });

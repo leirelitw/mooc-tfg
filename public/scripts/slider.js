@@ -1,5 +1,6 @@
 // Range slider - gravity forms
 $( function() {
+
     $( "#slider-range" ).slider({
       range: true,
       min: 1,

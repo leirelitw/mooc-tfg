@@ -222,7 +222,7 @@ header{
 .container-sidebar{
   padding:5px;
   width:20vw;
-  height: 400px;
+  height: 500px;
   text-align: center;
   align-items: center;
   margin: 20px auto;
@@ -323,19 +323,18 @@ button:focus {outline:0;}
     .split1{
       width: 100%;
       position: relative;
-      height: 500px;
+      height: 600px;
       top: 100px;
     }
     .split2{
       width: 100%;
       position: relative;
-      top: 20px;
+      top: 50px;
     }
     .container-sidebar{
       width: 80%;
-      height: 350px;
+      height: 500px;
       top: 0;
-      position: relative;
       z-index: 10;
     }
 
