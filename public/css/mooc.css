@@ -222,7 +222,7 @@ header{
 .container-sidebar{
   padding:5px;
   width:20vw;
-  height: 500px;
+  height: 460px;
   text-align: center;
   align-items: center;
   margin: 20px auto;
@@ -336,6 +336,10 @@ button:focus {outline:0;}
       height: 500px;
       top: 0;
       z-index: 10;
+    }
+
+    h3{
+      padding: 5px;
     }
 
     .ui-widget .ui-widget-content {

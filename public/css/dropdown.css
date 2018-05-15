@@ -69,6 +69,8 @@ select {
           transform: scale(1);
   opacity: 1;
   pointer-events: auto;
+  height: 200px;
+  overflow: auto;
 }
 .dropdown.open .option {
   cursor: pointer;
