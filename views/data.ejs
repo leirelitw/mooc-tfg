@@ -143,7 +143,8 @@
 
     function getByCountry() {
         // var country = $("country-selector").val();
-        var url = 'http://localhost:3000/universities/countries/'
+        //var url = 'http://localhost:3000/universities/countries/'
+        var url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
         var e = document.getElementById("country-selector");
         var country = e.options[e.selectedIndex].value;
         url += country;
