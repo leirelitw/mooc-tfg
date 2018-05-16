@@ -13,10 +13,15 @@ module.exports = function(app) {
         universities.findByCountry(req.params.country).then( function(dataRetrieved){
             res.status(200).json(dataRetrieved);
         });
-    })
+    });
 
     // Retrieve all universities by continent
-    app.get('/universities/continents/:continent', universities.findByContinent);
+    app.post('/universities/continents/:continent', function(req, res, next) {
+        universities.findByContinent(req.params.continent).then( function(dataRetrieved){
+            res.status(200).json(dataRetrieved);
+        });
+    });
+
 
     // Retrieve a single university with universityId
     app.get('/universities/:universityName', universities.findOne);

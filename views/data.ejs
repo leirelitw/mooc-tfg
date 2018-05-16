@@ -38,20 +38,20 @@
   <div class="container-sidebar">
     <h3 style="margin: 10px 0; margin-top: 15px">Select a continent</h3>
     <div style="width: 150px; margin:0 auto;">
-      <select class="continent-selector">
+      <select class="continent-selector" id="continent-selector">
         <option value="all" data-display-text="All Continents">All Continents</option>
-        <option value="asia">Asia</option>
-        <option value="europe">Europe</option>
-        <option value="america">America</option>
-        <option value="africa">Africa</option>
-        <option value="oceania">Oceania</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="America">America</option>
+        <option value="Africa">Africa</option>
+        <option value="Oceania">Oceania</option>
       </select>
     </div>
     <br><br>
     <h3 style="margin: 10px 0">Select a country</h3>
     <div style="width: 150px; margin:0 auto;">
       <select class="country-selector" id="country-selector">
-        <option value="all" data-display-text="All countries">All Countries</option>
+        <option value="all" data-display-text="All Countries">All Countries</option>
         <option value="France">France</option>
         <option value="Spain">Spain</option>
         <option value="Germany">Germany</option>
@@ -117,7 +117,7 @@
         });
 
     function filterTable(){
-      getByCountry();
+      getByCountryandContinent();
       //updateByRanking();
     }
 
@@ -141,13 +141,24 @@
       sortTablebyNumber(1);
     }
 
-    function getByCountry() {
+    function getByCountryandContinent() {
         // var country = $("country-selector").val();
         //var url = 'http://localhost:3000/universities/countries/'
-        var url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
+        var url;
         var e = document.getElementById("country-selector");
         var country = e.options[e.selectedIndex].value;
-        url += country;
+        if(country=="all"){
+          var u = document.getElementById("continent-selector");
+          var continent = u.options[u.selectedIndex].value;
+          //url = 'https://moocs-university-ranking.herokuapp.com/universities/continents/'
+          url = 'http://localhost:3000/universities/continents/'
+          url += continent;
+        }
+        else{
+          //url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
+          url = 'http://localhost:3000/universities/countries/'
+          url += country;
+        }
         console.log(url);
         var httpRequest = false;
         httpRequest = new XMLHttpRequest();

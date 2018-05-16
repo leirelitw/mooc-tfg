@@ -31,7 +31,6 @@ exports.findAll = function() {
 exports.findByCountry = function(country) {
     // Find a single university with a universityId
     console.log(country);
-
     if (country == "all") {
         return University.find()
             .then((results) =>
@@ -48,26 +47,27 @@ exports.findByCountry = function(country) {
                 return results;
             });
     }
-
 };
 
-exports.findByContinent = function(req, res) {
+exports.findByContinent = function(continent) {
     // Find a single university with a universityId
-    University.find({continent: req.params.continent}, function(err, uni) {
-        if(err) {
-            console.log(err);
-            if(err.kind === 'ObjectId') {
-                return res.status(404).send({message: "University not found by continent: " + req.params.continent});
-            }
-            return res.status(500).send({message: "Error retrieving university with continent: " + req.params.continent});
-        }
-
-        if(!uni) {
-            return res.status(404).send({message: "University continent not found with continent: " + req.params.continent});
-        }
-
-        res.send(uni);
-    });
+    console.log(continent);
+    if (continent == "all") {
+        return University.find()
+            .then((results) =>
+            {
+                //console.log(results));
+                return results;
+            });
+    }
+    else{
+        return University.find({continent: continent})
+            .then((results) =>
+            {
+                //console.log(results);
+                return results;
+            });
+    }
 };
 
 exports.findOne = function(req, res) {
