@@ -38,23 +38,23 @@ Highcharts.chart('bar-chart-1', {
         colorByPoint: true,
         data: [{
             name: 'Europe',
-            y: 56.33,
+            y: 153,
             drilldown: 'Europe'
         }, {
             name: 'Asia',
-            y: 24.03,
+            y: 261,
             drilldown: 'Asia'
         }, {
             name: 'America',
-            y: 10.38,
+            y: 340,
             drilldown: 'America'
         }, {
             name: 'Oceania',
-            y: 4.77,
+            y: 87,
             drilldown: 'Oceania'
         }, {
             name: 'Africa',
-            y: 0.91,
+            y: 95,
             drilldown: 'Africa'
         }]
     }],
@@ -69,11 +69,11 @@ Highcharts.chart('bar-chart-1', {
                 ],
                 [
                     'France',
-                    17
+                    67
                 ],
                 [
                     'Germany',
-                    8
+                    38
                 ],
                 [
                     'Spain',
@@ -93,60 +93,24 @@ Highcharts.chart('bar-chart-1', {
             id: 'Asia',
             data: [
                 [
-                    'v40.0',
-                    5
+                    'China',
+                    50
                 ],
                 [
-                    'v41.0',
-                    4.32
+                    'Japan',
+                    32
                 ],
                 [
-                    'v42.0',
-                    3.68
+                    'Thailand',
+                    12
                 ],
                 [
-                    'v39.0',
-                    2.96
+                    'South Korea',
+                    29
                 ],
                 [
-                    'v36.0',
-                    2.53
-                ],
-                [
-                    'v43.0',
-                    1.45
-                ],
-                [
-                    'v31.0',
-                    1.24
-                ],
-                [
-                    'v35.0',
-                    0.85
-                ],
-                [
-                    'v38.0',
-                    0.6
-                ],
-                [
-                    'v32.0',
-                    0.55
-                ],
-                [
-                    'v37.0',
-                    0.38
-                ],
-                [
-                    'v33.0',
-                    0.19
-                ],
-                [
-                    'v34.0',
-                    0.14
-                ],
-                [
-                    'v30.0',
-                    0.14
+                    'Arabia Saudi',
+                    17
                 ]
             ]
         }, {
@@ -154,36 +118,36 @@ Highcharts.chart('bar-chart-1', {
             id: 'America',
             data: [
                 [
-                    'v35',
-                    2.76
+                    'USA',
+                    286
                 ],
                 [
-                    'v36',
-                    2.32
+                    'Argentina',
+                    38
                 ],
                 [
-                    'v37',
-                    2.31
+                    'Brazil',
+                    21
                 ],
                 [
-                    'v34',
-                    1.27
+                    'Chile',
+                    13
                 ],
                 [
-                    'v38',
-                    1.02
+                    'Bolivia',
+                    2
                 ],
                 [
-                    'v31',
-                    0.33
+                    'Ecuador',
+                    3
                 ],
                 [
-                    'v33',
-                    0.22
+                    'Panama',
+                    10
                 ],
                 [
-                    'v32',
-                    0.15
+                    'Colombia',
+                    4
                 ]
             ]
         }, {
@@ -191,32 +155,20 @@ Highcharts.chart('bar-chart-1', {
             id: 'Oceania',
             data: [
                 [
-                    'v8.0',
-                    2.56
+                    'Australia',
+                    27
                 ],
                 [
-                    'v7.1',
-                    0.77
+                    'New Zealand',
+                    18
                 ],
                 [
-                    'v5.1',
-                    0.42
+                    'Indonesia',
+                    7
                 ],
                 [
-                    'v5.0',
-                    0.3
-                ],
-                [
-                    'v6.1',
-                    0.29
-                ],
-                [
-                    'v7.0',
-                    0.26
-                ],
-                [
-                    'v6.2',
-                    0.17
+                    'Samoa',
+                    3
                 ]
             ]
         }, {
@@ -224,20 +176,20 @@ Highcharts.chart('bar-chart-1', {
             id: 'Africa',
             data: [
                 [
-                    'v12.x',
-                    0.34
+                    'South Africa',
+                    8
                 ],
                 [
-                    'v28',
-                    0.24
+                    'Morocco',
+                    12
                 ],
                 [
-                    'v27',
-                    0.17
+                    'Kenya',
+                    5
                 ],
                 [
-                    'v29',
-                    0.16
+                    'Madagascar',
+                    3
                 ]
             ]
         }]
