@@ -88,6 +88,7 @@
 </div>
 <div id="linear-graphs-container">
   <div id="linear-graph-universities-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
+  <div id="linear-graph-courses-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
 </div>
 <div id="pie-graphs-container">
   <div id="pie-graph-universities-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
@@ -111,12 +112,82 @@
   <script src="scripts/dropdown.js"></script>
   <script src="scripts/bargraphs.js"></script>
   <script src="scripts/piegraphs.js"></script>
-  <script src="scripts/lineargraphs.js"></script>
+  <!--<script src="scripts/lineargraphs.js"></script>-->
   <script src="scripts/scriptmooc.js"></script>
   <script src="scripts/slider.js"></script>
   <script src="scripts/sortingTables.js"></script>
   <script src="scripts/dropdown.js"></script>
   <script src="scripts/maps.js"></script>
+
+  <script>
+    var countEurope=0, countAmerica=0, countOceania=0, countAfrica=0, countAsia=0;
+    var countEuropeCourses=0, countAmericaCourses=0, countOceaniaCourses=0, countAfricaCourses=0, countAsiaCourses=0;
+
+  <% for(var i=0; i<data.length; i++) {%>
+      if("<%=data[i].continent%>" == "Europe"){
+        countEurope++;
+        countEuropeCourses += <%=data[i].totalMOOCS%>;
+      }
+      else if("<%=data[i].continent%>" == "America"){
+        countAmerica++;
+        countAmericaCourses += <%=data[i].totalMOOCS%>;
+      }
+      else if("<%=data[i].continent%>" == "Oceania"){
+        countOceania++;
+        countOceaniaCourses += <%=data[i].totalMOOCS%>;
+      }
+      else if("<%=data[i].continent%>" == "Africa"){
+        countAfrica++;
+        countAfricaCourses += <%=data[i].totalMOOCS%>;
+      }
+      else if("<%=data[i].continent%>" == "Asia"){
+        countAsia++;
+        countAsiaCourses += <%=data[i].totalMOOCS%>;
+      }
+      else{
+        console.log("Continent wrong, must be not existing - "+<%=data[i].continent%>);
+      }
+  <% } %>
+
+  $('#linear-graph-universities-1').highcharts({
+      xAxis: {
+          categories: ["America", "Europe", "Asia",
+                       "Oceania", "Africa"]
+      },
+      yAxis: [{
+        title: {
+          text: 'Universities'
+        }
+      }],
+      title: {
+        text: 'Chart for universities in each continent'
+      },
+      series: [{
+        name: 'Universities / Continent',
+        data: [countAmerica, countEurope, countAsia, countOceania, countAfrica]
+      }]
+  });
+
+  $('#linear-graph-courses-1').highcharts({
+      xAxis: {
+          categories: ["America", "Europe", "Asia",
+                       "Oceania", "Africa"]
+      },
+      yAxis: [{
+        title: {
+          text: 'Courses'
+        }
+      }],
+      title: {
+        text: 'Chart for n# of courses MOOC in each continent'
+      },
+      series: [{
+        name: 'MOOCs / Continent',
+        data: [countAmericaCourses, countEuropeCourses, countAsiaCourses, countOceaniaCourses, countAfricaCourses]
+      }]
+  });
+
+  </script>
 
 
 </body></html>
