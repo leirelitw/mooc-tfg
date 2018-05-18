@@ -1,7 +1,7 @@
 function create_custom_dropdowns() {
   $('select').each(function(i, select) {
     if (!$(this).next().hasClass('dropdown')) {
-      $(this).after('<div class="dropdown ' + ($(this).attr('class') || '') + '" tabindex="0"><span class="current"></span><div class="list"><ul></ul></div></div>');
+      $(this).after('<div class="dropdown customCountryDrop ' + ($(this).attr('class') || '') + '" tabindex="0"><span class="current"></span><div class="list"><ul></ul></div></div>');
       var dropdown = $(this).next();
       var options = $(select).find('option');
       var selected = $(this).find('option:selected');
