@@ -86,18 +86,21 @@
   <div id="linear-graph-courses-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
 </div>
 <div id="comparison-graphs-container">
-    <h3 style="margin: 10px 20px; width:55%; display:inline-flex;">Select university 1 to compare</h3>
-    <div style="width: 150px; padding-top:30px; padding-bottom:10px; display: inline-flex;">
+  <div class="fixed-comparison-filter" style="width: 100%;">
+    <h3 style="margin: 20px; margin-top:40px; margin-left:5%; width:40%; text-align: center; display:inline-flex;">Select university 1</h3>
+    <h3 style="margin: 20px; margin-top:40px; margin-left:5%; width:40%; text-align: center; display:inline-flex;">Select university 2</h3>
+
+    <div style="width: 40%; margin-bottom: 15px; margin-left:5%; display: inline-flex;">
       <select class="university1-selector" id="university1-selector"></select>
     </div>
-    <h3 style="margin: 10px 20px; width:55%; display:inline-flex;">Select university 2 to compare</h3>
-    <div style="width: 150px; padding:10px 0; display: inline-flex;">
+    <div style="width: 40%; margin-bottom: 15px; margin-left:5%; display: inline-flex;">
       <select class="university2-selector" id="university2-selector"></select>
     </div>
-    <button class="button button-blue" onclick="" id="filter" style="margin-left:50px; display: inline-flex;">Compare</button>
-
-    <div id="comparison-graph" style="min-width: 300px; height: 400px; margin: 1em"></div>
-
+    <br>
+    <button class="button button-blue" onclick="" id="filter" style="margin-left:5%; align-items: center; display: inline-flex;">Compare</button>
+    <br>
+  </div>
+  <div id="comparison-graph" style="min-width: 300px; height: 400px; margin: 1em"></div>
 </div>
 </div>
 </div>
@@ -439,10 +442,13 @@
               var exists = 0;
               var data2 = <%-JSON.stringify(data)%>;
               var dropdown = '<option value=\"all\" data-display-text=\"All Countries\">All Countries</option>';
+              var dropdown2 = '<option value=\"all\" data-display-text=\"All Universities\">All Universities</option>';
 
               console.log("Data2: " + data2[0].country);
 
               for(var i=0; i<data2.length; i++) {
+                dropdown2 += '<option value="' + data2[i].universityName + '">' + data2[i].universityName + '</option>';
+
                   if (countryList.length == 0) {
                       countryList.push(data2[i]);
                       console.log(countryList[0].country);
@@ -461,12 +467,13 @@
                       }
                   }
               }
-
               console.log("CountryList: " + countryList);
               for(let i = 0; i < countryList.length; i++) {
                   dropdown += '<option value="' + countryList[i].country + '">' + countryList[i].country + '</option>';
               }
               $('#country-selector').html(dropdown);
+              $('#university1-selector').html(dropdown2);
+              $('#university2-selector').html(dropdown2);
           });
 
       function filterTable(){
