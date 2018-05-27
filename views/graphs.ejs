@@ -101,6 +101,8 @@
     <br>
   </div>
   <div id="comparison-graph" style="min-width: 300px; height: 400px; margin: 1em"></div>
+  <div id="pie-graph-comparison-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
+
 </div>
 </div>
 </div>
@@ -444,17 +446,19 @@
         var uni1 = e.options[e.selectedIndex].value;
         var u = document.getElementById("university2-selector");
         var uni2 = u.options[u.selectedIndex].value;
-        var ranking1, ranking2, shanghai1, shanghai2, moocs1, moocs2;
+        var ranking1, ranking2, shanghai1, shanghai2, moocs1, moocs2, size1, size2;
         for(let i = 0; i < data2.length; i++) {
             if(data2[i].universityName == uni1){
               ranking1 = data2[i].ranking;
               shanghai1 = data2[i].shangaiRanking;
               moocs1 = data2[i].totalMOOCS;
+              size1 = data2[i].universitySize;
             }
             if(data2[i].universityName == uni2){
               ranking2= data2[i].ranking;
               shanghai2 = data2[i].shangaiRanking;
               moocs2 = data2[i].totalMOOCS;
+              size2 = data2[i].universitySize;
             }
         }
         Highcharts.chart('comparison-graph', {
@@ -498,6 +502,41 @@
                 data: [ranking2, shanghai2, moocs2]
             }]
         });
+
+        $('#pie-graph-comparison-1').highcharts({
+            plotOptions: {
+            pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                enabled: false
+              },
+              showInLegend: true
+            }
+            },
+            chart: {
+              renderTo: 'container',
+              type: 'pie'
+            },
+            xAxis: {
+              categories: [uni1, uni2]
+            },
+            title: {
+              text: 'Universities size comparison'
+            },
+            series: [{
+              name: 'Students/Universities',
+              colorByPoint: true,
+              data: [{
+                name: uni1,
+                y: size1,
+              }, {
+                name: uni2,
+                y: size2
+              }]
+            }]
+        });
+
 
       }
 
