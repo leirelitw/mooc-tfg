@@ -49,6 +49,26 @@ exports.findByCountry = function(country) {
     }
 };
 
+exports.findCountByCountry = function(country) {
+    // Find a single university with a universityId
+    return University.count({country: country})
+        .then((results) =>
+        {
+            //console.log(results);
+            return results;
+    });
+};
+
+exports.findCountByContinent = function(continent) {
+    // Find a single university with a universityId
+    return University.count({continent: continent})
+        .then((results) =>
+        {
+            //console.log(results);
+            return results;
+    });
+};
+
 exports.findByContinent = function(continent) {
     // Find a single university with a universityId
     console.log(continent);

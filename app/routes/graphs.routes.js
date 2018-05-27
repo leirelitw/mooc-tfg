@@ -1,3 +1,5 @@
+module.exports = router;
+
 var express = require('express');
 var router = express.Router();
 var universities = require('../controllers/university.controller.js');

@@ -22,6 +22,20 @@ module.exports = function(app) {
         });
     });
 
+    // Retrieve all universities count by country
+    app.post('/universities/countriesCount/:country', function(req, res, next) {
+      universities.findCountByCountry(req.params.country).then( function(dataRetrieved){
+            res.status(200).json(dataRetrieved);
+        });
+    });
+
+    // Retrieve all universities count by continent
+    app.post('/universities/continentsCount/:continent', function(req, res, next) {
+        universities.findCountByContinent(req.params.continent).then( function(dataRetrieved){
+            res.status(200).json(dataRetrieved);
+        });
+    });
+
 
     // Retrieve a single university with universityId
     app.get('/universities/:universityName', universities.findOne);

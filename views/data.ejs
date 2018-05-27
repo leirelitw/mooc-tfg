@@ -152,27 +152,6 @@
 
     function filterTable(){
         getByCountryandContinent();
-        //updateByRanking();
-    }
-
-    function updateByRanking(){
-        var university_data = '';
-        <% for(var i=0; i<data.length; i++) {%>
-        if( <%= data[i].ranking%> >= parseInt($('#slider-range').slider("values")[0])){
-            if(<%=data[i].ranking%> <= parseInt($('#slider-range').slider("values")[1])){
-                university_data +='<tr>';
-                university_data += '<td>'+ "<%= data[i].universityName %> "+'</td>';
-                university_data += '<td style="text-align:center;">'+ <%=data[i].ranking%> + '</td>';
-                university_data += '<td style="text-align:center;">'+ <%= data[i].shangaiRanking %> +'</td>';
-                university_data += '<td>'+ " <%= data[i].country %> " + '</td>';
-                university_data += '<td style="text-align:center;">'+ "<%= data[i].universitySize %>" +'</td>';
-                university_data += '<td style="text-align:center;">'+ "<%= data[i].totalMOOCS %>" +'</td>';
-                university_data +='</tr>';
-            }
-        }
-        <% } %>
-        $('#tableBody').html(university_data);
-        //sortTablebyNumber(1);
     }
 
     function getByCountryandContinent() {
@@ -183,13 +162,13 @@
         if(country=="all"){
             var u = document.getElementById("continent-selector");
             var continent = u.options[u.selectedIndex].value;
-            url = 'https://moocs-university-ranking.herokuapp.com/universities/continents/'
-            //url = 'http://localhost:3000/universities/continents/'
+            //url = 'https://moocs-university-ranking.herokuapp.com/universities/continents/'
+            url = 'http://localhost:3000/universities/continents/'
             url += continent;
         }
         else{
-            url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
-            //url = 'http://localhost:3000/universities/countries/'
+            //url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
+            url = 'http://localhost:3000/universities/countries/'
             url += country;
         }
         //console.log(url);
