@@ -550,13 +550,13 @@
           if(country=="all"){
               var u = document.getElementById("continent-graph-selector");
               var continent = u.options[u.selectedIndex].value;
-              url = 'https://moocs-university-ranking.herokuapp.com/universities/continents/'
-              //url = 'http://localhost:3000/universities/continents/'
+              //url = 'https://moocs-university-ranking.herokuapp.com/universities/continents/'
+              url = 'http://localhost:3000/universities/continents/'
               url += continent;
           }
           else{
-              url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
-              //url = 'http://localhost:3000/universities/countries/'
+              //url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
+              url = 'http://localhost:3000/universities/countries/'
               url += country;
           }
           //console.log(url);
