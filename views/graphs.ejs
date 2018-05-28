@@ -45,7 +45,7 @@
     <div class="container-sidebar">
       <h3 style="margin: 10px 0; margin-top: 15px">Select a continent</h3>
       <div style="width: 150px; margin:0 auto;">
-        <select class="continent-selector" id="continent-selector">
+        <select class="continent-graph-selector" id="continent-graph-selector">
           <option value="all" data-display-text="All Continents">All Continents</option>
           <option value="Asia">Asia</option>
           <option value="Europe">Europe</option>
@@ -57,7 +57,7 @@
       <br><br>
       <h3 style="margin: 10px 0">Select a country</h3>
       <div style="width: 150px; margin:0 auto;">
-        <select class="country-selector" id="country-selector" >
+        <select class="country-graph-selector" id="country-graph-selector" >
         </select>
       </div>
       <br><br>
@@ -432,9 +432,11 @@
               for(let i = 0; i < countryList.length; i++) {
                   dropdown += '<option value="' + countryList[i].country + '">' + countryList[i].country + '</option>';
               }
-              $('#country-selector').html(dropdown);
+              $('#country-graph-selector').html(dropdown);
               $('#university1-selector').html(dropdown2);
               $('#university2-selector').html(dropdown2);
+              $(".customCountryDrop").remove();
+              create_custom_dropdowns();
           });
 
       function filterTable(){
@@ -541,12 +543,12 @@
       }
 
       function getByCountryandContinent() {
-          // var country = $("country-selector").val();
+          // var country = $("country-graph-selector").val();
           var url;
-          var e = document.getElementById("country-selector");
+          var e = document.getElementById("country-graph-selector");
           var country = e.options[e.selectedIndex].value;
           if(country=="all"){
-              var u = document.getElementById("continent-selector");
+              var u = document.getElementById("continent-graph-selector");
               var continent = u.options[u.selectedIndex].value;
               //url = 'https://moocs-university-ranking.herokuapp.com/universities/continents/'
               url = 'http://localhost:3000/universities/continents/'
@@ -599,15 +601,15 @@
           }
       }
 
-      $("#continent-selector").change(function () {
-          var e = document.getElementById("continent-selector");
+      $("#continent-graph-selector").change(function () {
+          var e = document.getElementById("continent-graph-selector");
           var continent = e.options[e.selectedIndex].value;
           filterCountryDropdown(continent);
           filterContinentComparisonDropdowns(continent);
       });
 
-      $("#country-selector").change(function () {
-          var e = document.getElementById("country-selector");
+      $("#country-graph-selector").change(function () {
+          var e = document.getElementById("country-graph-selector");
           var country = e.options[e.selectedIndex].value;
           filterCountryComparisonDropdowns(country);
       });
@@ -624,7 +626,7 @@
                   dropdown += '<option value="' + countryList[i].country + '">' + countryList[i].country + '</option>';
               }
           }
-          $("#country-selector").html(dropdown);
+          $("#country-graph-selector").html(dropdown);
           $(".customCountryDrop").remove();
           create_custom_dropdowns();
           //console.log(countryList);
