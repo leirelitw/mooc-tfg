@@ -16,6 +16,8 @@ var dbConfig = require('./config/database.config.js');
 var mongoose = require('mongoose');
 var index = require('./app/routes/home.routes.js');
 var data = require('./app/routes/data.routes.js');
+var data2 = require('./app/routes/data2.routes.js');
+var data9 = require('./app/routes/data9.routes.js');
 var about = require('./app/routes/about.routes.js');
 var graphs = require('./app/routes/graphs.routes.js');
 
@@ -29,6 +31,8 @@ app.use('/index', index);
 app.use('/about', about);
 app.use('/graphs', graphs);
 app.use('/data', data);
+app.use('/data2', data2);
+app.use('/data9', data9);
 app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/', function (req, res, next) {

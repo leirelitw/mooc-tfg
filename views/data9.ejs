@@ -67,9 +67,9 @@
 
 <div class="split2 right">
   <div class="centered">
-  <h3 style="margin: 10px auto; text-align:center" >This is the ranking according to metric 10 </h3>
-     <a href="/data2"><button class="button button-blue" id="m2button">Metric 2</button></a>
-     <a href="/data9"><button class="button button-blue" id="m9button">Metric 9</button></a>
+  <h3 style="margin: 10px auto; text-align:center" >This is the ranking according to metric 9 </h3>
+     <a href="/data2"><button class="button button-blue" onclick="" id="m2button">Metric 2</button></a>
+     <a href="/data"><button class="button button-blue" onclick="" id="m9button">Metric 10</button></a>
 
     <div class="table-responsive">
       <table id="universities-table" class="display nowrap dataTable dtr-inline collapsed" cellspacing="0" width="100%" role="grid" aria-describedby="universities-table_info" style="width: 80%; margin-top: 20px; margin-left: 10px;">
@@ -108,7 +108,7 @@
             <% for(var i=0; i<data.length; i++) {%>
             university_data +='<tr>';
             university_data += '<td>'+ "<%= data[i].universityName %> "+'</td>';
-            university_data += '<td style="text-align:center;">'+ <%=data[i].ranking10%> + '</td>';
+            university_data += '<td style="text-align:center;">'+ <%=data[i].ranking9%> + '</td>';
             university_data += '<td style="text-align:center;">'+ <%= data[i].shangaiRanking %> +'</td>';
             university_data += '<td>'+ " <%= data[i].country %> " + '</td>';
             university_data += '<td style="text-align:center;">'+ "<%= data[i].universitySize %>" +'</td>';
@@ -196,11 +196,11 @@
                 //console.log(response);
                 var university_data = '';
                 for(var i=0; i<response.length; i++) {
-                    if(response[i].ranking10 >= parseInt($('#slider-range').slider("values")[0])){
-                        if(response[i].ranking10 <= parseInt($('#slider-range').slider("values")[1])){
+                    if(response[i].ranking9 >= parseInt($('#slider-range').slider("values")[0])){
+                        if(response[i].ranking9 <= parseInt($('#slider-range').slider("values")[1])){
                             university_data +='<tr>';
                             university_data += '<td>'+ response[i].universityName +'</td>';
-                            university_data += '<td style="text-align:center;">'+ response[i].ranking10 + '</td>';
+                            university_data += '<td style="text-align:center;">'+ response[i].ranking9 + '</td>';
                             university_data += '<td style="text-align:center;">'+ response[i].shangaiRanking +'</td>';
                             university_data += '<td>'+ response[i].country + '</td>';
                             university_data += '<td style="text-align:center;">'+ response[i].universitySize +'</td>';
