@@ -13,8 +13,11 @@ var UniversitySchema = mongoose.Schema({
     edXMOOCS: Number,
     totalMOOCS: Number,
     Mo2: Number,
+    ranking2: Number,
     Mo9: Number,
-    Mo10: Number
+    ranking9: Number,
+    Mo10: Number,
+    ranking10: Number
 },{
     _id: false
 });
