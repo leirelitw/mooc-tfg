@@ -201,7 +201,7 @@
   <script>
       var countryList = [];
       var countryMOOCsEurope = [];
-      var countryMOOCsMAP = [];
+      var countryMOOCsMap = [];
       var countryMOOCsPie = [];
       var countryMOOCsAfrica = [];
       var countryMOOCsAsia = [];
@@ -242,10 +242,8 @@
               }
 
               for (var j = 0; j < countryList.length; j++) {
-                    countryMOOCsPie.push(countryList[j].totalMOOCS);
-                    //countryMOOCsPie.push({'name': 'countryList[j].country', 'y': countryList[j].totalMOOCS});
-                    countryMOOCsMAP.push({"code2": "countryList[j].countryCode", "value": countryList[j].totalMOOCS, "name": "countryList[j].country"});
-                    //countryMOOCsMAP.push({code2: countryList[j].countryCode, value: countryList[j].totalMOOCS, name: countryList[j].country});
+                    countryMOOCsPie.push({name: "'"+countryList[j].country+"'", y: countryList[j].totalMOOCS});
+                    countryMOOCsMap.push({"code2": "'"+countryList[j].countryCode+"'", "value": countryList[j].totalMOOCS, "name": "'"+countryList[j].country+"'"});
 
                 if(countryList[j].continent == "Europe"){
                     countryMOOCsEurope.push({name: countryList[j].country, y: countryList[j].totalMOOCS});
@@ -269,8 +267,25 @@
                 }
               }
 
+                  $.each(countryMOOCsMap, function () {
+                      this.value = (this.value < 1 ? 1 : this.value);
+                  });
 
-              console.log("CountryMAP: " + countryMOOCsMAP);
+
+                var text = "";
+
+                      for (var i = 0; i < countryMOOCsMap.length; i++) {
+                          var myObject = countryMOOCsMap[i];
+
+                          for (var x in myObject) {
+                              text += ( x + ": " + myObject[x] + " ");
+                          }
+                      }
+
+                      console.log(text);
+
+
+              console.log("CountryMAP: " + countryMOOCsMap);
               console.log("CountryPie: " + countryMOOCsPie);
 
 
@@ -670,7 +685,7 @@ Highcharts.chart('bar-chart-1', {
 
         series: [{
             //data: [{"code2":"ES", "value":23, "name": "Spain"}],
-            data: countryMOOCsMAP,
+            data: countryMOOCsMap,
             joinBy: ['iso-a2', 'code2'],
             name: 'How many MOOCS in our ranking?',
             states: {
@@ -700,13 +715,11 @@ Highcharts.chart('bar-chart-1', {
           text: 'Universities per country'
         },
         series: [{
-          name: 'Universities/country',
+          name: 'Spain',
           colorByPoint: true,
           data: countryMOOCsPie
         }]
     });
-
-
 
 
   </script>
