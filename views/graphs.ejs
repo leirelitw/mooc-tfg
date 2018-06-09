@@ -448,16 +448,20 @@
         var uni1 = e.options[e.selectedIndex].value;
         var u = document.getElementById("university2-selector");
         var uni2 = u.options[u.selectedIndex].value;
-        var ranking1, ranking2, shanghai1, shanghai2, moocs1, moocs2, size1, size2;
+        var ranking1_10, ranking2_10, shanghai1, shanghai2, moocs1, moocs2, size1, size2, ranking1_9, ranking2_9, ranking1_2, ranking2_2;
         for(let i = 0; i < data2.length; i++) {
             if(data2[i].universityName == uni1){
-              ranking1 = data2[i].ranking;
+              ranking1_10 = data2[i].ranking10;
+              ranking1_9 = data2[i].ranking9;
+              ranking1_2 = data2[i].ranking2;
               shanghai1 = data2[i].shangaiRanking;
               moocs1 = data2[i].totalMOOCS;
               size1 = data2[i].universitySize;
             }
             if(data2[i].universityName == uni2){
-              ranking2= data2[i].ranking;
+              ranking2_10 = data2[i].ranking10;
+              ranking2_9 = data2[i].ranking9;
+              ranking2_2 = data2[i].ranking2;
               shanghai2 = data2[i].shangaiRanking;
               moocs2 = data2[i].totalMOOCS;
               size2 = data2[i].universitySize;
@@ -472,7 +476,9 @@
             },
             xAxis: {
                 categories: [
-                    'Ranking',
+                    'Ranking with Metric 10',
+                    'Ranking with Metric 9',
+                    'Ranking with Metric 2',
                     'Shanghai Ranking',
                     'Number of MOOCs'
                 ],
@@ -497,11 +503,11 @@
             },
             series: [{
                 name: uni1,
-                data: [ranking1, shanghai1, moocs1]
+                data: [ranking1_10, ranking1_9, ranking1_2, shanghai1, moocs1]
 
             }, {
                 name: uni2,
-                data: [ranking2, shanghai2, moocs2]
+                data: [ranking2_10, ranking2_9, ranking2_2, shanghai2, moocs2]
             }]
         });
 

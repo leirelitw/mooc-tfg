@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c004b3a5-43b8-4e34-a678-40bb58af3dce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/data.ejs" afterPath="$PROJECT_DIR$/views/data.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/data2.ejs" afterPath="$PROJECT_DIR$/views/data2.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/data9.ejs" afterPath="$PROJECT_DIR$/views/data9.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/graphs.ejs" afterPath="$PROJECT_DIR$/views/graphs.ejs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,11 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data2.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data2.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/data2.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="213">
               <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graphs.routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes/graphs.routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,23 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maps.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/scripts/maps.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="24" />
-              <folding>
-                <marker date="1528115743000" expanded="true" signature="1253:1267" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graphs.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="graphs.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/graphs.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2667">
-              <caret line="198" column="35" lean-forward="true" selection-start-line="198" selection-start-column="35" selection-end-line="198" selection-end-column="35" />
+            <state relative-caret-position="135">
+              <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -132,10 +128,10 @@
       <find>name</find>
       <find>bar-chart</find>
       <find>&quot;</find>
-      <find>ranking</find>
       <find>ranking10</find>
-      <find>metri</find>
       <find>metric</find>
+      <find>metri</find>
+      <find>ranking</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,6 +155,7 @@
         <option value="$PROJECT_DIR$/views/data9.ejs" />
         <option value="$PROJECT_DIR$/views/data.ejs" />
         <option value="$PROJECT_DIR$/views/data2.ejs" />
+        <option value="$PROJECT_DIR$/views/graphs.ejs" />
       </list>
     </option>
   </component>
@@ -339,12 +336,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527827806919</updated>
       <workItem from="1527827815511" duration="1154000" />
-      <workItem from="1528065554748" duration="9069000" />
+      <workItem from="1528065554748" duration="9686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10223000" />
+    <option name="totallyTimeSpent" value="10840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="708" extended-state="6" />
@@ -475,14 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/graphs.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2667">
-          <caret line="198" column="35" lean-forward="true" selection-start-line="198" selection-start-column="35" selection-end-line="198" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/university.model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -543,6 +532,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/graphs.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/graphs.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
           <folding />
         </state>
       </provider>
