@@ -118,14 +118,12 @@
   <script src="https://www.highcharts.com/samples/maps/demo/all-maps/jquery.combobox.js"></script>
 
   <script src="scripts/drilldown.js"></script>
-  <!--<script src="scripts/bargraphs.js"></script>-->
-  <script src="scripts/piegraphs.js"></script>
-  <!--<script src="scripts/lineargraphs.js"></script>-->
+  <!--<script src="scripts/piegraphs.js"></script>-->
   <script src="scripts/scriptmooc.js"></script>
   <script src="scripts/slider.js"></script>
   <script src="scripts/sortingTables.js"></script>
   <script src="scripts/dropdown.js"></script>
-  <script src="scripts/maps.js"></script>
+  <!--<script src="scripts/maps.js"></script>-->
 
   <script>
     var countEurope=0, countAmerica=0, countOceania=0, countAfrica=0, countAsia=0;
@@ -157,10 +155,13 @@
       }
   <% } %>
 
+    var totalCount = countEurope + countAsia + countAmerica + countOceania + countAfrica;
+    var totalCountCourses = countEuropeCourses + countAsiaCourses + countAmericaCourses + countOceaniaCourses + countAfricaCourses;
+
+
   $('#linear-graph-universities-1').highcharts({
       xAxis: {
-          categories: ["America", "Europe", "Asia",
-                       "Oceania", "Africa"]
+          categories: ["2017", "2018", "2019"]
       },
       yAxis: [{
         title: {
@@ -172,14 +173,13 @@
       },
       series: [{
         name: 'Universities / Continent',
-        data: [countAmerica, countEurope, countAsia, countOceania, countAfrica]
+        data: [totalCount, totalCount+3, 0]
       }]
   });
 
   $('#linear-graph-courses-1').highcharts({
       xAxis: {
-          categories: ["America", "Europe", "Asia",
-                       "Oceania", "Africa"]
+          categories: ["2017", "2018", "2019"]
       },
       yAxis: [{
         title: {
@@ -191,205 +191,8 @@
       },
       series: [{
         name: 'MOOCs / Continent',
-        data: [countAmericaCourses, countEuropeCourses, countAsiaCourses, countOceaniaCourses, countAfricaCourses]
+        data: [totalCountCourses, totalCountCourses+27, 0]
       }]
-  });
-
-  // Create the chart
-  Highcharts.chart('bar-chart-1', {
-      chart: {
-          type: 'column'
-      },
-      title: {
-          text: 'Number of universities by Continent and Country'
-      },
-      xAxis: {
-          type: 'category'
-      },
-      yAxis: {
-          title: {
-              text: 'Number of universities'
-          }
-      },
-      legend: {
-          enabled: false
-      },
-      plotOptions: {
-          series: {
-              borderWidth: 0,
-              dataLabels: {
-                  enabled: true,
-                  format: '{point.y}'
-              }
-          }
-      },
-
-      tooltip: {
-          headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-          pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
-      },
-
-      series: [{
-          name: 'Brands',
-          colorByPoint: true,
-          data: [{
-              name: 'Europe',
-              y: countEurope,
-              drilldown: 'Europe'
-          }, {
-              name: 'Asia',
-              y: countAsia,
-              drilldown: 'Asia'
-          }, {
-              name: 'America',
-              y: countAmerica,
-              drilldown: 'America'
-          }, {
-              name: 'Oceania',
-              y: countOceania,
-              drilldown: 'Oceania'
-          }, {
-              name: 'Africa',
-              y: countAfrica,
-              drilldown: 'Africa'
-          }]
-      }],
-      drilldown: {
-          series: [{
-              name: 'Europe',
-              id: 'Europe',
-              data: [
-                  [
-                      'United Kingdom',
-                      24
-                  ],
-                  [
-                      'France',
-                      67
-                  ],
-                  [
-                      'Germany',
-                      38
-                  ],
-                  [
-                      'Spain',
-                      55
-                  ],
-                  [
-                      'Poland',
-                      1
-                  ],
-                  [
-                      'Belgium',
-                      12
-                  ]
-              ]
-          }, {
-              name: 'Asia',
-              id: 'Asia',
-              data: [
-                  [
-                      'China',
-                      50
-                  ],
-                  [
-                      'Japan',
-                      32
-                  ],
-                  [
-                      'Thailand',
-                      12
-                  ],
-                  [
-                      'South Korea',
-                      29
-                  ],
-                  [
-                      'Arabia Saudi',
-                      17
-                  ]
-              ]
-          }, {
-              name: 'America',
-              id: 'America',
-              data: [
-                  [
-                      'USA',
-                      286
-                  ],
-                  [
-                      'Argentina',
-                      38
-                  ],
-                  [
-                      'Brazil',
-                      21
-                  ],
-                  [
-                      'Chile',
-                      13
-                  ],
-                  [
-                      'Bolivia',
-                      2
-                  ],
-                  [
-                      'Ecuador',
-                      3
-                  ],
-                  [
-                      'Panama',
-                      10
-                  ],
-                  [
-                      'Colombia',
-                      4
-                  ]
-              ]
-          }, {
-              name: 'Oceania',
-              id: 'Oceania',
-              data: [
-                  [
-                      'Australia',
-                      27
-                  ],
-                  [
-                      'New Zealand',
-                      18
-                  ],
-                  [
-                      'Indonesia',
-                      7
-                  ],
-                  [
-                      'Samoa',
-                      3
-                  ]
-              ]
-          }, {
-              name: 'Africa',
-              id: 'Africa',
-              data: [
-                  [
-                      'South Africa',
-                      8
-                  ],
-                  [
-                      'Morocco',
-                      12
-                  ],
-                  [
-                      'Kenya',
-                      5
-                  ],
-                  [
-                      'Madagascar',
-                      3
-                  ]
-              ]
-          }]
-      }
   });
 
 
@@ -397,6 +200,14 @@
 
   <script>
       var countryList = [];
+      var countryMOOCsEurope = [];
+      var countryMOOCsMAP = [];
+      var countryMOOCsPie = [];
+      var countryMOOCsAfrica = [];
+      var countryMOOCsAsia = [];
+      var countryMOOCsAmerica = [];
+      var countryMOOCsOceania = [];
+
       var data2 = <%-JSON.stringify(data)%>;
 
       $(document).ready(
@@ -417,6 +228,7 @@
                   else {
                       for (var j = 0; j < countryList.length; j++) {
                           if((data2[i].country == countryList[j].country)){
+                              countryList[j].totalMOOCs += data2[i].totalMOOCs;
                               exists = 1;
                           }
                       }
@@ -428,7 +240,40 @@
                       }
                   }
               }
-              console.log("CountryList: " + countryList);
+
+              for (var j = 0; j < countryList.length; j++) {
+                    countryMOOCsPie.push(countryList[j].totalMOOCS);
+                    //countryMOOCsPie.push({'name': 'countryList[j].country', 'y': countryList[j].totalMOOCS});
+                    countryMOOCsMAP.push({"code2": "countryList[j].countryCode", "value": countryList[j].totalMOOCS, "name": "countryList[j].country"});
+                    //countryMOOCsMAP.push({code2: countryList[j].countryCode, value: countryList[j].totalMOOCS, name: countryList[j].country});
+
+                if(countryList[j].continent == "Europe"){
+                    countryMOOCsEurope.push({name: countryList[j].country, y: countryList[j].totalMOOCS});
+                }
+                else if(countryList[j].continent == "America"){
+                    //countryMOOCsAmerica.push((countryList[j].country, countryList[j].totalMOOCS));
+                    countryMOOCsAmerica.push({name: countryList[j].country, y: countryList[j].totalMOOCS});
+
+                }
+                else if(countryList[j].continent == "Asia"){
+                    countryMOOCsAsia.push({name: countryList[j].country, y: countryList[j].totalMOOCS});
+                }
+                else if(countryList[j].continent == "Oceania"){
+                    countryMOOCsOceania.push({name: countryList[j].country, y: countryList[j].totalMOOCS});
+                }
+                else if(countryList[j].continent == "Africa"){
+                    countryMOOCsAfrica.push({name: countryList[j].country, y: countryList[j].totalMOOCS});
+                }
+                else{
+                    console.log("Continent wrong, must be not existing - "+ countryList[j].continent);
+                }
+              }
+
+
+              console.log("CountryMAP: " + countryMOOCsMAP);
+              console.log("CountryPie: " + countryMOOCsPie);
+
+
               for(let i = 0; i < countryList.length; i++) {
                   dropdown += '<option value="' + countryList[i].country + '">' + countryList[i].country + '</option>';
               }
@@ -691,6 +536,177 @@
           $("#amount").val( "#" + $("#slider-range").slider("values", 0) +
               " - #" + $("#slider-range").slider("values", 1));
       });
+
+Highcharts.chart('bar-chart-1', {
+      chart: {
+          type: 'column'
+      },
+      title: {
+          text: 'Number of MOOCs by Continent and Country'
+      },
+      xAxis: {
+          type: 'category'
+      },
+      yAxis: {
+          title: {
+              text: 'Number of MOOCs'
+          }
+      },
+      legend: {
+          enabled: false
+      },
+      plotOptions: {
+          series: {
+              borderWidth: 0,
+              dataLabels: {
+                  enabled: true,
+                  format: '{point.y}'
+              }
+          }
+      },
+
+      tooltip: {
+          headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+          pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b> MOOCs<br/>'
+      },
+
+      series: [{
+          name: 'Brands',
+          colorByPoint: true,
+          data: [{
+              name: 'Europe',
+              y: countEuropeCourses,
+              drilldown: 'Europe'
+          }, {
+              name: 'Asia',
+              y: countAsiaCourses,
+              drilldown: 'Asia'
+          }, {
+              name: 'America',
+              y: countAmericaCourses,
+              drilldown: 'America'
+          }, {
+              name: 'Oceania',
+              y: countOceaniaCourses,
+              drilldown: 'Oceania'
+          }, {
+              name: 'Africa',
+              y: countAfricaCourses,
+              drilldown: 'Africa'
+          }]
+      }],
+      drilldown: {
+          series: [{
+              name: 'Europe',
+              id: 'Europe',
+              data: countryMOOCsEurope
+          }, {
+              name: 'Asia',
+              id: 'Asia',
+              data: countryMOOCsAsia
+          }, {
+              name: 'America',
+              id: 'America',
+              data: countryMOOCsAmerica
+          }, {
+              name: 'Oceania',
+              id: 'Oceania',
+              data: countryMOOCsOceania
+          }, {
+              name: 'Africa',
+              id: 'Africa',
+              data: countryMOOCsAfrica
+            }]
+      }
+  });
+
+
+    // Initiate the chart
+    Highcharts.mapChart('maps-universities-1', {
+
+        chart: {
+            map: 'custom/world'
+        },
+
+        title: {
+            text: 'MOOCs per Country'
+        },
+
+        legend: {
+            title: {
+                text: 'Universities per country',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                }
+            }
+        },
+
+        mapNavigation: {
+            enabled: true,
+            buttonOptions: {
+                verticalAlign: 'bottom'
+            }
+        },
+
+        tooltip: {
+            backgroundColor: 'none',
+            borderWidth: 0,
+            shadow: false,
+            useHTML: true,
+            padding: 0,
+            pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
+                '</span></span> {point.name}<br>' +
+                '<span style="font-size:30px">{point.value} MOOCS</span>',
+            positioner: function () {
+                return { x: 0, y: 250 };
+            }
+        },
+
+        colorAxis: {
+            min: 1,
+            max: 1000,
+            type: 'logarithmic'
+        },
+
+        series: [{
+            //data: [{"code2":"ES", "value":23, "name": "Spain"}],
+            data: countryMOOCsMAP,
+            joinBy: ['iso-a2', 'code2'],
+            name: 'How many MOOCS in our ranking?',
+            states: {
+                hover: {
+                    color: '#a4edba'
+                }
+            }
+        }]
+    });
+
+    $('#pie-graph-universities-1').highcharts({
+        plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          dataLabels: {
+            enabled: false
+          },
+          showInLegend: true
+        }
+        },
+        chart: {
+          renderTo: 'container',
+          type: 'pie'
+        },
+        title: {
+          text: 'Universities per country'
+        },
+        series: [{
+          name: 'Universities/country',
+          colorByPoint: true,
+          data: countryMOOCsPie
+        }]
+    });
+
+
 
 
   </script>

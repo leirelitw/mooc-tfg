@@ -5,19 +5,19 @@ var UniversitySchema = mongoose.Schema({
     country: String,
     countryCode: String,
     continent: String,
-    universitySize: Number,
-    universitySizeValue: Number,
-    ranking: Number,
-    shangaiRanking: Number,
-    courseraMOOCS: Number,
-    edXMOOCS: Number,
-    totalMOOCS: Number,
+    universitySize: { type: Number, min: 0 },
+    universitySizeValue: { type: Number, min: 0, max: 5 },
+    ranking: { type: Number, min: 1 },
+    shangaiRanking: { type: Number, min: 1 },
+    courseraMOOCS: { type: Number, min: 0 },
+    edXMOOCS: { type: Number, min: 0 },
+    totalMOOCS: { type: Number, min: 0 },
     Mo2: Number,
-    ranking2: Number,
+    ranking2: { type: Number, min: 1 },
     Mo9: Number,
-    ranking9: Number,
+    ranking9: { type: Number, min: 1 },
     Mo10: Number,
-    ranking10: Number
+    ranking10: { type: Number, min: 1 }
 },{
     _id: false
 });

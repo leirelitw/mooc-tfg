@@ -14,6 +14,8 @@ app.use(bodyParser.json())
 // Configuring the database
 var dbConfig = require('./config/database.config.js');
 var mongoose = require('mongoose');
+
+//Require the routes
 var index = require('./app/routes/home.routes.js');
 var data = require('./app/routes/data.routes.js');
 var data2 = require('./app/routes/data2.routes.js');
