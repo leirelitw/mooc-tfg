@@ -169,10 +169,10 @@
         }
       }],
       title: {
-        text: 'Chart for universities in each continent'
+        text: 'Chart for universities in Ranking over time'
       },
       series: [{
-        name: 'Universities / Continent',
+        name: 'Universities / year',
         data: [totalCount, totalCount+3, 0]
       }]
   });
@@ -187,10 +187,10 @@
         }
       }],
       title: {
-        text: 'Chart for n# of courses MOOC in each continent'
+        text: 'Chart for n# of courses MOOC in Ranking over time'
       },
       series: [{
-        name: 'MOOCs / Continent',
+        name: 'MOOCs / year',
         data: [totalCountCourses, totalCountCourses+27, 0]
       }]
   });
@@ -242,8 +242,10 @@
               }
 
               for (var j = 0; j < countryList.length; j++) {
-                    countryMOOCsPie.push({name: "'"+countryList[j].country+"'", y: countryList[j].totalMOOCS});
-                    countryMOOCsMap.push({"code2": "'"+countryList[j].countryCode+"'", "value": countryList[j].totalMOOCS, "name": "'"+countryList[j].country+"'"});
+                countryMOOCsPie.push({name: "'"+countryList[j].country+"'", y: countryList[j].totalMOOCS});
+                //countryMOOCsPie.push([countryList[j].country, countryList[j].totalMOOCS]);
+
+                countryMOOCsMap.push({"code2": "'"+countryList[j].countryCode+"'", "value": countryList[j].totalMOOCS, "name": "'"+countryList[j].country+"'"});
 
                 if(countryList[j].continent == "Europe"){
                     countryMOOCsEurope.push({name: countryList[j].country, y: countryList[j].totalMOOCS});
@@ -416,13 +418,13 @@
           if(country=="all"){
               var u = document.getElementById("continent-graph-selector");
               var continent = u.options[u.selectedIndex].value;
-              //url = 'https://moocs-university-ranking.herokuapp.com/universities/continents/'
-              url = 'http://localhost:3000/universities/continents/'
+              url = 'https://moocs-university-ranking.herokuapp.com/universities/continents/'
+              //url = 'http://localhost:3000/universities/continents/'
               url += continent;
           }
           else{
-              //url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
-              url = 'http://localhost:3000/universities/countries/'
+              url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
+              //url = 'http://localhost:3000/universities/countries/'
               url += country;
           }
           //console.log(url);
@@ -638,15 +640,12 @@ Highcharts.chart('bar-chart-1', {
 
     // Initiate the chart
     Highcharts.mapChart('maps-universities-1', {
-
         chart: {
             map: 'custom/world'
         },
-
         title: {
             text: 'MOOCs per Country'
         },
-
         legend: {
             title: {
                 text: 'Universities per country',
@@ -655,14 +654,12 @@ Highcharts.chart('bar-chart-1', {
                 }
             }
         },
-
         mapNavigation: {
             enabled: true,
             buttonOptions: {
                 verticalAlign: 'bottom'
             }
         },
-
         tooltip: {
             backgroundColor: 'none',
             borderWidth: 0,
@@ -676,13 +673,11 @@ Highcharts.chart('bar-chart-1', {
                 return { x: 0, y: 250 };
             }
         },
-
         colorAxis: {
             min: 1,
             max: 1000,
             type: 'logarithmic'
         },
-
         series: [{
             //data: [{"code2":"ES", "value":23, "name": "Spain"}],
             data: countryMOOCsMap,
@@ -696,7 +691,7 @@ Highcharts.chart('bar-chart-1', {
         }]
     });
 
-    $('#pie-graph-universities-1').highcharts({
+    Highcharts.chart('pie-graph-universities-1', {
         plotOptions: {
         pie: {
           allowPointSelect: true,
@@ -712,10 +707,10 @@ Highcharts.chart('bar-chart-1', {
           type: 'pie'
         },
         title: {
-          text: 'Universities per country'
+          text: 'Number of MOOCs per country'
         },
         series: [{
-          name: 'Spain',
+          name: 'Number of MOOCs per country',
           colorByPoint: true,
           data: countryMOOCsPie
         }]
