@@ -690,7 +690,7 @@ Highcharts.chart('bar-chart-1', {
             }
         }]
     });
-
+/*
     Highcharts.chart('pie-graph-universities-1', {
         plotOptions: {
         pie: {
@@ -710,12 +710,71 @@ Highcharts.chart('bar-chart-1', {
           text: 'Number of MOOCs per country'
         },
         series: [{
-          name: 'Number of MOOCs per country',
+          colorByPoint: true,
+          data: [{
+          name: "Spain",
+          y: 17
+          },{
+          name: "Netherlands",
+          y: 51
+          },{
+          name: "Belgium",
+          y: 24
+          },{
+          name: "UK",
+          y: 17
+          },{
+          name: "France",
+          y: 6
+          },{
+          name: "Germany",
+          y: 5
+          },{
+          name: "Sweden",
+          y: 8
+          },{
+          name: "Israel",
+          y: 1
+          },{
+          name: "Russia",
+          y: 1
+          },{
+          name: "Denmark",
+          y: 2
+          },{
+          name: "Italy",
+          y: 1
+          },{
+          name: "Switzerland",
+          y: 33
+          }]
+        }]
+    });
+*/
+
+Highcharts.chart('pie-graph-universities-1', {
+        plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          dataLabels: {
+            enabled: false
+          },
+          showInLegend: true
+        }
+        },
+        chart: {
+          renderTo: 'container',
+          type: 'pie'
+        },
+        title: {
+          text: 'Number of MOOCs per country'
+        },
+        series: [{
           colorByPoint: true,
           data: countryMOOCsPie
         }]
     });
-
 
   </script>
 
