@@ -118,12 +118,10 @@
   <script src="https://www.highcharts.com/samples/maps/demo/all-maps/jquery.combobox.js"></script>
 
   <script src="scripts/drilldown.js"></script>
-  <!--<script src="scripts/piegraphs.js"></script>-->
   <script src="scripts/scriptmooc.js"></script>
   <script src="scripts/slider.js"></script>
   <script src="scripts/sortingTables.js"></script>
   <script src="scripts/dropdown.js"></script>
-  <!--<script src="scripts/maps.js"></script>-->
 
   <script>
     var countEurope=0, countAmerica=0, countOceania=0, countAfrica=0, countAsia=0;
@@ -243,9 +241,7 @@
 
               for (var j = 0; j < countryList.length; j++) {
                 countryMOOCsPie.push({name: "'"+countryList[j].country+"'", y: countryList[j].totalMOOCS});
-                //countryMOOCsPie.push([countryList[j].country, countryList[j].totalMOOCS]);
-
-                countryMOOCsMap.push({"code2": "'"+countryList[j].countryCode+"'", "value": countryList[j].totalMOOCS, "name": "'"+countryList[j].country+"'"});
+                countryMOOCsMap.push({code2: countryList[j].countryCode, value: countryList[j].totalMOOCS, name: countryList[j].country});
 
                 if(countryList[j].continent == "Europe"){
                     countryMOOCsEurope.push({name: countryList[j].country, y: countryList[j].totalMOOCS});
@@ -273,24 +269,6 @@
                       this.value = (this.value < 1 ? 1 : this.value);
                   });
 
-
-                var text = "";
-
-                      for (var i = 0; i < countryMOOCsMap.length; i++) {
-                          var myObject = countryMOOCsMap[i];
-
-                          for (var x in myObject) {
-                              text += ( x + ": " + myObject[x] + " ");
-                          }
-                      }
-
-                      console.log(text);
-
-
-              console.log("CountryMAP: " + countryMOOCsMap);
-              console.log("CountryPie: " + countryMOOCsPie);
-
-
               for(let i = 0; i < countryList.length; i++) {
                   dropdown += '<option value="' + countryList[i].country + '">' + countryList[i].country + '</option>';
               }
@@ -299,7 +277,10 @@
               $('#university2-selector').html(dropdown2);
               $(".customCountryDrop").remove();
               create_custom_dropdowns();
+              renderMAPandPIE(countryMOOCsPie);
           });
+
+
 
       function filterTable(){
           //getByCountryandContinent();
@@ -418,13 +399,13 @@
           if(country=="all"){
               var u = document.getElementById("continent-graph-selector");
               var continent = u.options[u.selectedIndex].value;
-              //url = 'https://moocs-university-ranking.herokuapp.com/universities/continents/'
-              url = 'http://localhost:3000/universities/continents/'
+              url = 'https://moocs-university-ranking.herokuapp.com/universities/continents/'
+              //url = 'http://localhost:3000/universities/continents/'
               url += continent;
           }
           else{
-              //url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
-              url = 'http://localhost:3000/universities/countries/'
+              url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
+              //url = 'http://localhost:3000/universities/countries/'
               url += country;
           }
           //console.log(url);
@@ -639,7 +620,11 @@ Highcharts.chart('bar-chart-1', {
 
 
     // Initiate the chart
-    Highcharts.mapChart('maps-universities-1', {
+
+function renderMAPandPIE(piedata){
+
+
+Highcharts.mapChart('maps-universities-1', {
         chart: {
             map: 'custom/world'
         },
@@ -675,11 +660,10 @@ Highcharts.chart('bar-chart-1', {
         },
         colorAxis: {
             min: 1,
-            max: 1000,
+            max: 100,
             type: 'logarithmic'
         },
         series: [{
-            //data: [{"code2":"ES", "value":23, "name": "Spain"}],
             data: countryMOOCsMap,
             joinBy: ['iso-a2', 'code2'],
             name: 'How many MOOCS in our ranking?',
@@ -690,7 +674,37 @@ Highcharts.chart('bar-chart-1', {
             }
         }]
     });
+
+
+Highcharts.chart('pie-graph-universities-1', {
+        plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          dataLabels: {
+            enabled: false
+          },
+          showInLegend: true
+        }
+        },
+        chart: {
+          renderTo: 'container',
+          type: 'pie'
+        },
+        title: {
+          text: 'Number of MOOCs per country'
+        },
+        series: [{
+          name: 'MOOCS',
+          colorByPoint: true,
+          data: piedata
+        }]
+    });
+
+}
+
 /*
+
     Highcharts.chart('pie-graph-universities-1', {
         plotOptions: {
         pie: {
@@ -750,31 +764,10 @@ Highcharts.chart('bar-chart-1', {
           }]
         }]
     });
+
 */
 
-Highcharts.chart('pie-graph-universities-1', {
-        plotOptions: {
-        pie: {
-          allowPointSelect: true,
-          cursor: 'pointer',
-          dataLabels: {
-            enabled: false
-          },
-          showInLegend: true
-        }
-        },
-        chart: {
-          renderTo: 'container',
-          type: 'pie'
-        },
-        title: {
-          text: 'Number of MOOCs per country'
-        },
-        series: [{
-          colorByPoint: true,
-          data: countryMOOCsPie
-        }]
-    });
+
 
   </script>
 
