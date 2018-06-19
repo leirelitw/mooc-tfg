@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c004b3a5-43b8-4e34-a678-40bb58af3dce" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/tfg.xlsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/data.ejs" afterPath="$PROJECT_DIR$/views/data.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/data2.ejs" afterPath="$PROJECT_DIR$/views/data2.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/data9.ejs" afterPath="$PROJECT_DIR$/views/data9.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tfgfinal.csv" afterPath="$PROJECT_DIR$/public/tfgfinal.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tfgfinal.xlsx" afterPath="$PROJECT_DIR$/public/tfgfinal.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/graphs.ejs" afterPath="$PROJECT_DIR$/views/graphs.ejs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="graphs.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/graphs.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="242" column="0" lean-forward="true" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+            <state relative-caret-position="298">
+              <caret line="828" column="0" lean-forward="true" selection-start-line="828" selection-start-column="0" selection-end-line="828" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -40,7 +38,7 @@
       <file leaf-file-name="data.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/data.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
+            <state relative-caret-position="3750">
               <caret line="250" column="14" lean-forward="false" selection-start-line="250" selection-start-column="14" selection-end-line="250" selection-end-column="14" />
               <folding />
             </state>
@@ -50,7 +48,7 @@
       <file leaf-file-name="data2.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/data2.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
+            <state relative-caret-position="2535">
               <caret line="169" column="14" lean-forward="false" selection-start-line="169" selection-start-column="14" selection-end-line="169" selection-end-column="14" />
               <folding />
             </state>
@@ -60,7 +58,7 @@
       <file leaf-file-name="data9.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/data9.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
+            <state relative-caret-position="2535">
               <caret line="169" column="14" lean-forward="false" selection-start-line="169" selection-start-column="14" selection-end-line="169" selection-end-column="14" />
               <folding />
             </state>
@@ -202,7 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,8 +256,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -381,11 +379,12 @@
       <workItem from="1528065554748" duration="23677000" />
       <workItem from="1529316561872" duration="2607000" />
       <workItem from="1529361620831" duration="1166000" />
+      <workItem from="1529450681079" duration="1324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33254000" />
+    <option name="totallyTimeSpent" value="34578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="708" extended-state="0" />
@@ -763,7 +762,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/data9.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="2535">
           <caret line="169" column="14" lean-forward="false" selection-start-line="169" selection-start-column="14" selection-end-line="169" selection-end-column="14" />
           <folding />
         </state>
@@ -771,7 +770,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/data2.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="2535">
           <caret line="169" column="14" lean-forward="false" selection-start-line="169" selection-start-column="14" selection-end-line="169" selection-end-column="14" />
           <folding />
         </state>
@@ -779,7 +778,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/data.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="3750">
           <caret line="250" column="14" lean-forward="false" selection-start-line="250" selection-start-column="14" selection-end-line="250" selection-end-column="14" />
           <folding />
         </state>
@@ -787,8 +786,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/graphs.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="242" column="0" lean-forward="true" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+        <state relative-caret-position="298">
+          <caret line="828" column="0" lean-forward="true" selection-start-line="828" selection-start-column="0" selection-end-line="828" selection-end-column="0" />
           <folding />
         </state>
       </provider>
