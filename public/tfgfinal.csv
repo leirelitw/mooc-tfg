@@ -1,149 +1,188 @@
-universityName,country,countryCode,continent,universitySize,universitySizeValue,shangaiRanking,courseraMOOCS,edXMOOCS,totalMOOCS,M2,ranking2,M9,ranking9,M10,ranking10
-Moscow Institute of Physics and Technology,Russia,RU,Europe,3319,1,501,39,,39,14.35,1,0.00,1,106.23,1
-"University of California, Berkeley",United States,US,America,33000,4,5,83,,83,1.52,28,0.22,28,83.83,2
-Delft University of Technology,Netherlands,NL,Europe,19613,3,151,,51,51,2.54,19,0.08,19,68.98,3
-Saint Petersburg State University,Russia,RU,Europe,32400,4,301,36,,36,0.66,65,0.52,65,65.73,4
-National Research University Higher School of Economics,Russia,RU,Europe,31000,4,,59,,59,1.08,47,0.34,47,59.00,5
-Harvard University,United States,US,America,22000,3,1,0,57,57,2.84,18,0.06,18,57.11,6
-University of Pennsylvania,United States,US,America,10019,2,17,54,,54,7.31,2,0.00,2,55.87,7
-National Taiwan University,Taiwan,TW,Asia,32168,4,151,41,,41,0.75,57,0.47,57,55.46,8
-Peking University,China,CN,Asia,30248,4,71,45,,45,0.82,51,0.44,51,51.87,9
-University of Illinois Urbana-Campaign,United States,US,America,44087,5,37,47,,47,0.32,74,0.73,74,50.61,10
-Universidad Nacional Autonoma de Mexico,Mexico,MX,America,324413,5,201,33,,33,0.22,83,0.80,83,49.33,11
-Universidad Carlos III de Madrid,Spain,ES,Europe,18676,3,501,,17,17,0.85,50,0.43,50,46.30,12
-Duke University,United States,US,America,14832,2,,44,,44,5.95,3,0.00,3,44.00,13
-Autonomous University of Barcelona,Spain,ES,Europe,37166,5,301,24,,24,0.16,90,0.85,90,43.82,14
-Sciences Po,France,FR,Europe,13000,2,501,16,,16,2.17,22,0.11,22,43.58,15
-Swiss Federal Institute of Technology Lausanne,Switzerland,CH,Europe,10124,2,92,8,25,33,4.47,7,0.01,7,39.67,16
-University of Virginia,United States,US,America,24360,3,151,29,,29,1.44,35,0.24,35,39.22,17
-Johns Hopkins University,United States,US,America,20174,3,18,37,,37,1.84,25,0.16,25,38.36,18
-Georgia Institute of Technology,United States,US,America,15489,3,85,32,,32,1.59,27,0.20,27,37.93,19
-Pontificia Universidad Catolica de Chile,Chile,CL,America,29703,4,401,17,,17,0.31,75,0.73,75,37.91,20
-Ecole Polytechnique Federale de Lausanne,Switzerland,CH,Europe,10536,2,,37,,37,5.01,4,0.01,4,37.00,21
-University of Michigan,United States,US,America,44718,5,24,35,,35,0.24,82,0.79,82,36.72,22
-Catholic University of Louvain,Belgium,BE,Europe,29711,4,151,,24,24,0.44,67,0.64,67,32.46,23
-The Hong Kong University of Science and Technology,China,CN,Asia,14208,2,201,21,,21,2.84,16,0.06,16,31.39,24
-Universidad de Chile,Chile,CL,America,40494,5,301,17,,17,0.11,99,0.89,99,31.04,25
-The University of Edinburgh,UK,UK,Europe,35582,5,41,25,3,28,0.19,85,0.83,85,30.39,26
-Leiden University,Netherlands,NL,Europe,24270,3,93,25,,25,1.24,38,0.29,38,30.11,27
-University of Geneva,Switzerland,CH,Europe,14489,2,53,27,,27,3.65,10,0.03,10,30.02,28
-HEC Paris,France,FR,Europe,4000,1,501,11,,11,4.05,9,0.02,9,29.96,29
-The State University of New York,United States,US,America,29850,4,201,19,,19,0.35,72,0.71,72,28.40,30
-University College London,UK,UK,Europe,161270,5,17,25,,25,0.17,86,0.84,86,25.86,31
-National Research Tomsk State University,Russia,RU,Europe,16440,3,,25,,25,1.24,39,0.29,39,25.00,32
-IESE Business School,Spain,ES,Europe,2081,1,501,9,,9,3.31,11,0.04,11,24.51,33
-Melbourne University,Australia,AU,Oceania,48088,5,101,20,,20,0.13,94,0.87,94,24.48,34
-Yonsei University,South Korea,KR,Asia,38213,5,201,16,,16,0.11,104,0.90,104,23.92,35
-University of Sao Paulo,Brazil,BR,America,_92064,5,151,17,,17,0.11,100,0.89,100,22.99,36
-Yale University,United States,US,America,12223,2,11,22,,22,2.98,14,0.05,14,22.49,37
-Nanjing University,China,CN,Asia,35434,5,201,15,,15,0.10,106,0.90,106,22.42,38
-Novosibirsk State University ,Russia,RU,Europe,7131,2,401,10,,10,1.35,36,0.26,36,22.30,39
-Stanford University,United States,US,America,16336,3,2,22,,22,1.10,42,0.33,42,22.09,40
-National Research Nuclear University MEPhI,Russia,RU,Europe,19980,3,,22,,22,1.10,43,0.33,43,22.00,41
-University of Colorado System,United States,US,America,65371,5,43,20,,20,0.13,95,0.87,95,21.80,42
-Copenhagen Business School,Denmark,DK,Europe,22829,3,501,8,,8,0.40,69,0.67,69,21.79,43
-The Chinese University of Hong Kong,China,CN,Asia,20277,3,151,16,,16,0.80,56,0.45,56,21.64,44
-Berklee College of Music,United States,US,America,5983,2,,21,,21,2.84,17,0.06,17,21.00,45
-University of Colorado Boulder,United States,US,America,33246,4,43,19,,19,0.35,73,0.71,73,20.71,46
-University of Campinas,Brazil,BR,America,35000,4,401,9,,9,0.16,87,0.85,87,20.07,47
-Ludwig-Maximilians-University of Munich (LMU),Germany,DE,Europe,50542,5,501,7,,7,0.05,128,0.95,128,19.07,48
-Tel Aviv University,Israel,ISR,Europe,25130,4,151,14,,14,0.26,77,0.77,77,18.94,49
-ESSEC Business School,France,FR,Europe,5200,2,,18,,18,2.44,20,0.09,20,18.00,50
-University of Copenhagen,Denmark,DK,Europe,40882,5,30,16,,16,0.11,105,0.90,105,16.99,51
-Cape Town University,South Africa,SA,Africa,26610,4,301,9,,9,0.16,88,0.85,88,16.43,52
-University of Notre Dame,France,FR,Europe,12179,2,501,,6,6,0.81,52,0.44,52,16.34,53
-Emory University,United States,US,America,14077,2,,16,,16,2.17,23,0.11,23,16.00,54
-University of Florida,United States,US,America,52270,5,88,13,,13,0.09,108,0.92,108,15.50,55
-University of Georgia,United States,US,America,37606,5,201,10,,10,0.07,115,0.93,115,14.95,56
-University of Rochester,United States,US,America,6386,2,101,12,,12,1.62,26,0.20,26,14.69,57
-University of Alberta,Canada,CA,America,35421,5,101,12,,12,0.08,109,0.92,109,14.69,58
-Northwestern University,United States,US,America,21208,3,22,14,,14,0.70,62,0.50,62,14.63,59
-University of New Mexico,United States,US,America,26278,4,301,8,,8,0.15,91,0.86,91,14.61,60
-Princeton University,United States,US,America,8623,2,6,14,,14,1.89,24,0.15,24,14.17,61
-Universidad de los Andes,Colombia,CO,America,16665,3,,14,,14,0.70,63,0.50,63,14.00,62
-University of Minnesota,United States,US,America,34871,4,34,13,,13,0.24,80,0.79,80,13.91,63
-University of North Carolina at Chapel Hill,United States,US,America,29847,4,33,13,,13,0.24,81,0.79,81,13.89,64
-Erasmus University Rotterdam,Netherlands,NL,Europe,28047,4,73,12,,12,0.22,84,0.80,84,13.89,65
-Sorbonne University System,France,FR,Europe,57800,5,501,,5,5,0.03,138,0.97,138,13.62,66
-Technical University of Denmark,Denmark,DK,Europe,11190,2,151,10,,10,1.35,37,0.26,37,13.53,67
-Arizona State University,United States,US,America,61033,5,101,11,,11,0.07,112,0.93,112,13.46,68
-University of Barcelona,Spain,ES,Europe,90644,5,201,9,,9,0.06,116,0.94,116,13.45,69
-"University of Maryland, College Park",United States,US,America,40521,5,53,12,,12,0.08,110,0.92,110,13.34,70
-IE Business School,Spain,ES,Europe,547,1,,13,,13,4.78,5,0.01,5,13.00,71
-Rice University,United States,US,America,3893,1,,13,,13,4.78,6,0.01,6,13.00,72
-Wesleyan University,United States,US,America,3213,1,,12,,12,4.41,8,0.01,8,12.00,73
-Tecnologico de Monterrey,Mexico,MX,America,100000,5,,12,,12,0.08,111,0.92,111,12.00,74
-Chalmers University of Technology,Sweden,SE,Europe,11000,2,201,,8,8,1.08,44,0.34,44,11.96,75
-Autonomous University of Madrid,Spain,ES,Europe,36118,5,201,,8,8,0.05,121,0.95,121,11.96,76
-University of Toronto,Canada,CA,America,60595,5,23,11,,11,0.07,113,0.93,113,11.52,77
-Shanghai Jiao Tong University,China,CN,Asia,,1,101,9,,9,3.31,12,0.04,12,11.01,78
-Centrale Superior Paris,France,FR,Europe,1394,1,501,4,,4,1.47,29,0.23,29,10.89,79
-Institut Mines-T四残om ,France,FR,Europe,3193,1,501,3,1,4,1.47,30,0.23,30,10.89,80
-University of Sydney,Australia,AU,Oceania,52789,5,83,9,,9,0.06,117,0.94,117,10.63,81
-Korea Advanced Institute of Science and Technology,South Africa,KR,Asia,10249,2,201,7,,7,0.95,48,0.39,48,10.46,82
-University of Houston System,United States,US,America,35871,5,201,7,,7,0.05,129,0.95,129,10.46,83
-McMaster University,Canada,CA,America,30117,4,66,9,,9,0.16,89,0.85,89,10.27,84
-Vanderbilt University,United States,US,America,12714,2,52,9,,9,1.22,40,0.30,40,9.99,85
-Lund University,Sweden,SE,Europe,47000,5,101,8,,8,0.05,122,0.95,122,9.79,86
-Michigan State University,United States,US,America,50344,5,101,8,,8,0.05,123,0.95,123,9.79,87
-University of Washington,United States,US,America,46686,5,13,9,,9,0.06,118,0.94,118,9.24,88
-Columbia University,United States,US,America,20222,3,8,9,,9,0.45,66,0.64,66,9.15,89
-Instituto Tecnologico de Aeronautica,Brazil,BR,America,600,1,,9,,9,3.31,13,0.04,13,9.00,90
-The University of Manchester,UK,UK,Europe,38590,5,35,8,,8,0.05,124,0.95,124,8.58,91
-Hong Kong University,China,CN,Asia,28744,4,101,7,,7,0.13,96,0.88,96,8.57,92
-University of Amsterdam,Netherlands,NL,Europe,32631,4,101,7,,7,0.13,97,0.88,97,8.57,93
-Technion - Israel Institute of Technology,Israel,ISR,Europe,13926,2,93,7,,7,0.95,49,0.39,49,8.43,94
-KU Leuven,Belgium,BE,Europe,55484,5,93,,7,7,0.05,130,0.95,130,8.43,95
-The Hebrew University of Jerusalem,Israel,ISR,Europe,23000,3,87,7,,7,0.35,71,0.71,71,8.33,96
-Swiss Federal Institute of Technology Zurich,Switzerland,CH,Europe,10851,2,19,,8,8,1.08,45,0.34,45,8.31,97
-Rutgers the State University of New Jersey,United States,US,America,37364,5,79,7,,7,0.05,131,0.95,131,8.20,98
-Universidad Austral,Argentina,AR,America,,1,,8,,8,2.94,15,0.05,15,8.00,99
-Bocconi University,Italy,IT,Europe,13404,2,,8,,8,1.08,46,0.34,46,8.00,100
-University of Zurich,Switzerland,CH,Europe,25732,4,54,7,,7,0.13,98,0.88,98,7.80,101
-University of Lausanne,Switzerland,CH,Europe,13500,2,201,5,,5,0.68,64,0.51,64,7.47,102
-Politecnico di Milano,Italy,IT,Europe,42000,5,201,5,,5,0.03,139,0.97,139,7.47,103
-Icahn School of Medicine at Mount Sinai,United States,US,America,,1,101,6,,6,2.21,21,0.11,21,7.34,104
-Case Western Reserve University,United States,US,America,11664,2,101,6,,6,0.81,53,0.44,53,7.34,105
-Fudan University,China,CN,Asia,31900,4,101,6,,6,0.11,101,0.90,101,7.34,106
-The University of New South Wales,Australia,AU,Oceania,53481,5,101,6,,6,0.04,132,0.96,132,7.34,107
-Pennsylvania State University,United States,US,America,98738,5,85,6,,6,0.04,133,0.96,133,7.11,108
-Sapienza University of Rome,Italy,IT,Europe,112564,5,151,5,,5,0.03,140,0.97,140,6.76,109
-West Virginia University,United States,US,America,29175,4,401,3,,3,0.05,119,0.95,119,6.69,110
-Karolinska Institute,Sweden,SE,Europe,5978,2,44,,6,6,0.81,54,0.44,54,6.55,111
-University of Tokyo,Japan,JP,Asia,28697,4,24,6,,6,0.11,102,0.90,102,6.30,112
-Koc University,Turkey,TR,Europe,6180,2,,6,,6,0.81,55,0.44,55,6.00,113
-Xi'an Jiaotong University,China,CN,Asia,32000,4,,6,,6,0.11,103,0.90,103,6.00,114
-RWTH Aachen University,Germany,DE,Europe,42000,5,201,,4,4,0.03,142,0.97,142,5.98,115
-University of Pittsburgh,United States,US,America,19123,3,68,5,,5,0.25,78,0.78,78,5.73,116
-Utrecht University,Netherlands,NL,Europe,30374,4,47,5,,5,0.09,107,0.91,107,5.49,117
-Technical University Munich,Germany,DE,Europe,40000,5,47,2,3,5,0.03,141,0.97,141,5.49,118
-University of Chicago,United States,US,America,16016,3,10,5,,5,0.25,79,0.78,79,5.10,119
-University of Arizona,United States,US,America,36000,5,99,4,,4,0.03,143,0.97,143,4.88,120
-National University of Singapore,Singapore,SG,Asia,38596,5,91,4,,4,0.03,144,0.97,144,4.80,121
-Eindhoven University of Technology,Netherlands,NL,Europe,9711,2,201,3,,3,0.41,68,0.67,68,4.48,122
-Macquarie University,Australia,AU,Oceania,39355,5,151,3,,3,0.02,145,0.98,145,4.06,123
-Caltech,United States,US,America,2240,1,,4,,4,1.47,31,0.23,31,4.00,124
-Ecole des Ponts ParisTech,France,FR,Europe,1797,1,,4,,4,1.47,32,0.23,32,4.00,125
-Indian School of Business,India,IN,Asia,,1,,4,,4,1.47,33,0.23,33,4.00,126
-Insper,Brazil,BR,America,,1,,4,,4,1.47,34,0.23,34,4.00,127
-Peter the Great St. Petersburg Polytechnic University,Russia,RU,Europe,30197,4,,4,,4,0.07,114,0.93,114,4.00,128
-Ecole Normale Superieure - Lyon,France,FR,Europe,2000,1,301,2,,2,0.74,58,0.48,58,3.65,129
-Ecole Polytechnique,France,FR,Europe,2888,1,301,2,,2,0.74,59,0.48,59,3.65,130
-University of Kentucky,United States,US,America,30473,4,301,2,,2,0.04,134,0.96,134,3.65,131
-University of Western Australia,Australia,AU,Oceania,25837,4,91,3,,3,0.05,120,0.95,120,3.60,132
-California Institute of the Arts,United States,US,America,959,1,,3,,3,1.10,41,0.33,41,3.00,133
-ITMO University,Russia,RU,Europe,12000,2,501,,1,1,0.14,92,0.87,92,2.72,134
-Nanyang Technological University,Singapore,SG,Asia,32699,4,101,2,,2,0.04,135,0.96,135,2.45,135
-University of Science and Technology of China,China,CN,Asia,33000,4,101,2,,2,0.04,136,0.96,136,2.45,136
-EM Lyon Business School,France,FR,Europe,3300,1,,2,,2,0.74,60,0.48,60,2.00,137
-New York University Tandon School of Engineering,United States,US,America,2344,1,,2,,2,0.74,61,0.48,61,2.00,138
-ESADE Business and Law School,Spain,ES,Europe,9425,2,,2,,2,0.27,76,0.76,76,2.00,139
-Sberbank Corporate University,Russia,RU,Europe,35000,4,,2,,2,0.04,137,0.96,137,2.00,140
-The George Washington University,United States,US,America,27159,4,301,1,,1,0.02,146,0.98,146,1.83,141
-Yeshiva University,United States,US,America,2714,1,201,1,,1,0.37,70,0.69,70,1.49,142
-University of Nebraska,United States,US,America,20833,3,151,1,,1,0.05,125,0.95,125,1.35,143
-University of Leeds,UK,UK,Europe,33300,4,101,1,,1,0.02,147,0.98,147,1.22,144
-Lund University,Sweden,SE,Europe,41000,5,101,1,,1,0.01,148,0.99,148,1.22,145
-Imperial College London,UK,UK,Europe,16610,3,22,1,0,1,0.05,126,0.95,126,1.04,146
-University of Oxford,UK,UK,Europe,22602,3,7,,1,1,0.05,127,0.95,127,1.01,147
-Moscow State Institute of International Relations (MGIMO),Russia,RU,Europe,8372,2,,1,,1,0.14,93,0.87,93,1.00,148
+universityName,country,countryCode,continent,universitySize,universitySizeValue,shangaiRanking,courseraMOOCS,edXMOOCS,totalMOOCS,M2,ranking2,M9,ranking9,M10,ranking10,year
+Moscow Institute of Physics and Technology,Russia,RU,Europe,3319,1,501,39,,39,14.35,1,0.00,1,106.23,1,2018
+"University of California, Berkeley",United States,US,America,33000,4,5,83,,83,1.52,28,0.22,28,83.83,2,2018
+Delft University of Technology,Netherlands,NL,Europe,19613,3,151,,51,51,2.54,19,0.08,19,68.98,3,2018
+Saint Petersburg State University,Russia,RU,Europe,32400,4,301,36,,36,0.66,65,0.52,65,65.73,4,2018
+National Research University Higher School of Economics,Russia,RU,Europe,31000,4,,59,,59,1.08,47,0.34,47,59.00,5,2018
+Harvard University,United States,US,America,22000,3,1,0,57,57,2.84,18,0.06,18,57.11,6,2018
+University of Pennsylvania,United States,US,America,10019,2,17,54,,54,7.31,2,0.00,2,55.87,7,2018
+National Taiwan University,Taiwan,TW,Asia,32168,4,151,41,,41,0.75,57,0.47,57,55.46,8,2018
+Peking University,China,CN,Asia,30248,4,71,45,,45,0.82,51,0.44,51,51.87,9,2018
+University of Illinois Urbana-Campaign,United States,US,America,44087,5,37,47,,47,0.32,74,0.73,74,50.61,10,2018
+Universidad Nacional Autonoma de Mexico,Mexico,MX,America,324413,5,201,33,,33,0.22,83,0.80,83,49.33,11,2018
+Universidad Carlos III de Madrid,Spain,ES,Europe,18676,3,501,,17,17,0.85,50,0.43,50,46.30,12,2018
+Duke University,United States,US,America,14832,2,,44,,44,5.95,3,0.00,3,44.00,13,2018
+Autonomous University of Barcelona,Spain,ES,Europe,37166,5,301,24,,24,0.16,90,0.85,90,43.82,14,2018
+Sciences Po,France,FR,Europe,13000,2,501,16,,16,2.17,22,0.11,22,43.58,15,2018
+Swiss Federal Institute of Technology Lausanne,Switzerland,CH,Europe,10124,2,92,8,25,33,4.47,7,0.01,7,39.67,16,2018
+University of Virginia,United States,US,America,24360,3,151,29,,29,1.44,35,0.24,35,39.22,17,2018
+Johns Hopkins University,United States,US,America,20174,3,18,37,,37,1.84,25,0.16,25,38.36,18,2018
+Georgia Institute of Technology,United States,US,America,15489,3,85,32,,32,1.59,27,0.20,27,37.93,19,2018
+Pontificia Universidad Catolica de Chile,Chile,CL,America,29703,4,401,17,,17,0.31,75,0.73,75,37.91,20,2018
+Ecole Polytechnique Federale de Lausanne,Switzerland,CH,Europe,10536,2,,37,,37,5.01,4,0.01,4,37.00,21,2018
+University of Michigan,United States,US,America,44718,5,24,35,,35,0.24,82,0.79,82,36.72,22,2018
+Catholic University of Louvain,Belgium,BE,Europe,29711,4,151,,24,24,0.44,67,0.64,67,32.46,23,2018
+The Hong Kong University of Science and Technology,China,CN,Asia,14208,2,201,21,,21,2.84,16,0.06,16,31.39,24,2018
+Universidad de Chile,Chile,CL,America,40494,5,301,17,,17,0.11,99,0.89,99,31.04,25,2018
+The University of Edinburgh,UK,UK,Europe,35582,5,41,25,3,28,0.19,85,0.83,85,30.39,26,2018
+Leiden University,Netherlands,NL,Europe,24270,3,93,25,,25,1.24,38,0.29,38,30.11,27,2018
+University of Geneva,Switzerland,CH,Europe,14489,2,53,27,,27,3.65,10,0.03,10,30.02,28,2018
+HEC Paris,France,FR,Europe,4000,1,501,11,,11,4.05,9,0.02,9,29.96,29,2018
+The State University of New York,United States,US,America,29850,4,201,19,,19,0.35,72,0.71,72,28.40,30,2018
+University College London,UK,UK,Europe,161270,5,17,25,,25,0.17,86,0.84,86,25.86,31,2018
+National Research Tomsk State University,Russia,RU,Europe,16440,3,,25,,25,1.24,39,0.29,39,25.00,32,2018
+IESE Business School,Spain,ES,Europe,2081,1,501,9,,9,3.31,11,0.04,11,24.51,33,2018
+Melbourne University,Australia,AU,Oceania,48088,5,101,20,,20,0.13,94,0.87,94,24.48,34,2018
+Yonsei University,South Korea,KR,Asia,38213,5,201,16,,16,0.11,104,0.90,104,23.92,35,2018
+University of Sao Paulo,Brazil,BR,America,_92064,5,151,17,,17,0.11,100,0.89,100,22.99,36,2018
+Yale University,United States,US,America,12223,2,11,22,,22,2.98,14,0.05,14,22.49,37,2018
+Nanjing University,China,CN,Asia,35434,5,201,15,,15,0.10,106,0.90,106,22.42,38,2018
+Novosibirsk State University ,Russia,RU,Europe,7131,2,401,10,,10,1.35,36,0.26,36,22.30,39,2018
+Stanford University,United States,US,America,16336,3,2,22,,22,1.10,42,0.33,42,22.09,40,2018
+National Research Nuclear University MEPhI,Russia,RU,Europe,19980,3,,22,,22,1.10,43,0.33,43,22.00,41,2018
+University of Colorado System,United States,US,America,65371,5,43,20,,20,0.13,95,0.87,95,21.80,42,2018
+Copenhagen Business School,Denmark,DK,Europe,22829,3,501,8,,8,0.40,69,0.67,69,21.79,43,2018
+The Chinese University of Hong Kong,China,CN,Asia,20277,3,151,16,,16,0.80,56,0.45,56,21.64,44,2018
+Berklee College of Music,United States,US,America,5983,2,,21,,21,2.84,17,0.06,17,21.00,45,2018
+University of Colorado Boulder,United States,US,America,33246,4,43,19,,19,0.35,73,0.71,73,20.71,46,2018
+University of Campinas,Brazil,BR,America,35000,4,401,9,,9,0.16,87,0.85,87,20.07,47,2018
+Ludwig-Maximilians-University of Munich (LMU),Germany,DE,Europe,50542,5,501,7,,7,0.05,128,0.95,128,19.07,48,2018
+Tel Aviv University,Israel,ISR,Europe,25130,4,151,14,,14,0.26,77,0.77,77,18.94,49,2018
+ESSEC Business School,France,FR,Europe,5200,2,,18,,18,2.44,20,0.09,20,18.00,50,2018
+University of Copenhagen,Denmark,DK,Europe,40882,5,30,16,,16,0.11,105,0.90,105,16.99,51,2018
+Cape Town University,South Africa,SA,Africa,26610,4,301,9,,9,0.16,88,0.85,88,16.43,52,2018
+University of Notre Dame,France,FR,Europe,12179,2,501,,6,6,0.81,52,0.44,52,16.34,53,2018
+Emory University,United States,US,America,14077,2,,16,,16,2.17,23,0.11,23,16.00,54,2018
+University of Florida,United States,US,America,52270,5,88,13,,13,0.09,108,0.92,108,15.50,55,2018
+University of Georgia,United States,US,America,37606,5,201,10,,10,0.07,115,0.93,115,14.95,56,2018
+University of Rochester,United States,US,America,6386,2,101,12,,12,1.62,26,0.20,26,14.69,57,2018
+University of Alberta,Canada,CA,America,35421,5,101,12,,12,0.08,109,0.92,109,14.69,58,2018
+Northwestern University,United States,US,America,21208,3,22,14,,14,0.70,62,0.50,62,14.63,59,2018
+University of New Mexico,United States,US,America,26278,4,301,8,,8,0.15,91,0.86,91,14.61,60,2018
+Princeton University,United States,US,America,8623,2,6,14,,14,1.89,24,0.15,24,14.17,61,2018
+Universidad de los Andes,Colombia,CO,America,16665,3,,14,,14,0.70,63,0.50,63,14.00,62,2018
+University of Minnesota,United States,US,America,34871,4,34,13,,13,0.24,80,0.79,80,13.91,63,2018
+University of North Carolina at Chapel Hill,United States,US,America,29847,4,33,13,,13,0.24,81,0.79,81,13.89,64,2018
+Erasmus University Rotterdam,Netherlands,NL,Europe,28047,4,73,12,,12,0.22,84,0.80,84,13.89,65,2018
+Sorbonne University System,France,FR,Europe,57800,5,501,,5,5,0.03,138,0.97,138,13.62,66,2018
+Technical University of Denmark,Denmark,DK,Europe,11190,2,151,10,,10,1.35,37,0.26,37,13.53,67,2018
+Arizona State University,United States,US,America,61033,5,101,11,,11,0.07,112,0.93,112,13.46,68,2018
+University of Barcelona,Spain,ES,Europe,90644,5,201,9,,9,0.06,116,0.94,116,13.45,69,2018
+"University of Maryland, College Park",United States,US,America,40521,5,53,12,,12,0.08,110,0.92,110,13.34,70,2018
+IE Business School,Spain,ES,Europe,547,1,,13,,13,4.78,5,0.01,5,13.00,71,2018
+Rice University,United States,US,America,3893,1,,13,,13,4.78,6,0.01,6,13.00,72,2018
+Wesleyan University,United States,US,America,3213,1,,12,,12,4.41,8,0.01,8,12.00,73,2018
+Tecnologico de Monterrey,Mexico,MX,America,100000,5,,12,,12,0.08,111,0.92,111,12.00,74,2018
+Chalmers University of Technology,Sweden,SE,Europe,11000,2,201,,8,8,1.08,44,0.34,44,11.96,75,2018
+Autonomous University of Madrid,Spain,ES,Europe,36118,5,201,,8,8,0.05,121,0.95,121,11.96,76,2018
+University of Toronto,Canada,CA,America,60595,5,23,11,,11,0.07,113,0.93,113,11.52,77,2018
+Shanghai Jiao Tong University,China,CN,Asia,,1,101,9,,9,3.31,12,0.04,12,11.01,78,2018
+Centrale Superior Paris,France,FR,Europe,1394,1,501,4,,4,1.47,29,0.23,29,10.89,79,2018
+Institut Mines-T四残om ,France,FR,Europe,3193,1,501,3,1,4,1.47,30,0.23,30,10.89,80,2018
+University of Sydney,Australia,AU,Oceania,52789,5,83,9,,9,0.06,117,0.94,117,10.63,81,2018
+Korea Advanced Institute of Science and Technology,South Africa,KR,Asia,10249,2,201,7,,7,0.95,48,0.39,48,10.46,82,2018
+University of Houston System,United States,US,America,35871,5,201,7,,7,0.05,129,0.95,129,10.46,83,2018
+McMaster University,Canada,CA,America,30117,4,66,9,,9,0.16,89,0.85,89,10.27,84,2018
+Vanderbilt University,United States,US,America,12714,2,52,9,,9,1.22,40,0.30,40,9.99,85,2018
+Lund University,Sweden,SE,Europe,47000,5,101,8,,8,0.05,122,0.95,122,9.79,86,2018
+Michigan State University,United States,US,America,50344,5,101,8,,8,0.05,123,0.95,123,9.79,87,2018
+University of Washington,United States,US,America,46686,5,13,9,,9,0.06,118,0.94,118,9.24,88,2018
+Columbia University,United States,US,America,20222,3,8,9,,9,0.45,66,0.64,66,9.15,89,2018
+Instituto Tecnologico de Aeronautica,Brazil,BR,America,600,1,,9,,9,3.31,13,0.04,13,9.00,90,2018
+The University of Manchester,UK,UK,Europe,38590,5,35,8,,8,0.05,124,0.95,124,8.58,91,2018
+Hong Kong University,China,CN,Asia,28744,4,101,7,,7,0.13,96,0.88,96,8.57,92,2018
+University of Amsterdam,Netherlands,NL,Europe,32631,4,101,7,,7,0.13,97,0.88,97,8.57,93,2018
+Technion - Israel Institute of Technology,Israel,ISR,Europe,13926,2,93,7,,7,0.95,49,0.39,49,8.43,94,2018
+KU Leuven,Belgium,BE,Europe,55484,5,93,,7,7,0.05,130,0.95,130,8.43,95,2018
+The Hebrew University of Jerusalem,Israel,ISR,Europe,23000,3,87,7,,7,0.35,71,0.71,71,8.33,96,2018
+Swiss Federal Institute of Technology Zurich,Switzerland,CH,Europe,10851,2,19,,8,8,1.08,45,0.34,45,8.31,97,2018
+Rutgers the State University of New Jersey,United States,US,America,37364,5,79,7,,7,0.05,131,0.95,131,8.20,98,2018
+Universidad Austral,Argentina,AR,America,,1,,8,,8,2.94,15,0.05,15,8.00,99,2018
+Bocconi University,Italy,IT,Europe,13404,2,,8,,8,1.08,46,0.34,46,8.00,100,2018
+University of Zurich,Switzerland,CH,Europe,25732,4,54,7,,7,0.13,98,0.88,98,7.80,101,2018
+University of Lausanne,Switzerland,CH,Europe,13500,2,201,5,,5,0.68,64,0.51,64,7.47,102,2018
+Politecnico di Milano,Italy,IT,Europe,42000,5,201,5,,5,0.03,139,0.97,139,7.47,103,2018
+Icahn School of Medicine at Mount Sinai,United States,US,America,,1,101,6,,6,2.21,21,0.11,21,7.34,104,2018
+Case Western Reserve University,United States,US,America,11664,2,101,6,,6,0.81,53,0.44,53,7.34,105,2018
+Fudan University,China,CN,Asia,31900,4,101,6,,6,0.11,101,0.90,101,7.34,106,2018
+The University of New South Wales,Australia,AU,Oceania,53481,5,101,6,,6,0.04,132,0.96,132,7.34,107,2018
+Pennsylvania State University,United States,US,America,98738,5,85,6,,6,0.04,133,0.96,133,7.11,108,2018
+Sapienza University of Rome,Italy,IT,Europe,112564,5,151,5,,5,0.03,140,0.97,140,6.76,109,2018
+West Virginia University,United States,US,America,29175,4,401,3,,3,0.05,119,0.95,119,6.69,110,2018
+Karolinska Institute,Sweden,SE,Europe,5978,2,44,,6,6,0.81,54,0.44,54,6.55,111,2018
+University of Tokyo,Japan,JP,Asia,28697,4,24,6,,6,0.11,102,0.90,102,6.30,112,2018
+Koc University,Turkey,TR,Europe,6180,2,,6,,6,0.81,55,0.44,55,6.00,113,2018
+Xi'an Jiaotong University,China,CN,Asia,32000,4,,6,,6,0.11,103,0.90,103,6.00,114,2018
+RWTH Aachen University,Germany,DE,Europe,42000,5,201,,4,4,0.03,142,0.97,142,5.98,115,2018
+University of Pittsburgh,United States,US,America,19123,3,68,5,,5,0.25,78,0.78,78,5.73,116,2018
+Utrecht University,Netherlands,NL,Europe,30374,4,47,5,,5,0.09,107,0.91,107,5.49,117,2018
+Technical University Munich,Germany,DE,Europe,40000,5,47,2,3,5,0.03,141,0.97,141,5.49,118,2018
+University of Chicago,United States,US,America,16016,3,10,5,,5,0.25,79,0.78,79,5.10,119,2018
+University of Arizona,United States,US,America,36000,5,99,4,,4,0.03,143,0.97,143,4.88,120,2018
+National University of Singapore,Singapore,SG,Asia,38596,5,91,4,,4,0.03,144,0.97,144,4.80,121,2018
+Eindhoven University of Technology,Netherlands,NL,Europe,9711,2,201,3,,3,0.41,68,0.67,68,4.48,122,2018
+Macquarie University,Australia,AU,Oceania,39355,5,151,3,,3,0.02,145,0.98,145,4.06,123,2018
+Caltech,United States,US,America,2240,1,,4,,4,1.47,31,0.23,31,4.00,124,2018
+Ecole des Ponts ParisTech,France,FR,Europe,1797,1,,4,,4,1.47,32,0.23,32,4.00,125,2018
+Indian School of Business,India,IN,Asia,,1,,4,,4,1.47,33,0.23,33,4.00,126,2018
+Insper,Brazil,BR,America,,1,,4,,4,1.47,34,0.23,34,4.00,127,2018
+Peter the Great St. Petersburg Polytechnic University,Russia,RU,Europe,30197,4,,4,,4,0.07,114,0.93,114,4.00,128,2018
+Ecole Normale Superieure - Lyon,France,FR,Europe,2000,1,301,2,,2,0.74,58,0.48,58,3.65,129,2018
+Ecole Polytechnique,France,FR,Europe,2888,1,301,2,,2,0.74,59,0.48,59,3.65,130,2018
+University of Kentucky,United States,US,America,30473,4,301,2,,2,0.04,134,0.96,134,3.65,131,2018
+University of Western Australia,Australia,AU,Oceania,25837,4,91,3,,3,0.05,120,0.95,120,3.60,132,2018
+California Institute of the Arts,United States,US,America,959,1,,3,,3,1.10,41,0.33,41,3.00,133,2018
+ITMO University,Russia,RU,Europe,12000,2,501,,1,1,0.14,92,0.87,92,2.72,134,2018
+Nanyang Technological University,Singapore,SG,Asia,32699,4,101,2,,2,0.04,135,0.96,135,2.45,135,2018
+University of Science and Technology of China,China,CN,Asia,33000,4,101,2,,2,0.04,136,0.96,136,2.45,136,2018
+EM Lyon Business School,France,FR,Europe,3300,1,,2,,2,0.74,60,0.48,60,2.00,137,2018
+New York University Tandon School of Engineering,United States,US,America,2344,1,,2,,2,0.74,61,0.48,61,2.00,138,2018
+ESADE Business and Law School,Spain,ES,Europe,9425,2,,2,,2,0.27,76,0.76,76,2.00,139,2018
+Sberbank Corporate University,Russia,RU,Europe,35000,4,,2,,2,0.04,137,0.96,137,2.00,140,2018
+The George Washington University,United States,US,America,27159,4,301,1,,1,0.02,146,0.98,146,1.83,141,2018
+Yeshiva University,United States,US,America,2714,1,201,1,,1,0.37,70,0.69,70,1.49,142,2018
+University of Nebraska,United States,US,America,20833,3,151,1,,1,0.05,125,0.95,125,1.35,143,2018
+University of Leeds,UK,UK,Europe,33300,4,101,1,,1,0.02,147,0.98,147,1.22,144,2018
+Lund University,Sweden,SE,Europe,41000,5,101,1,,1,0.01,148,0.99,148,1.22,145,2018
+Imperial College London,UK,UK,Europe,16610,3,22,1,0,1,0.05,126,0.95,126,1.04,146,2018
+University of Oxford,UK,UK,Europe,22602,3,7,,1,1,0.05,127,0.95,127,1.01,147,2018
+Moscow State Institute of International Relations (MGIMO),Russia,RU,Europe,8372,2,,1,,1,0.14,93,0.87,93,1.00,148,2018
+Ecole Polytechnique Federale de Lausanne,France,FR,Europe,,1,,37,,37,13.61,1,0.00,1,37.00,4,2017
+Ecole Polytechnique,France,FR,Europe,2888,1,301,19,,19,6.99,2,0.00,2,34.69,5,2017
+Swiss Federal Institute of Technology Lausanne,Switzerland,CH,Europe,10124,2,92,8,25,33,4.47,3,0.01,3,39.67,3,2017
+Delft University of Technology,Netherlands,NL,Europe,19613,3,151,,51,51,2.54,4,0.08,4,68.98,1,2017
+Ecole Normale Superieure - Lyon,France,FR,Europe,2000,1,301,6,,6,2.21,5,0.11,5,10.95,13,2017
+Ecole des Ponts ParisTech,France,FR,Europe,,1,,4,,4,1.47,6,0.23,6,4.00,25,2017
+Centrale Superior Paris,France,FR,Europe,1394,1,501,3,,3,1.10,7,0.33,7,8.17,18,2017
+Chalmers University of Technology,Sweden,SE,Europe,11000,2,201,,8,8,1.08,8,0.34,8,11.96,11,2017
+Swiss Federal Institute of Technology Zurich,Switzerland,CH,Europe,10851,2,19,,8,8,1.08,9,0.34,9,8.31,16,2017
+Universidad Carlos III de Madrid,Spain,ES,Europe,18676,3,501,,17,17,0.85,10,0.43,10,46.30,2,2017
+University of Notre Dame,France,FR,Europe,12179,2,501,,6,6,0.81,11,0.44,11,16.34,8,2017
+Karolinska Institute,Sweden,SE,Europe,5978,2,44,,6,6,0.81,12,0.44,12,6.55,20,2017
+Catholic University of Louvain,Belgium,BE,Europe,29711,4,151,,24,24,0.44,13,0.64,13,32.46,6,2017
+Eindhoven University of Technology,Netherlands,NL,Europe,9711,2,201,3,,3,0.41,14,0.67,14,4.48,24,2017
+University of Geneva,Switzerland,CH,Europe,14489,2,53,3,,3,0.41,15,0.67,15,3.34,26,2017
+HEC Paris,France,FR,Europe,4000,1,501,1,,1,0.37,16,0.69,16,2.72,27,2017
+IESE Business School,Spain,ES,Europe,2081,1,501,1,,1,0.37,17,0.69,17,2.72,28,2017
+Institut Mines-T四残om ,France,FR,Europe,0,1,501,,1,1,0.37,18,0.69,18,2.72,29,2017
+IsraelX,Israel,ISR,Europe,0,1,501,,1,1,0.37,19,0.69,19,2.72,30,2017
+Technical University of Denmark,Denmark,DK,Europe,11190,2,151,2,,2,0.27,20,0.76,20,2.71,33,2017
+Leiden University,Netherlands,NL,Europe,24270,3,93,5,,5,0.25,21,0.78,21,6.02,21,2017
+ITMO University,Russia,RU,Europe,12000,2,501,,1,1,0.14,22,0.87,22,2.72,31,2017
+University of Lausanne,Switzerland,CH,Europe,13500,2,201,1,,1,0.14,23,0.87,23,1.49,35,2017
+The University of Edinburgh,UK,UK,Europe,35582,5,41,14,3,17,0.11,24,0.89,24,18.45,7,2017
+University of Zurich,Switzerland,CH,Europe,25732,4,54,6,,6,0.11,25,0.90,25,6.68,19,2017
+The Hebrew University of Jerusalem,Israel,ISR,Europe,23000,3,87,2,,2,0.10,26,0.91,26,2.38,34,2017
+Autonomous University of Madrid,Spain,ES,Europe,36118,5,201,,8,8,0.05,27,0.95,27,11.96,12,2017
+The University of Manchester,UK,UK,Europe,38590,5,35,8,,8,0.05,28,0.95,28,8.58,14,2017
+University College London,UK,UK,Europe,161270,5,17,8,,8,0.05,29,0.95,29,8.28,17,2017
+Copenhagen Business School,Denmark,DK,Europe,22829,3,501,1,,1,0.05,30,0.95,30,2.72,32,2017
+University of Oxford,UK,UK,Europe,22602,3,7,,1,1,0.05,31,0.95,31,1.01,38,2017
+KU Leuven,Belgium,BE,Europe,55484,5,93,,7,7,0.05,32,0.95,32,8.43,15,2017
+Ludwig-Maximilians-University of Munich (LMU),Denmark,DE,Europe,50542,5,501,5,,5,0.03,33,0.97,33,13.62,9,2017
+Sorbonne University System,France,FR,Europe,57800,5,501,,5,5,0.03,34,0.97,34,13.62,10,2017
+Technical University Munich,Denmark,DE,Europe,40000,5,47,2,3,5,0.03,35,0.97,35,5.49,23,2017
+RWTH Aachen University,Denmark,DE,Europe,42000,5,201,,4,4,0.03,36,0.97,36,5.98,22,2017
+Sapienza University of Rome,Italy,IT,Europe,112564,5,151,1,,1,0.01,37,0.99,37,1.35,36,2017
+Lund University,Sweden,SE,Europe,41000,5,101,1,,1,0.01,38,0.99,38,1.22,37,2017
+"The Imperial College of Science, Technology and Medicine",UK,UK,Europe,16610,3,22,,0,0,0.00,39,1.00,39,0.00,39,2017
