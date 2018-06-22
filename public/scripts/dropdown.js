@@ -94,6 +94,7 @@ function fixsidebar() {
       document.getElementsByClassName("container-sidebar")[0].style.position = "fixed";
       document.getElementsByClassName("container-sidebar")[0].style.top = "105px";
       document.getElementsByClassName("container-sidebar")[0].style.left = "1.9vw";
+
     }
     else{
       document.getElementsByClassName("container-sidebar")[0].style.position = "relative";
@@ -105,6 +106,7 @@ function fixsidebar() {
     document.getElementsByClassName("container-sidebar")[0].style.position = "relative";
     document.getElementsByClassName("container-sidebar")[0].style.left = "0px";
     document.getElementsByClassName("container-sidebar")[0].style.top = "0";
+
   }
 }
 window.onscroll = fixsidebar;

@@ -229,6 +229,26 @@ header{
   border: solid 2px grey;
 }
 
+.container-sidebar-maps{
+    padding:5px;
+    width:20vw;
+    height: 350px;
+    text-align: center;
+    align-items: center;
+    margin: 20px auto;
+    border: solid 2px grey;
+}
+
+.container-sidebar-comparison{
+    padding:5px;
+    width:20vw;
+    height: 320px;
+    text-align: center;
+    align-items: center;
+    margin: 20px auto;
+    border: solid 2px grey;
+}
+
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -336,6 +356,20 @@ button:focus {outline:0;}
       height: 500px;
       top: 0;
       z-index: 10;
+    }
+
+    .container-sidebar-maps{
+        width: 80%;
+        height: 350px;
+        top: 0;
+        z-index: 10;
+    }
+
+    .container-sidebar-comparison{
+        width: 80%;
+        height: 300px;
+        top: 0;
+        z-index: 10;
     }
 
     h3{
