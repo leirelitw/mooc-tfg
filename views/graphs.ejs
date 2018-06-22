@@ -16,14 +16,15 @@
 <body>
 
   <header class="site-header">
-      <a href="#" class="logo"><img src="images/logo.png" alt="" style="width:250px; padding:5px;"></a>
+      <a href="#" class="logo"><img src="images/logo.png" onclick="changeLanguage(1)" alt="" style="width:250px; padding:5px;"></a>
 
     <div class="subheader">
             <ul class="principal-menu-mooc">
-              <li id="menu-item-about" class="menu-item"><a href="/about">ABOUT</a></li>
-              <li id="menu-item-graphs" class="menu-item"><a href="/graphs">GRAPHS</a></li>
-              <li id="menu-item-data" class="menu-item"><a href="/data">DATA</a></li>
-              <li id="menu-item-home" class="menu-item current-menu-item"><a href="/index">HOME</a></li>
+              <li class="menu-item current-menu-item"><a href="/index" id="menu-item-home">HOME</a></li>
+              <li class="menu-item"><a href="/data" id="menu-item-data">DATA</a></li>
+              <li class="menu-item"><a href="/graphs" id="menu-item-graphs" >GRAPHS</a></li>
+              <li class="menu-item"><a href="/about" id="menu-item-about">ABOUT</a></li>
+
             </ul>
     </div>
   </header>
@@ -35,10 +36,10 @@
   </div>
 
   <ul class="chart-menu-mooc">
-    <li class="menu-item" id="maps-menu" onclick="displayMaps()" style="color:white;">MAPS</li>
-    <li class="menu-item" id="linear-graph-menu" onclick="displayLinear()">LINEAR GRAPH</li>
-    <li class="menu-item" id="bar-chart-menu" onclick="displayBar()">BAR CHART</li>
-    <li class="menu-item" id="comparison-chart-menu" onclick="displayComparisonCharts()">COMPARISON</li>
+    <li class="menu-item" id="maps-menu" style="color:white;">MAPS</li>
+    <li class="menu-item" id="linear-graph-menu"><a href="/lineargraphs">LINEAR GRAPH</a></li>
+    <li class="menu-item" id="bar-chart-menu"><a href="/barchart">BAR CHART</a></li>
+    <li class="menu-item" id="comparison-chart-menu"><a href="/comparison">COMPARISON</a></li>
   </ul>
 
   <div class="split1 left">
@@ -55,19 +56,21 @@
         </select>
       </div>
       <br><br>
+      <!--
       <h3 style="margin: 10px 0">Select a country</h3>
       <div style="width: 150px; margin:0 auto;">
         <select class="country-graph-selector" id="country-graph-selector" >
         </select>
       </div>
       <br><br>
+      -->
       <h3 style="margin: 10px 0">Ranking Selection</h3>
       <div id="range-slider">
         <p><input type="text" id="amount" readonly style="border:0;"></p>
         <div id="slider-range"></div>
       </div>
       <br>
-      <button class="button button-blue" onclick="filterTable()" id="filter">Filter</button>
+      <button class="button button-blue" onclick="updateMap()" id="filter">Filter</button>
     </div>
   </div>
 
@@ -75,50 +78,22 @@
 <div class="centered">
 
 <div id="maps-container">
-  <div id="maps-universities-1" style="width: 90%;margin: 20px auto"></div>
-  <div id="maps-universities-2" style="width: 90%;margin: 20px auto"></div>
-  <div id="maps-universities-3" style="width: 90%;margin: 20px auto"></div>
-  <div id="maps-universities-4" style="width: 90%;margin: 20px auto"></div>
-  <div id="maps-universities-5" style="width: 90%;margin: 20px auto"></div>
+  <div id="maps-universities-world" style="width: 90%;margin: 20px auto"></div>
+  <div id="maps-universities-europe" style="width: 90%;margin: 20px auto"></div>
+  <div id="maps-universities-africa" style="width: 90%;margin: 20px auto"></div>
+  <div id="maps-universities-asia" style="width: 90%;margin: 20px auto"></div>
+  <div id="maps-universities-oceania" style="width: 90%;margin: 20px auto"></div>
+  <div id="maps-universities-south-america" style="width: 90%;margin: 20px auto"></div>
+  <div id="maps-universities-north-america" style="width: 90%;margin: 20px auto"></div>
 
   <div id="pie-graph-universities-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
 </div>
-<div id="bar-graphs-container">
-  <div id="bar-chart-1" style="padding:20px;"></div>
-</div>
-<div id="linear-graphs-container">
-  <div id="linear-graph-universities-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
-  <div id="linear-graph-courses-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
-</div>
-<div id="comparison-graphs-container">
-  <div class="fixed-comparison-filter" style="width: 100%;">
-    <h3 style="margin: 20px; margin-top:40px; margin-left:5%; width:40%; text-align: center; display:inline-flex;">Select university 1</h3>
-    <h3 style="margin: 20px; margin-top:40px; margin-left:5%; width:40%; text-align: center; display:inline-flex;">Select university 2</h3>
 
-    <div style="width: 40%; margin-bottom: 15px; margin-left:5%; display: inline-flex;">
-      <select class="university1-selector" id="university1-selector"></select>
-    </div>
-    <div style="width: 40%; margin-bottom: 15px; margin-left:5%; display: inline-flex;">
-      <select class="university2-selector" id="university2-selector"></select>
-    </div>
-    <br>
-    <button class="button button-blue" onclick="filterComparisonGraph()" id="filter" style="margin-left:5%; align-items: center; display: inline-flex;">Compare</button>
-    <br>
-  </div>
-  <div id="comparison-graph" style="min-width: 300px; height: 400px; margin: 1em"></div>
-  <div id="pie-graph-comparison-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
-
-</div>
 </div>
 </div>
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/maps/modules/map.js"></script>
-  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
-  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-  <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
-  <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
   <script src="https://www.highcharts.com/samples/maps/demo/all-maps/jquery.combobox.js"></script>
 
@@ -127,11 +102,16 @@
   <script src="scripts/slider.js"></script>
   <script src="scripts/sortingTables.js"></script>
   <script src="scripts/dropdown.js"></script>
-  <script src="http://code.highcharts.com/maps/highmaps.js"></script>
-  <script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
-  <script src="http://code.highcharts.com/mapdata/custom/europe.js"></script>
-  <script src="http://code.highcharts.com/mapdata/custom/africa.js"></script>
+
+  <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/europe.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/africa.js"></script>
   <script src="https://code.highcharts.com/mapdata/custom/asia.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/oceania.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/south-america.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/north-america.js"></script>
 
 
   <script>
@@ -167,44 +147,6 @@
     var totalCount = countEurope + countAsia + countAmerica + countOceania + countAfrica;
     var totalCountCourses = countEuropeCourses + countAsiaCourses + countAmericaCourses + countOceaniaCourses + countAfricaCourses;
 
-
-  $('#linear-graph-universities-1').highcharts({
-      xAxis: {
-          categories: ["2017", "2018", "2019"]
-      },
-      yAxis: [{
-        title: {
-          text: 'Universities'
-        }
-      }],
-      title: {
-        text: 'Chart for universities in Ranking over time'
-      },
-      series: [{
-        name: 'Universities / year',
-        data: [totalCount, totalCount+3, 0]
-      }]
-  });
-
-  $('#linear-graph-courses-1').highcharts({
-      xAxis: {
-          categories: ["2017", "2018", "2019"]
-      },
-      yAxis: [{
-        title: {
-          text: 'Courses'
-        }
-      }],
-      title: {
-        text: 'Chart for n# of courses MOOC in Ranking over time'
-      },
-      series: [{
-        name: 'MOOCs / year',
-        data: [totalCountCourses, totalCountCourses+27, 0]
-      }]
-  });
-
-
   </script>
 
   <script>
@@ -216,6 +158,7 @@
       var countryMOOCsAsia = [];
       var countryMOOCsAmerica = [];
       var countryMOOCsOceania = [];
+      var variableMap = [];
 
       var data2 = <%-JSON.stringify(data)%>;
 
@@ -225,14 +168,14 @@
               var dropdown = '<option value=\"all\" data-display-text=\"All Countries\">All Countries</option>';
               var dropdown2 = '<option value=\"all\" data-display-text=\"All Universities\">All Universities</option>';
 
-              console.log("Data2: " + data2[0].country);
+              //console.log("Data2: " + data2[0].country);
 
               for(var i=0; i<data2.length; i++) {
                 dropdown2 += '<option value="' + data2[i].universityName + '">' + data2[i].universityName + '</option>';
 
                   if (countryList.length == 0) {
                       countryList.push(data2[i]);
-                      console.log(countryList[0].country);
+                      //console.log(countryList[0].country);
                   }
                   else {
                       for (var j = 0; j < countryList.length; j++) {
@@ -260,7 +203,7 @@
                   }
                   text += "<br/>";
               }
-               console.log(text);
+               //console.log(text);
 
               for (var j = 0; j < countryList.length; j++) {
                 countryMOOCsPie.push({name: "'"+countryList[j].country+"'", y: countryList[j].totalMOOCS});
@@ -300,178 +243,9 @@
               $('#university2-selector').html(dropdown2);
               $(".customCountryDrop").remove();
               create_custom_dropdowns();
-              renderMAPandPIE(countryMOOCsPie);
+              renderPieChart(countryMOOCsPie);
+              allMaps();
           });
-
-
-
-      function filterTable(){
-          //getByCountryandContinent();
-      }
-
-      function filterComparisonGraph(){
-        var e = document.getElementById("university1-selector");
-        var uni1 = e.options[e.selectedIndex].value;
-        var u = document.getElementById("university2-selector");
-        var uni2 = u.options[u.selectedIndex].value;
-        var ranking1_10, ranking2_10, shanghai1, shanghai2, moocs1, moocs2, size1, size2, ranking1_9, ranking2_9, ranking1_2, ranking2_2;
-        for(let i = 0; i < data2.length; i++) {
-            if(data2[i].universityName == uni1){
-              ranking1_10 = data2[i].ranking10;
-              ranking1_9 = data2[i].ranking9;
-              ranking1_2 = data2[i].ranking2;
-              shanghai1 = data2[i].shangaiRanking;
-              moocs1 = data2[i].totalMOOCS;
-              size1 = data2[i].universitySize;
-            }
-            if(data2[i].universityName == uni2){
-              ranking2_10 = data2[i].ranking10;
-              ranking2_9 = data2[i].ranking9;
-              ranking2_2 = data2[i].ranking2;
-              shanghai2 = data2[i].shangaiRanking;
-              moocs2 = data2[i].totalMOOCS;
-              size2 = data2[i].universitySize;
-            }
-        }
-        Highcharts.chart('comparison-graph', {
-            chart: {
-                type: 'column'
-            },
-            title: {
-                text: 'Universities comparison'
-            },
-            xAxis: {
-                categories: [
-                    'Ranking with Metric 10',
-                    'Ranking with Metric 9',
-                    'Ranking with Metric 2',
-                    'Shanghai Ranking',
-                    'Number of MOOCs'
-                ],
-                crosshair: true
-            },
-            yAxis: {
-                min: 0
-            },
-            tooltip: {
-                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                    '<td style="padding:0"><b>{point.y}</b></td></tr>',
-                footerFormat: '</table>',
-                shared: true,
-                useHTML: true
-            },
-            plotOptions: {
-                column: {
-                    pointPadding: 0.2,
-                    borderWidth: 0
-                }
-            },
-            series: [{
-                name: uni1,
-                data: [ranking1_10, ranking1_9, ranking1_2, shanghai1, moocs1]
-
-            }, {
-                name: uni2,
-                data: [ranking2_10, ranking2_9, ranking2_2, shanghai2, moocs2]
-            }]
-        });
-
-        $('#pie-graph-comparison-1').highcharts({
-            plotOptions: {
-            pie: {
-              allowPointSelect: true,
-              cursor: 'pointer',
-              dataLabels: {
-                enabled: false
-              },
-              showInLegend: true
-            }
-            },
-            chart: {
-              renderTo: 'container',
-              type: 'pie'
-            },
-            xAxis: {
-              categories: [uni1, uni2]
-            },
-            title: {
-              text: 'Universities size comparison'
-            },
-            series: [{
-              name: 'Students/Universities',
-              colorByPoint: true,
-              data: [{
-                name: uni1,
-                y: size1,
-              }, {
-                name: uni2,
-                y: size2
-              }]
-            }]
-        });
-
-
-      }
-
-      function getByCountryandContinent() {
-          // var country = $("country-graph-selector").val();
-          var url;
-          var e = document.getElementById("country-graph-selector");
-          var country = e.options[e.selectedIndex].value;
-          if(country=="all"){
-              var u = document.getElementById("continent-graph-selector");
-              var continent = u.options[u.selectedIndex].value;
-              //url = 'https://moocs-university-ranking.herokuapp.com/universities/continents/'
-              url = 'http://localhost:3000/universities/continents/'
-              url += continent;
-          }
-          else{
-              //url = 'https://moocs-university-ranking.herokuapp.com/universities/countries/'
-              url = 'http://localhost:3000/universities/countries/'
-              url += country;
-          }
-          //console.log(url);
-          var httpRequest = false;
-          httpRequest = new XMLHttpRequest();
-          if (!httpRequest) {
-              alert('Abort! Unable to create an XMLHTTP instance');
-              return false;
-          }
-          httpRequest.onreadystatechange = function() { updateTable(httpRequest); };
-          httpRequest.open('POST', url, true);
-          httpRequest.send(null);
-      }
-
-      function updateTable(httpRequest) {
-          if (httpRequest.readyState == XMLHttpRequest.DONE) {
-              if (httpRequest.status == 200) {
-                  //console.log("reply received");
-                  //alert(httpRequest.responseText);
-                  var response = JSON.parse(httpRequest.responseText);
-                  //console.log(response);
-                  var university_data = '';
-                  for(var i=0; i<response.length; i++) {
-                      if(response[i].ranking >= parseInt($('#slider-range').slider("values")[0])){
-                          if(response[i].ranking <= parseInt($('#slider-range').slider("values")[1])){
-                              university_data +='<tr>';
-                              university_data += '<td>'+ response[i].universityName +'</td>';
-                              university_data += '<td style="text-align:center;">'+ response[i].ranking + '</td>';
-                              university_data += '<td style="text-align:center;">'+ response[i].shangaiRanking +'</td>';
-                              university_data += '<td>'+ response[i].country + '</td>';
-                              university_data += '<td style="text-align:center;">'+ response[i].universitySize +'</td>';
-                              university_data += '<td style="text-align:center;">'+ response[i].totalMOOCS +'</td>';
-                              university_data +='</tr>';
-                          }
-                      }
-                  }
-                  $('#tableBody').html(university_data);
-                  sortTablebyNumber(1);
-              } else {
-                  alert('There was a problem with the response request');
-              }
-          }
-      }
 
       $("#continent-graph-selector").change(function () {
           var e = document.getElementById("continent-graph-selector");
@@ -523,24 +297,6 @@
           //console.log(countryList);
       }
 
-      function filterCountryComparisonDropdowns(country){
-        var dropdown2 = '<option value=\"all\" data-display-text=\"All Universities\">All Universities</option>';
-          console.log(country);
-          for(let i = 0; i < data2.length; i++) {
-              if(country == "all"){
-                  dropdown2 += '<option value="' + data2[i].universityName + '">' + data2[i].universityName + '</option>';
-              }
-              else if(data2[i].country == country){
-                  dropdown2 += '<option value="' + data2[i].universityName + '">' + data2[i].universityName + '</option>';
-              }
-          }
-          $("#university1-selector").html(dropdown2);
-          $("#university2-selector").html(dropdown2);
-          $(".customCountryDrop").remove();
-          create_custom_dropdowns();
-          //console.log(countryList);
-      }
-
       // Range slider - gravity forms
       $( function() {
           var length = <%= data.length %>;
@@ -558,146 +314,78 @@
               " - #" + $("#slider-range").slider("values", 1));
       });
 
-Highcharts.chart('bar-chart-1', {
-      chart: {
-          type: 'column'
-      },
-      title: {
-          text: 'Number of MOOCs by Continent and Country'
-      },
-      xAxis: {
-          type: 'category'
-      },
-      yAxis: {
-          title: {
-              text: 'Number of MOOCs'
-          }
-      },
-      legend: {
-          enabled: false
-      },
-      plotOptions: {
-          series: {
-              borderWidth: 0,
-              dataLabels: {
-                  enabled: true,
-                  format: '{point.y}'
-              }
-          }
-      },
-
-      tooltip: {
-          headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-          pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b> MOOCs<br/>'
-      },
-
-      series: [{
-          name: 'Brands',
-          colorByPoint: true,
-          data: [{
-              name: 'Europe',
-              y: countEuropeCourses,
-              drilldown: 'Europe'
-          }, {
-              name: 'Asia',
-              y: countAsiaCourses,
-              drilldown: 'Asia'
-          }, {
-              name: 'America',
-              y: countAmericaCourses,
-              drilldown: 'America'
-          }, {
-              name: 'Oceania',
-              y: countOceaniaCourses,
-              drilldown: 'Oceania'
-          }, {
-              name: 'Africa',
-              y: countAfricaCourses,
-              drilldown: 'Africa'
-          }]
-      }],
-      drilldown: {
-          series: [{
-              name: 'Europe',
-              id: 'Europe',
-              data: countryMOOCsEurope
-          }, {
-              name: 'Asia',
-              id: 'Asia',
-              data: countryMOOCsAsia
-          }, {
-              name: 'America',
-              id: 'America',
-              data: countryMOOCsAmerica
-          }, {
-              name: 'Oceania',
-              id: 'Oceania',
-              data: countryMOOCsOceania
-          }, {
-              name: 'Africa',
-              id: 'Africa',
-              data: countryMOOCsAfrica
-            }]
-      }
-  });
-
-
     // Initiate the chart
 
-function renderMAPandPIE(piedata){
 
+function updateMap(){
+     var variableMap = '';
+        var e = document.getElementById("continent-graph-selector");
+        var continentMap = e.options[e.selectedIndex].value;
 
-Highcharts.mapChart('maps-universities-1', {
-        chart: {
-            map: 'custom/world'
-        },
-        title: {
-            text: 'MOOCs per Country'
-        },
-        legend: {
-            title: {
-                text: 'Universities per country',
-                style: {
-                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
-                }
-            }
-        },
-        mapNavigation: {
-            enabled: true,
-            buttonOptions: {
-                verticalAlign: 'bottom'
-            }
-        },
-        tooltip: {
-            backgroundColor: 'none',
-            borderWidth: 0,
-            shadow: false,
-            useHTML: true,
-            padding: 0,
-            pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
-                '</span></span> {point.name}<br>' +
-                '<span style="font-size:30px">{point.value} MOOCS</span>',
-            positioner: function () {
-                return { x: 0, y: 250 };
-            }
-        },
-        colorAxis: {
-            min: 1,
-            max: 1000,
-            type: 'logarithmic'
-        },
-        series: [{
-            data: countryMOOCsMap,
-            joinBy: ['iso-a2', 'code2'],
-            name: 'How many MOOCS in our ranking?',
-            states: {
-                hover: {
-                    color: '#a4edba'
-                }
-            }
-        }]
-    });
+        if(continentMap == "Europe"){
+            variableMap = 'custom/europe';
+            document.getElementById("maps-universities-world").style.display = "none";
+            document.getElementById("maps-universities-africa").style.display = "none";
+            document.getElementById("maps-universities-asia").style.display = "none";
+            document.getElementById("maps-universities-oceania").style.display = "none";
+            document.getElementById("maps-universities-north-america").style.display = "none";
+            document.getElementById("maps-universities-south-america").style.display = "none";
+            document.getElementById("maps-universities-europe").style.display = "block";
+        }
+        else if(continentMap == "America"){
+            variableMap = 'custom/north-america';
+            document.getElementById("maps-universities-world").style.display = "none";
+            document.getElementById("maps-universities-africa").style.display = "none";
+            document.getElementById("maps-universities-asia").style.display = "none";
+            document.getElementById("maps-universities-oceania").style.display = "none";
+            document.getElementById("maps-universities-north-america").style.display = "block";
+            document.getElementById("maps-universities-south-america").style.display = "block";
+            document.getElementById("maps-universities-europe").style.display = "none";
+        }
+        else if(continentMap == "Asia"){
+            variableMap = 'custom/asia';
+            document.getElementById("maps-universities-world").style.display = "none";
+            document.getElementById("maps-universities-africa").style.display = "none";
+            document.getElementById("maps-universities-asia").style.display = "block";
+            document.getElementById("maps-universities-oceania").style.display = "none";
+            document.getElementById("maps-universities-north-america").style.display = "none";
+            document.getElementById("maps-universities-south-america").style.display = "none";
+            document.getElementById("maps-universities-europe").style.display = "none";
+        }
+        else if(continentMap == "Oceania"){
+            variableMap = 'custom/oceania';
+            document.getElementById("maps-universities-world").style.display = "none";
+            document.getElementById("maps-universities-africa").style.display = "none";
+            document.getElementById("maps-universities-asia").style.display = "none";
+            document.getElementById("maps-universities-oceania").style.display = "block";
+            document.getElementById("maps-universities-north-america").style.display = "none";
+            document.getElementById("maps-universities-south-america").style.display = "none";
+            document.getElementById("maps-universities-europe").style.display = "none";
+        }
+        else if(continentMap == "Africa"){
+            variableMap = 'custom/africa';
+            document.getElementById("maps-universities-world").style.display = "none";
+            document.getElementById("maps-universities-africa").style.display = "block";
+            document.getElementById("maps-universities-asia").style.display = "none";
+            document.getElementById("maps-universities-oceania").style.display = "none";
+            document.getElementById("maps-universities-north-america").style.display = "none";
+            document.getElementById("maps-universities-south-america").style.display = "none";
+            document.getElementById("maps-universities-europe").style.display = "none";
+        }
+        else {
+            variableMap = 'custom/world';
+            document.getElementById("maps-universities-world").style.display = "block";
+            document.getElementById("maps-universities-africa").style.display = "none";
+            document.getElementById("maps-universities-asia").style.display = "none";
+            document.getElementById("maps-universities-oceania").style.display = "none";
+            document.getElementById("maps-universities-north-america").style.display = "none";
+            document.getElementById("maps-universities-south-america").style.display = "none";
+            document.getElementById("maps-universities-europe").style.display = "none";
+        }
 
+}
+
+function renderPieChart(piedata){
 
 Highcharts.chart('pie-graph-universities-1', {
         plotOptions: {
@@ -724,174 +412,372 @@ Highcharts.chart('pie-graph-universities-1', {
         }]
     });
 
-       $('#maps-universities-2').highcharts('Map', {
+    }
 
-           title: {
-               text: 'Highmaps basic demo'
-           },
+    function allMaps(){
 
-           subtitle: {
-               text: 'Europe'
-           },
 
-           mapNavigation: {
-               enabled: true,
-               buttonOptions: {
-                   verticalAlign: 'bottom'
-               }
-           },
+            Highcharts.mapChart('maps-universities-world', {
+                    chart: {
+                        map: 'custom/world'
+                    },
+                    title: {
+                        text: 'MOOCs per Country'
+                    },
+                    legend: {
+                        title: {
+                            text: 'MOOCs per country',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }
+                    },
+                    mapNavigation: {
+                        enabled: true,
+                        buttonOptions: {
+                            verticalAlign: 'bottom'
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'none',
+                        borderWidth: 0,
+                        shadow: false,
+                        useHTML: true,
+                        padding: 0,
+                        pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
+                            '</span></span> {point.name}<br>' +
+                            '<span style="font-size:30px">{point.value} MOOCS</span>',
+                        positioner: function () {
+                            return { x: 0, y: 250 };
+                        }
+                    },
+                    colorAxis: {
+                        min: 1,
+                        max: 1000,
+                        type: 'logarithmic'
+                    },
+                    series: [{
+                        data: countryMOOCsMap,
+                        joinBy: ['iso-a2', 'code2'],
+                        name: 'How many MOOCS in our ranking?',
+                        states: {
+                            hover: {
+                                color: '#a4edba'
+                            }
+                        }
+                    }]
+                });
 
-           colorAxis: {
-               min: 0
-           },
 
-           series: [{
-               data: countryMOOCsMap,
-               joinBy: ['iso-a2', 'code2'],
-               mapData: Highcharts.maps['custom/europe'],
-               name: 'Random data',
-               states: {
-                   hover: {
-                       color: '#BADA55'
-                   }
-               },
-               dataLabels: {
-                   enabled: true,
-                   format: '{point.name}'
-               }
-           }]
-       });
-
-           $('#maps-universities-3').highcharts('Map', {
-
-               title : {
-                   text : 'Highmaps basic demo'
-               },
-
-               subtitle : {
-                   text : 'Africa'
-               },
-
-               colorAxis: {
-                   min: 0
-               },
-
-               series : [{
-                   data : countryMOOCsMap,
-                   mapData: Highcharts.maps['custom/africa'],
-                   joinBy: ['iso-a2', 'code2'],
-                   name: 'Random data',
-                   states: {
-                       hover: {
-                           color: '#BADA55'
+           Highcharts.mapChart('maps-universities-europe', {
+                   chart: {
+                       map: 'custom/europe'
+                   },
+                   title: {
+                       text: 'MOOCs per Country in Europe'
+                   },
+                   legend: {
+                       title: {
+                           text: 'MOOCs per country',
+                           style: {
+                               color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                           }
                        }
                    },
-                   dataLabels: {
+                   mapNavigation: {
                        enabled: true,
-                       format: '{point.name}'
-                   }
-               }]
-           });
-
-          $('#maps-universities-4').highcharts('Map', {
-
-               title : {
-                   text : 'Highmaps basic demo'
-               },
-
-               subtitle : {
-                   text : 'Asia'
-               },
-
-               colorAxis: {
-                   min: 0
-               },
-
-               series : [{
-                   data : countryMOOCsMap,
-                   mapData: Highcharts.maps['custom/asia'],
-                   joinBy: ['iso-a2', 'code2'],
-                   name: 'Random data',
-                   states: {
-                       hover: {
-                           color: '#BADA55'
+                       buttonOptions: {
+                           verticalAlign: 'bottom'
                        }
                    },
-                   dataLabels: {
-                       enabled: true,
-                       format: '{point.name}'
-                   }
-               }]
-           });
+                   tooltip: {
+                       backgroundColor: 'none',
+                       borderWidth: 0,
+                       shadow: false,
+                       useHTML: true,
+                       padding: 0,
+                       pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
+                           '</span></span> {point.name}<br>' +
+                           '<span style="font-size:30px">{point.value} MOOCS</span>',
+                       positioner: function () {
+                           return { x: 0, y: 250 };
+                       }
+                   },
+                   colorAxis: {
+                       min: 1,
+                       max: 1000,
+                       type: 'logarithmic'
+                   },
+                   series: [{
+                       data: countryMOOCsMap,
+                       joinBy: ['iso-a2', 'code2'],
+                       name: 'How many MOOCS in our ranking?',
+                       states: {
+                           hover: {
+                               color: '#a4edba'
+                           }
+                       }
+                   }]
+               });
 
+
+          Highcharts.mapChart('maps-universities-africa', {
+                  chart: {
+                      map: 'custom/africa'
+                  },
+                  title: {
+                      text: 'MOOCs per Country in Africa'
+                  },
+                  legend: {
+                      title: {
+                          text: 'MOOCs per country',
+                          style: {
+                              color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                          }
+                      }
+                  },
+                  mapNavigation: {
+                      enabled: true,
+                      buttonOptions: {
+                          verticalAlign: 'bottom'
+                      }
+                  },
+                  tooltip: {
+                      backgroundColor: 'none',
+                      borderWidth: 0,
+                      shadow: false,
+                      useHTML: true,
+                      padding: 0,
+                      pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
+                          '</span></span> {point.name}<br>' +
+                          '<span style="font-size:30px">{point.value} MOOCS</span>',
+                      positioner: function () {
+                          return { x: 0, y: 250 };
+                      }
+                  },
+                  colorAxis: {
+                      min: 1,
+                      max: 1000,
+                      type: 'logarithmic'
+                  },
+                  series: [{
+                      data: countryMOOCsMap,
+                      joinBy: ['iso-a2', 'code2'],
+                      name: 'How many MOOCS in our ranking?',
+                      states: {
+                          hover: {
+                              color: '#a4edba'
+                          }
+                      }
+                  }]
+              });
+
+            Highcharts.mapChart('maps-universities-asia', {
+                    chart: {
+                        map: 'custom/asia'
+                    },
+                    title: {
+                        text: 'MOOCs per Country in Asia'
+                    },
+                    legend: {
+                        title: {
+                            text: 'MOOCs per country',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }
+                    },
+                    mapNavigation: {
+                        enabled: true,
+                        buttonOptions: {
+                            verticalAlign: 'bottom'
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'none',
+                        borderWidth: 0,
+                        shadow: false,
+                        useHTML: true,
+                        padding: 0,
+                        pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
+                            '</span></span> {point.name}<br>' +
+                            '<span style="font-size:30px">{point.value} MOOCS</span>',
+                        positioner: function () {
+                            return { x: 0, y: 250 };
+                        }
+                    },
+                    colorAxis: {
+                        min: 1,
+                        max: 1000,
+                        type: 'logarithmic'
+                    },
+                    series: [{
+                        data: countryMOOCsMap,
+                        joinBy: ['iso-a2', 'code2'],
+                        name: 'How many MOOCS in our ranking?',
+                        states: {
+                            hover: {
+                                color: '#a4edba'
+                            }
+                        }
+                    }]
+                });
+
+            Highcharts.mapChart('maps-universities-oceania', {
+                    chart: {
+                        map: 'custom/oceania'
+                    },
+                    title: {
+                        text: 'MOOCs per Country in Oceania'
+                    },
+                    legend: {
+                        title: {
+                            text: 'MOOCs per country',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }
+                    },
+                    mapNavigation: {
+                        enabled: true,
+                        buttonOptions: {
+                            verticalAlign: 'bottom'
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'none',
+                        borderWidth: 0,
+                        shadow: false,
+                        useHTML: true,
+                        padding: 0,
+                        pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
+                            '</span></span> {point.name}<br>' +
+                            '<span style="font-size:30px">{point.value} MOOCS</span>',
+                        positioner: function () {
+                            return { x: 0, y: 250 };
+                        }
+                    },
+                    colorAxis: {
+                        min: 1,
+                        max: 1000,
+                        type: 'logarithmic'
+                    },
+                    series: [{
+                        data: countryMOOCsMap,
+                        joinBy: ['iso-a2', 'code2'],
+                        name: 'How many MOOCS in our ranking?',
+                        states: {
+                            hover: {
+                                color: '#a4edba'
+                            }
+                        }
+                    }]
+                });
+
+
+            Highcharts.mapChart('maps-universities-south-america', {
+                    chart: {
+                        map: 'custom/south-america'
+                    },
+                    title: {
+                        text: 'MOOCs per Country in South America'
+                    },
+                    legend: {
+                        title: {
+                            text: 'MOOCs per country',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }
+                    },
+                    mapNavigation: {
+                        enabled: true,
+                        buttonOptions: {
+                            verticalAlign: 'bottom'
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'none',
+                        borderWidth: 0,
+                        shadow: false,
+                        useHTML: true,
+                        padding: 0,
+                        pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
+                            '</span></span> {point.name}<br>' +
+                            '<span style="font-size:30px">{point.value} MOOCS</span>',
+                        positioner: function () {
+                            return { x: 0, y: 250 };
+                        }
+                    },
+                    colorAxis: {
+                        min: 1,
+                        max: 1000,
+                        type: 'logarithmic'
+                    },
+                    series: [{
+                        data: countryMOOCsMap,
+                        joinBy: ['iso-a2', 'code2'],
+                        name: 'How many MOOCS in our ranking?',
+                        states: {
+                            hover: {
+                                color: '#a4edba'
+                            }
+                        }
+                    }]
+                });
+
+            Highcharts.mapChart('maps-universities-north-america', {
+                    chart: {
+                        map: 'custom/north-america'
+                    },
+                    title: {
+                        text: 'MOOCs per Country in North America'
+                    },
+                    legend: {
+                        title: {
+                            text: 'MOOCs per country',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }
+                    },
+                    mapNavigation: {
+                        enabled: true,
+                        buttonOptions: {
+                            verticalAlign: 'bottom'
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'none',
+                        borderWidth: 0,
+                        shadow: false,
+                        useHTML: true,
+                        padding: 0,
+                        pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
+                            '</span></span> {point.name}<br>' +
+                            '<span style="font-size:30px">{point.value} MOOCS</span>',
+                        positioner: function () {
+                            return { x: 0, y: 250 };
+                        }
+                    },
+                    colorAxis: {
+                        min: 1,
+                        max: 1000,
+                        type: 'logarithmic'
+                    },
+                    series: [{
+                        data: countryMOOCsMap,
+                        joinBy: ['iso-a2', 'code2'],
+                        name: 'How many MOOCS in our ranking?',
+                        states: {
+                            hover: {
+                                color: '#a4edba'
+                            }
+                        }
+                    }]
+                });
 
 }
-
-/*
-
-    Highcharts.chart('pie-graph-universities-1', {
-        plotOptions: {
-        pie: {
-          allowPointSelect: true,
-          cursor: 'pointer',
-          dataLabels: {
-            enabled: false
-          },
-          showInLegend: true
-        }
-        },
-        chart: {
-          renderTo: 'container',
-          type: 'pie'
-        },
-        title: {
-          text: 'Number of MOOCs per country'
-        },
-        series: [{
-          colorByPoint: true,
-          data: [{
-          name: "Spain",
-          y: 17
-          },{
-          name: "Netherlands",
-          y: 51
-          },{
-          name: "Belgium",
-          y: 24
-          },{
-          name: "UK",
-          y: 17
-          },{
-          name: "France",
-          y: 6
-          },{
-          name: "Germany",
-          y: 5
-          },{
-          name: "Sweden",
-          y: 8
-          },{
-          name: "Israel",
-          y: 1
-          },{
-          name: "Russia",
-          y: 1
-          },{
-          name: "Denmark",
-          y: 2
-          },{
-          name: "Italy",
-          y: 1
-          },{
-          name: "Switzerland",
-          y: 33
-          }]
-        }]
-    });
-
-*/
-
-
 
   </script>
 

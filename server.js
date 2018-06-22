@@ -22,6 +22,9 @@ var data2 = require('./app/routes/data2.routes.js');
 var data9 = require('./app/routes/data9.routes.js');
 var about = require('./app/routes/about.routes.js');
 var graphs = require('./app/routes/graphs.routes.js');
+var comparison = require('./app/routes/comparison.routes.js');
+var lineargraphs = require('./app/routes/linear.routes.js');
+var barchart = require('./app/routes/barchart.routes.js');
 
 // Require Universities routes
 require('./app/routes/university.routes.js')(app);
@@ -32,6 +35,9 @@ app.set('view engine', 'ejs');
 app.use('/index', index);
 app.use('/about', about);
 app.use('/graphs', graphs);
+app.use('/comparison', comparison);
+app.use('/lineargraphs', lineargraphs);
+app.use('/barchart', barchart);
 app.use('/data', data);
 app.use('/data2', data2);
 app.use('/data9', data9);

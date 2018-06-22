@@ -11,13 +11,13 @@ display: block;
 }
 
 #bar-graphs-container{
-  display: none;
+  display: block;
 }
 #linear-graphs-container{
-  display: none;
+  display: block;
 }
 #comparison-graphs-container{
-  display: none;
+  display: block;
 }
 
 #mapBox {

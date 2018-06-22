@@ -131,7 +131,7 @@ header{
   font-family: 'Exo 2', sans-serif;
 }
 
-.chart-menu-mooc li:hover{
+.chart-menu-mooc a:hover{
   color:white;
 }
 
@@ -158,7 +158,6 @@ header{
 #menu-item-about a{
   color: #29a047;
 }
-
 
 #menu-item-about a:hover, #menu-item-graphs a:hover, #menu-item-data a:hover, #menu-item-home a:hover{
   color: white;

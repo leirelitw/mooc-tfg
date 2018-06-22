@@ -1,49 +1,17 @@
-function displayBar(){
-  document.getElementById("bar-graphs-container").style.display="block";
-  document.getElementById("linear-graphs-container").style.display="none";
-  document.getElementById("comparison-graphs-container").style.display="none";
-  document.getElementById("maps-container").style.display="none";
-
-  document.getElementById('bar-chart-menu').style.color="white";
-  document.getElementById('maps-menu').style.color="grey";
-  document.getElementById('linear-graph-menu').style.color="grey";
-  document.getElementById('comparison-chart-menu').style.color="grey";
-}
-
-function displayComparisonCharts(){
-  document.getElementById("bar-graphs-container").style.display="none";
-  document.getElementById("linear-graphs-container").style.display="none";
-  document.getElementById("comparison-graphs-container").style.display="block";
-  document.getElementById("maps-container").style.display="none";
-
-  document.getElementById('bar-chart-menu').style.color="grey";
-  document.getElementById('maps-menu').style.color="grey";
-  document.getElementById('linear-graph-menu').style.color="grey";
-  document.getElementById('comparison-chart-menu').style.color="white";
-}
-
-function displayMaps(){
-
-  document.getElementById("bar-graphs-container").style.display="none";
-  document.getElementById("linear-graphs-container").style.display="none";
-  document.getElementById("comparison-graphs-container").style.display="none";
-  document.getElementById("maps-container").style.display="block";
-
-  document.getElementById('bar-chart-menu').style.color="grey";
-  document.getElementById('maps-menu').style.color="white";
-  document.getElementById('linear-graph-menu').style.color="grey";
-  document.getElementById('comparison-chart-menu').style.color="grey";
-
-}
-
-function displayLinear(){
-  document.getElementById("bar-graphs-container").style.display="none";
-  document.getElementById("linear-graphs-container").style.display="block";
-  document.getElementById("comparison-graphs-container").style.display="none";
-  document.getElementById("maps-container").style.display="none";
-
-  document.getElementById('bar-chart-menu').style.color="grey";
-  document.getElementById('maps-menu').style.color="grey";
-  document.getElementById('linear-graph-menu').style.color="white";
-  document.getElementById('comparison-chart-menu').style.color="grey";
+function changeLanguage(language){
+  if(language == 0){ //English
+      document.getElementById("menu-item-about").innerHTML = "ABOUT";
+      document.getElementById("menu-item-graphs").innerHTML = "GRAPHS";
+      document.getElementById("menu-item-data").innerHTML = "DATA";
+      document.getElementById("menu-item-home").innerHTML = "HOME";
+  }
+  else if(language == 1){ //Spanish
+      document.getElementById("menu-item-about").innerHTML = "ACERCA DE";
+      document.getElementById("menu-item-graphs").innerHTML = "GRÁFICOS";
+      document.getElementById("menu-item-data").innerHTML = "DATOS";
+      document.getElementById("menu-item-home").innerHTML = "INICIO";
+  }
+  else{
+    console.log("No other languages are implemented");
+  }
 }
