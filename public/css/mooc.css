@@ -282,6 +282,7 @@ button:focus {outline:0;}
 
 }
 
+
 /* Turn off parallax scrolling for tablets and phones */
 @media (max-width: 800px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {

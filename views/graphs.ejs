@@ -20,11 +20,10 @@
 
     <div class="subheader">
             <ul class="principal-menu-mooc">
-              <li class="menu-item current-menu-item"><a href="/index" id="menu-item-home">HOME</a></li>
-              <li class="menu-item"><a href="/data" id="menu-item-data">DATA</a></li>
-              <li class="menu-item"><a href="/graphs" id="menu-item-graphs" >GRAPHS</a></li>
-              <li class="menu-item"><a href="/about" id="menu-item-about">ABOUT</a></li>
-
+              <li id="menu-item-about" class="menu-item"><a href="/about">ABOUT</a></li>
+              <li id="menu-item-graphs" class="menu-item"><a href="/graphs">GRAPHS</a></li>
+              <li id="menu-item-data" class="menu-item"><a href="/data">DATA</a></li>
+              <li id="menu-item-home" class="menu-item current-menu-item"><a href="/index">HOME</a></li>
             </ul>
     </div>
   </header>
@@ -90,7 +89,15 @@
 </div>
 
 </div>
+<div style="float:right" id="google_translate_element"></div>
 </div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, multilanguagePage: true}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
