@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c004b3a5-43b8-4e34-a678-40bb58af3dce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/mooc.css" afterPath="$PROJECT_DIR$/public/css/mooc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/about.ejs" afterPath="$PROJECT_DIR$/views/about.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/barchart.ejs" afterPath="$PROJECT_DIR$/views/barchart.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/comparison.ejs" afterPath="$PROJECT_DIR$/views/comparison.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/data.ejs" afterPath="$PROJECT_DIR$/views/data.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/data2.ejs" afterPath="$PROJECT_DIR$/views/data2.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/data9.ejs" afterPath="$PROJECT_DIR$/views/data9.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/graphs.ejs" afterPath="$PROJECT_DIR$/views/graphs.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/lineargraphs.ejs" afterPath="$PROJECT_DIR$/views/lineargraphs.ejs" />
-    </list>
+    <list default="true" id="c004b3a5-43b8-4e34-a678-40bb58af3dce" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,21 +61,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="data.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/data.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="75" column="213" lean-forward="false" selection-start-line="75" selection-start-column="175" selection-end-line="75" selection-end-column="213" />
+            <state relative-caret-position="260">
+              <caret line="176" column="61" lean-forward="true" selection-start-line="176" selection-start-column="61" selection-end-line="176" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data9.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data9.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/data9.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="75" column="213" lean-forward="false" selection-start-line="75" selection-start-column="213" selection-end-line="75" selection-end-column="213" />
+            <state relative-caret-position="257">
+              <caret line="178" column="14" lean-forward="false" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -96,8 +84,8 @@
       <file leaf-file-name="data2.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/data2.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="75" column="213" lean-forward="false" selection-start-line="75" selection-start-column="213" selection-end-line="75" selection-end-column="213" />
+            <state relative-caret-position="185">
+              <caret line="178" column="15" lean-forward="false" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -152,11 +140,11 @@
       <find>pie</find>
       <find>fixsidebar</find>
       <find>pie-gra</find>
-      <find>url</find>
       <find>container-sidebar</find>
       <find>linear</find>
       <find>universities</find>
       <find>table</find>
+      <find>url</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -416,12 +404,12 @@
       <workItem from="1529450681079" duration="1446000" />
       <workItem from="1529487696942" duration="3895000" />
       <workItem from="1529574060270" duration="9484000" />
-      <workItem from="1530134019886" duration="1533000" />
+      <workItem from="1530134019886" duration="1620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49612000" />
+    <option name="totallyTimeSpent" value="49699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="708" extended-state="0" />
@@ -803,26 +791,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/data.ejs">
+    <entry file="file://$PROJECT_DIR$/views/data9.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="75" column="213" lean-forward="false" selection-start-line="75" selection-start-column="175" selection-end-line="75" selection-end-column="213" />
+        <state relative-caret-position="257">
+          <caret line="178" column="14" lean-forward="false" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/data2.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="75" column="213" lean-forward="false" selection-start-line="75" selection-start-column="213" selection-end-line="75" selection-end-column="213" />
+        <state relative-caret-position="185">
+          <caret line="178" column="15" lean-forward="false" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/data9.ejs">
+    <entry file="file://$PROJECT_DIR$/views/data.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="75" column="213" lean-forward="false" selection-start-line="75" selection-start-column="213" selection-end-line="75" selection-end-column="213" />
+        <state relative-caret-position="260">
+          <caret line="176" column="61" lean-forward="true" selection-start-line="176" selection-start-column="61" selection-end-line="176" selection-end-column="61" />
           <folding />
         </state>
       </provider>
