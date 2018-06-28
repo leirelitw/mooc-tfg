@@ -1,17 +1,30 @@
-function changeLanguage(language){
-  if(language == 0){ //English
-      document.getElementById("menu-item-about").innerHTML = "ABOUT";
-      document.getElementById("menu-item-graphs").innerHTML = "GRAPHS";
-      document.getElementById("menu-item-data").innerHTML = "DATA";
-      document.getElementById("menu-item-home").innerHTML = "HOME";
-  }
-  else if(language == 1){ //Spanish
-      document.getElementById("menu-item-about").innerHTML = "ACERCA DE";
-      document.getElementById("menu-item-graphs").innerHTML = "GRÁFICOS";
-      document.getElementById("menu-item-data").innerHTML = "DATOS";
-      document.getElementById("menu-item-home").innerHTML = "INICIO";
-  }
-  else{
-    console.log("No other languages are implemented");
-  }
+function updateMap(){
+    var variableMap = '';
+    var e = document.getElementById("continent-graph-selector");
+    var continentMap = e.options[e.selectedIndex].value;
+
+    if(continentMap == "Europe"){
+        //countryMOOCsMap
+        window.location.href = "/mapsEurope";
+    }
+    else if(continentMap == "America"){
+        window.location.href = "/mapsAmerica";
+
+    }
+    else if(continentMap == "Asia"){
+        window.location.href = "/mapsAsia";
+
+    }
+    else if(continentMap == "Oceania"){
+        window.location.href = "/mapsOceania";
+
+    }
+    else if(continentMap == "Africa"){
+        window.location.href = "/mapsAfrica";
+
+    }
+    else {
+        window.location.href = "/worldmap";
+    }
+
 }

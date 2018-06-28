@@ -9,7 +9,7 @@ var universities = require('../controllers/university.controller.js');
 router.get('/', function(req, res, next) {
   universities.findAll().then( function(dataRetrieved){
     //console.log(dataRetrieved);
-    res.render('graphs', { title: 'MOOCs Ranking | Leire Litwin',
+    res.render('mapsAsia', { title: 'MOOCs Ranking | Leire Litwin',
     data: dataRetrieved
     });
   }, function (reason) {

@@ -16,7 +16,7 @@
 <body>
 
   <header class="site-header">
-      <a href="#" class="logo"><img src="images/logo.png" alt="" style="width:250px; padding:5px;"></a>
+      <a href="#" class="logo"><img src="images/logo.png" onclick="changeLanguage(1)" alt="" style="width:250px; padding:5px;"></a>
 
     <div class="subheader">
             <ul class="principal-menu-mooc">
@@ -35,14 +35,14 @@
   </div>
 
   <ul class="chart-menu-mooc">
-    <li class="menu-item" id="maps-menu"><a href="/worldmap">MAPS</a></li>
-    <li class="menu-item" id="linear-graph-menu" style="color:white;">LINEAR GRAPH</li>
+    <li class="menu-item" id="maps-menu" style="color:white;">MAPS</li>
+    <li class="menu-item" id="linear-graph-menu"><a href="/lineargraphs">LINEAR GRAPH</a></li>
     <li class="menu-item" id="bar-chart-menu"><a href="/barchart">BAR CHART</a></li>
     <li class="menu-item" id="comparison-chart-menu"><a href="/comparison">COMPARISON</a></li>
   </ul>
 
   <div class="split1 left">
-    <div class="container-sidebar">
+    <div class="container-sidebar container-sidebar-maps">
       <h3 style="margin: 10px 0; margin-top: 15px">Select a continent</h3>
       <div style="width: 150px; margin:0 auto;">
         <select class="continent-graph-selector" id="continent-graph-selector">
@@ -55,29 +55,33 @@
         </select>
       </div>
       <br><br>
+      <!--
       <h3 style="margin: 10px 0">Select a country</h3>
       <div style="width: 150px; margin:0 auto;">
         <select class="country-graph-selector" id="country-graph-selector" >
         </select>
       </div>
       <br><br>
+      -->
       <h3 style="margin: 10px 0">Ranking Selection</h3>
       <div id="range-slider">
         <p><input type="text" id="amount" readonly style="border:0;"></p>
         <div id="slider-range"></div>
       </div>
       <br>
-      <button class="button button-blue" onclick="filterTable()" id="filter">Filter</button>
+      <button class="button button-blue" onclick="updateMap()" id="filter">Filter</button>
     </div>
   </div>
 
 <div class="split2 right">
 <div class="centered">
 
-<div id="linear-graphs-container">
-  <div id="linear-graph-universities-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
-  <div id="linear-graph-courses-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
+<div id="maps-container">
+  <div id="maps-universities-world" style="width: 90%;margin: 20px auto"></div>
+
+  <div id="pie-graph-universities-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
 </div>
+
 </div>
 <div style="float:right" id="google_translate_element"></div>
 </div>
@@ -91,11 +95,6 @@ function googleTranslateElementInit() {
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/maps/modules/map.js"></script>
-  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
-  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-  <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
-  <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
   <script src="https://www.highcharts.com/samples/maps/demo/all-maps/jquery.combobox.js"></script>
 
@@ -104,11 +103,10 @@ function googleTranslateElementInit() {
   <script src="scripts/slider.js"></script>
   <script src="scripts/sortingTables.js"></script>
   <script src="scripts/dropdown.js"></script>
-  <script src="http://code.highcharts.com/maps/highmaps.js"></script>
-  <script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
-  <script src="http://code.highcharts.com/mapdata/custom/europe.js"></script>
-  <script src="http://code.highcharts.com/mapdata/custom/africa.js"></script>
-  <script src="https://code.highcharts.com/mapdata/custom/asia.js"></script>
+
+  <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
 
 
   <script>
@@ -144,44 +142,6 @@ function googleTranslateElementInit() {
     var totalCount = countEurope + countAsia + countAmerica + countOceania + countAfrica;
     var totalCountCourses = countEuropeCourses + countAsiaCourses + countAmericaCourses + countOceaniaCourses + countAfricaCourses;
 
-
-  $('#linear-graph-universities-1').highcharts({
-      xAxis: {
-          categories: ["2017", "2018", "2019"]
-      },
-      yAxis: [{
-        title: {
-          text: 'Universities'
-        }
-      }],
-      title: {
-        text: 'Chart for universities in Ranking over time'
-      },
-      series: [{
-        name: 'Universities / year',
-        data: [39, totalCount, ]
-      }]
-  });
-
-  $('#linear-graph-courses-1').highcharts({
-      xAxis: {
-          categories: ["2017", "2018", "2019"]
-      },
-      yAxis: [{
-        title: {
-          text: 'Courses'
-        }
-      }],
-      title: {
-        text: 'Chart for n# of courses MOOC in Ranking over time'
-      },
-      series: [{
-        name: 'MOOCs / year',
-        data: [320, totalCountCourses, ]
-      }]
-  });
-
-
   </script>
 
   <script>
@@ -193,6 +153,7 @@ function googleTranslateElementInit() {
       var countryMOOCsAsia = [];
       var countryMOOCsAmerica = [];
       var countryMOOCsOceania = [];
+      var variableMap = [];
 
       var data2 = <%-JSON.stringify(data)%>;
 
@@ -202,14 +163,14 @@ function googleTranslateElementInit() {
               var dropdown = '<option value=\"all\" data-display-text=\"All Countries\">All Countries</option>';
               var dropdown2 = '<option value=\"all\" data-display-text=\"All Universities\">All Universities</option>';
 
-              console.log("Data2: " + data2[0].country);
+              //console.log("Data2: " + data2[0].country);
 
               for(var i=0; i<data2.length; i++) {
                 dropdown2 += '<option value="' + data2[i].universityName + '">' + data2[i].universityName + '</option>';
 
                   if (countryList.length == 0) {
                       countryList.push(data2[i]);
-                      console.log(countryList[0].country);
+                      //console.log(countryList[0].country);
                   }
                   else {
                       for (var j = 0; j < countryList.length; j++) {
@@ -237,7 +198,7 @@ function googleTranslateElementInit() {
                   }
                   text += "<br/>";
               }
-               console.log(text);
+               //console.log(text);
 
               for (var j = 0; j < countryList.length; j++) {
                 countryMOOCsPie.push({name: "'"+countryList[j].country+"'", y: countryList[j].totalMOOCS});
@@ -277,9 +238,8 @@ function googleTranslateElementInit() {
               $('#university2-selector').html(dropdown2);
               $(".customCountryDrop").remove();
               create_custom_dropdowns();
-              renderMAPandPIE(countryMOOCsPie);
+              allMaps();
           });
-
 
       $("#continent-graph-selector").change(function () {
           var e = document.getElementById("continent-graph-selector");
@@ -312,6 +272,24 @@ function googleTranslateElementInit() {
           //console.log(countryList);
       }
 
+      function filterContinentComparisonDropdowns(continent){
+        var dropdown2 = '<option value=\"all\" data-display-text=\"All Universities\">All Universities</option>';
+          console.log(continent);
+          console.log(countryList);
+          for(let i = 0; i < data2.length; i++) {
+              if(continent == "all"){
+                  dropdown2 += '<option value="' + data2[i].universityName + '">' + data2[i].universityName + '</option>';
+              }
+              else if(data2[i].continent == continent){
+                  dropdown2 += '<option value="' + data2[i].universityName + '">' + data2[i].universityName + '</option>';
+              }
+          }
+          $("#university1-selector").html(dropdown2);
+          $("#university2-selector").html(dropdown2);
+          $(".customCountryDrop").remove();
+          create_custom_dropdowns();
+          //console.log(countryList);
+      }
 
       // Range slider - gravity forms
       $( function() {
@@ -329,6 +307,66 @@ function googleTranslateElementInit() {
           $("#amount").val( "#" + $("#slider-range").slider("values", 0) +
               " - #" + $("#slider-range").slider("values", 1));
       });
+
+    // Initiate the chart
+
+
+
+    function allMaps(){
+
+
+            Highcharts.mapChart('maps-universities-world', {
+                    chart: {
+                        map: 'custom/world'
+                    },
+                    title: {
+                        text: 'MOOCs per Country'
+                    },
+                    legend: {
+                        title: {
+                            text: 'MOOCs per country',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }
+                    },
+                    mapNavigation: {
+                        enabled: true,
+                        buttonOptions: {
+                            verticalAlign: 'bottom'
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'none',
+                        borderWidth: 0,
+                        shadow: false,
+                        useHTML: true,
+                        padding: 0,
+                        pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
+                            '</span></span> {point.name}<br>' +
+                            '<span style="font-size:30px">{point.value} MOOCS</span>',
+                        positioner: function () {
+                            return { x: 0, y: 250 };
+                        }
+                    },
+                    colorAxis: {
+                        min: 1,
+                        max: 1000,
+                        type: 'logarithmic'
+                    },
+                    series: [{
+                        data: countryMOOCsMap,
+                        joinBy: ['iso-a2', 'code2'],
+                        name: 'How many MOOCS in our ranking?',
+                        states: {
+                            hover: {
+                                color: '#a4edba'
+                            }
+                        }
+                    }]
+                });
+
+    }
 
   </script>
 
