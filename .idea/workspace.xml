@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c004b3a5-43b8-4e34-a678-40bb58af3dce" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/barchart.ejs" afterPath="$PROJECT_DIR$/views/barchart.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/mapsAfrica.ejs" afterPath="$PROJECT_DIR$/views/mapsAfrica.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/mapsAmerica.ejs" afterPath="$PROJECT_DIR$/views/mapsAmerica.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/mapsAsia.ejs" afterPath="$PROJECT_DIR$/views/mapsAsia.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/mapsEurope.ejs" afterPath="$PROJECT_DIR$/views/mapsEurope.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/mapsOceania.ejs" afterPath="$PROJECT_DIR$/views/mapsOceania.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/worldmap.ejs" afterPath="$PROJECT_DIR$/views/worldmap.ejs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +22,18 @@
       <file leaf-file-name="mapsAmerica.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/mapsAmerica.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="183">
+              <caret line="318" column="36" lean-forward="false" selection-start-line="318" selection-start-column="36" selection-end-line="318" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="barchart.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/barchart.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="343" column="8" lean-forward="true" selection-start-line="343" selection-start-column="8" selection-end-line="343" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -30,8 +42,8 @@
       <file leaf-file-name="mapsAsia.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/mapsAsia.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="79" column="25" lean-forward="false" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+            <state relative-caret-position="153">
+              <caret line="318" column="24" lean-forward="false" selection-start-line="318" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -40,8 +52,8 @@
       <file leaf-file-name="mapsEurope.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/mapsEurope.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="212">
+              <caret line="282" column="24" lean-forward="false" selection-start-line="282" selection-start-column="24" selection-end-line="282" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -50,18 +62,8 @@
       <file leaf-file-name="mapsAfrica.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/mapsAfrica.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lineargraphs.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/lineargraphs.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            <state relative-caret-position="195">
+              <caret line="315" column="34" lean-forward="false" selection-start-line="315" selection-start-column="34" selection-end-line="315" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -70,8 +72,8 @@
       <file leaf-file-name="mapsOceania.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/mapsOceania.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="107">
+              <caret line="318" column="36" lean-forward="true" selection-start-line="318" selection-start-column="24" selection-end-line="318" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -107,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="worldmap.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="worldmap.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/worldmap.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="151" column="23" lean-forward="false" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="23" />
+            <state relative-caret-position="130">
+              <caret line="320" column="33" lean-forward="false" selection-start-line="320" selection-start-column="33" selection-end-line="320" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -187,21 +189,21 @@
         <option value="$PROJECT_DIR$/views/graphs.ejs" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/app/routes/worldmap.routes.js" />
-        <option value="$PROJECT_DIR$/views/worldmap.ejs" />
         <option value="$PROJECT_DIR$/views/lineargraphs.ejs" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/views/data9.ejs" />
         <option value="$PROJECT_DIR$/views/data2.ejs" />
         <option value="$PROJECT_DIR$/views/data.ejs" />
         <option value="$PROJECT_DIR$/views/comparison.ejs" />
-        <option value="$PROJECT_DIR$/views/barchart.ejs" />
         <option value="$PROJECT_DIR$/views/about.ejs" />
         <option value="$PROJECT_DIR$/public/scripts/scriptmooc.js" />
-        <option value="$PROJECT_DIR$/views/mapsAfrica.ejs" />
-        <option value="$PROJECT_DIR$/views/mapsAmerica.ejs" />
+        <option value="$PROJECT_DIR$/views/worldmap.ejs" />
         <option value="$PROJECT_DIR$/views/mapsAsia.ejs" />
         <option value="$PROJECT_DIR$/views/mapsEurope.ejs" />
         <option value="$PROJECT_DIR$/views/mapsOceania.ejs" />
+        <option value="$PROJECT_DIR$/views/mapsAfrica.ejs" />
+        <option value="$PROJECT_DIR$/views/mapsAmerica.ejs" />
+        <option value="$PROJECT_DIR$/views/barchart.ejs" />
       </list>
     </option>
   </component>
@@ -428,7 +430,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52583000" />
+    <option name="totallyTimeSpent" value="53122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="708" extended-state="0" />
@@ -734,14 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/barchart.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/about.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -766,22 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/mapsAfrica.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/mapsAmerica.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/dropdown.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
@@ -790,34 +768,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/worldmap.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="320" column="33" lean-forward="false" selection-start-line="320" selection-start-column="33" selection-end-line="320" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/mapsAsia.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="79" column="25" lean-forward="false" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        <state relative-caret-position="153">
+          <caret line="318" column="24" lean-forward="false" selection-start-line="318" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/mapsEurope.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state relative-caret-position="212">
+          <caret line="282" column="24" lean-forward="false" selection-start-line="282" selection-start-column="24" selection-end-line="282" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/mapsOceania.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state relative-caret-position="107">
+          <caret line="318" column="36" lean-forward="true" selection-start-line="318" selection-start-column="24" selection-end-line="318" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/worldmap.ejs">
+    <entry file="file://$PROJECT_DIR$/views/mapsAfrica.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="151" column="23" lean-forward="false" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="23" />
+        <state relative-caret-position="195">
+          <caret line="315" column="34" lean-forward="false" selection-start-line="315" selection-start-column="34" selection-end-line="315" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/mapsAmerica.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="318" column="36" lean-forward="false" selection-start-line="318" selection-start-column="36" selection-end-line="318" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/barchart.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="343" column="8" lean-forward="true" selection-start-line="343" selection-start-column="8" selection-end-line="343" selection-end-column="8" />
           <folding />
         </state>
       </provider>
