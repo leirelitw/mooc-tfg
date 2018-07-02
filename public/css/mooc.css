@@ -232,7 +232,7 @@ header{
 .container-sidebar-maps{
     padding:5px;
     width:20vw;
-    height: 350px;
+    height: 200px;
     text-align: center;
     align-items: center;
     margin: 20px auto;
@@ -280,6 +280,14 @@ button:focus {outline:0;}
     background-color: #008CBA;
         color: white;
 
+}
+
+#uni1-title{
+    margin: 20px; margin-top:40px; margin-left:5%; width:40%; text-align: center; display:inline-flex;
+}
+
+#uni2-title{
+    margin: 20px; margin-top:40px; margin-left:5%; width:40%; text-align: center; display:inline-flex;
 }
 
 
@@ -347,6 +355,14 @@ button:focus {outline:0;}
       height: 600px;
       top: 100px;
     }
+
+    .split1maps{
+        width: 100%;
+        position: relative;
+        height: 250px;
+        top: 30px;
+    }
+
     .split2{
       width: 100%;
       position: relative;
@@ -357,11 +373,12 @@ button:focus {outline:0;}
       height: 500px;
       top: 0;
       z-index: 10;
+        overflow: hidden;
     }
 
     .container-sidebar-maps{
         width: 80%;
-        height: 350px;
+        height: 200px;
         top: 0;
         z-index: 10;
     }
@@ -372,6 +389,23 @@ button:focus {outline:0;}
         top: 0;
         z-index: 10;
     }
+
+    .split1comparison{
+        width: 100%;
+        position: relative;
+        height: 350px;
+        top: 30px;
+    }
+
+    #uni1-title{
+        margin: 5px;
+
+    }
+
+    #uni2-title{
+        margin: 5px;
+    }
+
 
     h3{
       padding: 5px;

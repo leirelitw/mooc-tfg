@@ -115,6 +115,7 @@ select {
   text-align: left;
   transition: all 0.2s;
 }
+
 .dropdown .option:hover, .dropdown .option:focus {
   background-color: #f6f6f6 !important;
 }
@@ -145,4 +146,10 @@ ul {
 .dropdown{
   width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .dropdown .option {
+    width: 100px;
+  }
 }

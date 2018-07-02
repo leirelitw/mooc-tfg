@@ -41,7 +41,7 @@
     <li class="menu-item" id="comparison-chart-menu"><a href="/comparison">COMPARISON</a></li>
   </ul>
 
-  <div class="split1 left">
+  <div class="split1 left split1maps">
     <div class="container-sidebar container-sidebar-maps">
       <h3 style="margin: 10px 0; margin-top: 15px">Select a continent</h3>
       <div style="width: 150px; margin:0 auto;">
@@ -62,13 +62,14 @@
         </select>
       </div>
       <br><br>
-      -->
+
       <h3 style="margin: 10px 0">Ranking Selection</h3>
       <div id="range-slider">
         <p><input type="text" id="amount" readonly style="border:0;"></p>
         <div id="slider-range"></div>
       </div>
       <br>
+      -->
       <button class="button button-blue" onclick="updateMap()" id="filter">Filter</button>
     </div>
   </div>
@@ -78,8 +79,8 @@
 
 <div id="maps-container">
   <div id="maps-universities-world" style="width: 90%;margin: 20px auto"></div>
+  <div id="maps-universities-world-1" style="width: 90%;margin: 20px auto"></div>
 
-  <div id="pie-graph-universities-1" style="min-width: 300px; height: 400px; margin: 1em"></div>
 </div>
 
 </div>
@@ -368,6 +369,110 @@ function googleTranslateElementInit() {
 
     }
 
+    /*
+          function updateMap(){
+
+          var newCountryList = [];
+          while (newCountryList.length > 0) {
+              newCountryList.pop();
+          }
+          newCountryList.length = 0;
+          var countryMOOCsMap1 = [];
+          countryMOOCsMap1.length = 0;
+          var exists = 0;
+
+            document.getElementById("maps-universities-world-1").style.display = "block";
+            document.getElementById("maps-universities-world").style.display = "none";
+
+              for(var i=0; i<data2.length; i++) {
+                  if(data2[i].ranking10 >= parseInt($('#slider-range').slider("values")[0])){
+                      if(data2[i].ranking10 <= parseInt($('#slider-range').slider("values")[1])){
+
+                        if (newCountryList.length == 0) {
+                            newCountryList.push(data2[i]);
+                            //console.log(newCountryList[0].country);
+                        }
+                        else {
+                            for (var j = 0; j < newCountryList.length; j++) {
+                                if(data2[i].country == newCountryList[j].country){
+
+                                    console.log(newCountryList[j].country+" MOOCS 1: "+newCountryList[j].totalMOOCS);
+
+                                    newCountryList[j].totalMOOCS += data2[i].totalMOOCS;
+                                    exists = 1;
+                                    console.log(newCountryList[j].country+" MOOCS 2: "+newCountryList[j].totalMOOCS);
+
+                                }
+                            }
+                            if (exists == 0){
+                                newCountryList.push(data2[i]);
+                            }
+                            else{
+                                exists = 0
+                            }
+                        }
+                      }
+                  }
+              }
+
+              for (var j = 0; j < newCountryList.length; j++) {
+                  countryMOOCsMap1.push({code2: newCountryList[j].countryCode, value: newCountryList[j].totalMOOCS, name: newCountryList[j].country});
+              }
+
+            Highcharts.mapChart('maps-universities-world-1', {
+                    chart: {
+                        map: 'custom/world'
+                    },
+                    title: {
+                        text: 'MOOCs per Country'
+                    },
+                    legend: {
+                        title: {
+                            text: 'MOOCs per country',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }
+                    },
+                    mapNavigation: {
+                        enabled: true,
+                        buttonOptions: {
+                            verticalAlign: 'bottom'
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'none',
+                        borderWidth: 0,
+                        shadow: false,
+                        useHTML: true,
+                        padding: 0,
+                        pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
+                            '</span></span> {point.name}<br>' +
+                            '<span style="font-size:30px">{point.value} MOOCS</span>',
+                        positioner: function () {
+                            return { x: 0, y: 250 };
+                        }
+                    },
+                    colorAxis: {
+                        min: 1,
+                        max: 1000,
+                        type: 'logarithmic'
+                    },
+                    series: [{
+                        data: countryMOOCsMap1,
+                        joinBy: ['iso-a2', 'code2'],
+                        name: 'How many MOOCS in our ranking?',
+                        states: {
+                            hover: {
+                                color: '#a4edba'
+                            }
+                        }
+                    }]
+                });
+
+
+          }
+    */
   </script>
 
 
